@@ -1,0 +1,311 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0px;
+	background: url(images/img01.gif) repeat-x left top;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #444444;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #444444;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted #CC0001;
+	color: #FB7600;
+}
+
+a:hover {
+	background: none;
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+	background: url(images/img04.jpg) no-repeat left top;
+}
+
+/* Header */
+
+#header {
+	width: 900px;
+	height: 105px;
+	margin: 0 auto;
+	background: url(images/img02.jpg) repeat-y left top;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 640px;
+	color: #000000;
+}
+
+#logo h1, #logo p {
+}
+
+#logo h1 {
+	float: left;
+	padding: 30px 0 0 20px;
+	margin-right: 10px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	font-size: 2.8em;
+}
+
+#logo h1 a {
+	color: #FF7900;
+}
+
+#logo p {
+	float: left;
+	margin: 44px 0 0 0;
+	padding: 3px 10px 3px 0px;
+	font: normal 13px Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+} 
+
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #000000;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 230px;
+	padding: 0;
+}
+
+#search form {
+	height: 41px;
+	margin: 0;
+	padding: 70px 0 0 0px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search-text {
+	width: 210px;
+	border: none;
+	text-transform: lowercase;
+	font: bold 1.2em Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+#search-submit {
+	display: none;
+}
+
+/* Menu */
+
+#menu {
+	width: 900px;
+	height: 44px;
+	background: url(images/img03.jpg) no-repeat left top;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 13px 0 0 20px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	margin-right: 3px;
+	padding: 5px 20px 7px 20px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #FFFFFF;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+}
+
+#menu a:hover {
+	background: #FF7900;
+	text-decoration: none;
+}
+
+#menu .first {
+	margin-right: 3px;
+	background: #FF7900;
+}
+
+/* Page */
+
+#page {
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+/* Content */
+
+#content {
+	float: right;
+	width: 610px;
+	padding: 20px 20px 0 0;
+}
+
+.post {
+	margin-left: 20px;
+	padding-bottom: 30px;
+}
+
+.post .title {
+	padding-left: 10px;
+	border-left: 4px solid #F57601;
+	color: #000000;
+}
+
+.post .title a {
+	background: none;
+	color: #444444;
+	border: none;
+}
+
+.post .title a:hover {
+	text-decoration: underline;
+}
+
+.post .meta {
+	background: #E0E0E0;
+	border-left: 4px double #F57601;
+	border-right: 4px double #F57601;
+	padding: 3px 10px 3px 10px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.post .meta .comments,.post .meta .permalink {
+}
+
+.post .entry {
+	padding: 10px 20px 20px 20px;
+	text-align: justify;
+}
+
+/* Sidebar */
+
+#sidebar {
+	font-size: 0.8em;
+	float: left;
+	width: 210px;
+	padding: 25px 10px 0 20px;
+}
+
+#sidebar ul {
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+}
+
+#sidebar li ul {
+	padding-bottom: 30px;
+}
+
+#sidebar li li {
+	border-bottom: 1px dashed #BCBCBC;
+}
+
+#sidebar li li span {
+	font-size: 11px;
+	font-style: italic;
+	color: #BCBCBC;
+}
+
+#sidebar h2 {
+	color: #444444;
+}
+
+#sidebar p {
+	padding-bottom: 20px;
+}
+
+#sidebar a {
+	border: none;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+	color: #787878;
+}
+
+/* Footer */
+
+#footer {
+	width: 900px;
+	height: 20px;
+	margin: 0 auto;
+	padding: 20px 0 15px 0;
+	background: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+#footer p {
+	margin: 0;
+	line-height: normal;
+	font-size: 9px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#footer a {
+	color: #FFFFFF;
+	border-bottom: 1px #FFFFFF dotted;
+}
+
