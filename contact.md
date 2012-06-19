@@ -10,5 +10,4 @@ This website is hosted by:
 > 45 rue d'Ulm   
 > Parkas Group  
 > 75005 Paris, France  
-
-[Website](http://www.grosser.es)
+> Website: [http://www.grosser.es](http://www.grosser.es)
