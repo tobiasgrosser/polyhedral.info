@@ -24,7 +24,7 @@ To contribute your own content to polyhedral.info the following steps are necess
 
 ### 1. Clone the content to your computer
 
-To obtain the content of this website, use [git](git-scm.com) to clone the
+To obtain the content of this website, use [git](http://git-scm.com) to clone the
 repository of this website to your own computer.
 
 	git clone https://github.com/tobig/polyhedral.info.git
