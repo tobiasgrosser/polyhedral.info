@@ -1,8 +1,13 @@
 ---
 layout: default
-title: publications
+title: Publications related to polyhedral techniques
 ---
 
-An (incomplete) list of related publications
-============================================
+Publications
+============
+
+This is an (incomplete) list of papers related to polyhedral techniques. There is also a [Bibtex File](Publications.tex) available.
+
 <div id="bibtex_display"> </div>
+
+
