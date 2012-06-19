@@ -1,0 +1,32 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>polyhedral.info</title>
+  <link href="http://polyhedral.info/"/>
+  <link type="application/atom+xml" rel="self" href="http://polyhedral.info/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://polyhedral.info/</id>
+  <author>
+    <name>Tobias Grosser and others</name>
+    <email>tobias@grosser.es</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://polyhedral.info{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://polyhedral.info{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Tobias Grosser and others</name>
+      <uri>http://polyhedral.info/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+ 
+</feed>
