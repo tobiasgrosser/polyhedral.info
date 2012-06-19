@@ -8,7 +8,7 @@ Benchmarks
 
 Benchmarks containing static control parts.
 
- * [Polybench](www.cse.ohio-state.edu/~pouchet/software/polybench/)
+ * [Polybench](http://www.cse.ohio-state.edu/~pouchet/software/polybench/)
 
 Code Generators
 ==============
