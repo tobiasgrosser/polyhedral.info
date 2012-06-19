@@ -7,10 +7,9 @@ title: Software
 Compilers
 =========
 
-There are several projects that use polyhedral compilation techniques within
-production compilers.
+There are several static compilers that use polyhedral compilation techniques.
 
- * GCC/Graphite
- * LLVM/Polly
- * IBM XL
+ * [Graphite] (http://gcc.gnu.org/wiki/Graphite) (for [GCC](http://www.gcc.org))
+ * [Polly](http://polly.llvm.org) (for [LLVM](http://www.llvm.org))
+ * [IBM XL](http://www.ibm.com/software/awdtools/xlcpp/)
 
