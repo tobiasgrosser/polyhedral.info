@@ -47,6 +47,11 @@ To add a new page, copy the file 'index.md' to 'newpage.md' and change the
 'title' tag at the top of the file. You can now reference this page by
 adding links to 'newpage.html'.
 
+#### Add a new publication
+
+Publications are added by modifying the 'Publications.tex' file. The publications
+page is automatically derived from this tex file.
+
 #### Write a blog entry
 
 Blog entries are normal pages stored in the folder '_posts' and using the
