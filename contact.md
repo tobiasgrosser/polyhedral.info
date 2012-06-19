@@ -3,7 +3,7 @@ layout: default
 title: Contact
 ---
 
-This website is hosted by:
+### polyhedral.info is hosted by
 
 > Tobias Grosser  
 > Ecole Normale Superieure  
