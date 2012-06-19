@@ -247,6 +247,7 @@ function BibtexDisplay() {
     value = value.replace(/{\\"O}/g, '&Ouml;');
     value = value.replace(/{\\"U}/g, '&Uuml;');
     value = value.replace(/\\ss/g, '&szlig;');
+    value = value.replace(/\\'\{e\}/g, '&eacute;');
     value = value.replace(/\{(.*?)\}/g, '$1');
     return value;
   }
