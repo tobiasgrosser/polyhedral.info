@@ -389,3 +389,4 @@ if (typeof jQuery == 'undefined') {
     bibtex_js_draw();
   });
 }
+
