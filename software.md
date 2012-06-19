@@ -26,6 +26,12 @@ Static compilers that use polyhedral compilation techniques.
  * [IBM XL](http://www.ibm.com/software/awdtools/xlcpp/)
  * [Polly](http://polly.llvm.org) (for [LLVM](http://www.llvm.org))
 
+Dependency analysis
+===================
+
+ * [candl] (http://www.lri.fr/~bastoul/development/candl/)
+ * [isl] (http://freshmeat.net/projects/isl)
+
 Frameworks / Toolboxes
 ======================
 
