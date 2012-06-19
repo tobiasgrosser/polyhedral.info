@@ -53,6 +53,7 @@ Libraries to perform calculations on polyhedra.
  * [isl] (http://freshmeat.net/projects/isl)
  * [Jolylib] (http://www.reservoir.com/)
  * [polylib] (http://icps.u-strasbg.fr/polylib/)
+ * [piplib] (http://www.piplib.org)
  * [PPL] (bugseng.com/products/ppl/)
 
 Optimizers
