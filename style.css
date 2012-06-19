@@ -61,7 +61,11 @@ a:hover {
 	width: 900px;
 	height: 105px;
 	margin: 0 auto;
-	background: url(images/img02.jpg) repeat-y left top;
+	background: white;
+	background-image: url(images/poly_model.svg);
+	background-repeat: no-repeat;
+	background-size: 15em;
+	background-position: right;
 }
 
 /* Logo */
