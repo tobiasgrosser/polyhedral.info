@@ -62,7 +62,7 @@ Interactive Environments
  * [Omega calculator] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
  * [Omega+ calculator] (http://ctop.cs.utah.edu/chen_wiki/index.php?title=Main_Page)
 
-Interchange formats
+Exchange formats
 ===================
 
  * [OpenSCoP](http://www.lri.fr/~bastoul/development/openscop/index.html)
