@@ -51,7 +51,7 @@ Front ends
 Tools and libraries to translate a high level language into a polyhedral representation.
 
  * [clan](http://www.lri.fr/~bastoul/development/clan/index.html)
- * [pet](http://repo.or.cz/w/pet.git)
+ * [pet](http://freecode.com/projects/libpet)
 
 Interchange formats
 ===================
