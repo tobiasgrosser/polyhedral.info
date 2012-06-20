@@ -63,6 +63,7 @@ Libraries
 
 Libraries to perform calculations on polyhedra.
 
+ * [barvinok] (http://freecode.com/projects/barvinok)
  * [isl] (http://freecode.com/projects/isl)
  * [Jolylib] (http://www.reservoir.com/)
  * [Omega] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
