@@ -253,7 +253,7 @@ function BibtexDisplay() {
     value = value.replace(/\{(.*?)\}/g, '$1');
     return value;
   }
-  
+
   this.displayBibtex2 = function(i, o) {
     var b = new BibtexParser();
     b.setInput(i);
@@ -302,18 +302,51 @@ function BibtexDisplay() {
     old.remove();
   }
 
+  this.displayBibtexCitations = function(input) {
+    keys = {}
+    $('body').find('a.citation').each(function() {
+	key = this.text;
+	this.href = "#" + key;
+	keys[key] = true;
+     });
+
+    this.displayBibtexCited(input,  $("#bibtex_display_citations"), keys);
+
+    if ($('a.citation').length)
+      $("#bibtex_display_citations").prepend("<h2 id='Bibliography'>Bibliography</h2>");
+  }
 
   this.displayBibtex = function(input, output) {
     // parse bibtex input
     var b = new BibtexParser();
     b.setInput(input);
     b.bibtex();
-    
-    // save old entries to remove them later
-    var old = output.find("*");    
 
     // iterate over bibTeX entries
     var entries = b.getEntries();
+    this.printBibtex(entries, output);
+  }
+
+  this.displayBibtexCited = function(input, output, keys) {
+    // parse bibtex input
+    var b = new BibtexParser();
+    b.setInput(input);
+    b.bibtex();
+
+    // iterate over bibTeX entries
+    var entries = b.getEntries();
+    var entriesCited = new Object();
+
+    for (var entryKey in entries)
+      if (keys[entryKey])
+	entriesCited[entryKey] = entries[entryKey];
+
+    this.printBibtex(entriesCited, output);
+  }
+
+  this.printBibtex = function(entries, output) {
+    // save old entries to remove them later
+    var old = output.find("*");
     for (var entryKey in entries) {
       var entry = entries[entryKey];
       
@@ -379,6 +412,7 @@ function BibtexDisplay() {
         tpl.find("span:not(a)." + key.toLowerCase()).html(value);
         tpl.find("a." + key.toLowerCase()).attr('href', value);
       }
+      tpl.find("a.id").attr('name', entryKey);
       
       output.append(tpl);
       tpl.show();
@@ -392,9 +426,15 @@ function BibtexDisplay() {
 
 function bibtex_js_draw() {
   $(".bibtex_template").hide();
-  $("#bibtex_input").load('/Publications.tex',
-  	function() {
-  (new BibtexDisplay()).displayBibtex($("#bibtex_input").val(), $("#bibtex_display"));
+  $("#bibtex_input").load('/Publications.tex', function() {
+    (new BibtexDisplay()).displayBibtex($("#bibtex_input").val(), $("#bibtex_display"));
+  });
+}
+
+function bibtex_js_citations() {
+  $(".bibtex_template").hide();
+  $("#bibtex_input").load('/Publications.tex', function() {
+    (new BibtexDisplay()).displayBibtexCitations($("#bibtex_input").val());
   });
 }
 
@@ -412,6 +452,7 @@ if (typeof jQuery == 'undefined') {
     }
 
     bibtex_js_draw();
+    bibtex_js_citations();
   });
 }
 

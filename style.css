@@ -339,3 +339,17 @@ a.popup:hover span {
 	z-index:2;
 	margin-bottom: 2em;
 }
+
+a.citation:before {
+	content: "[";
+}
+
+a.citation:after {
+	content: "]";
+}
+
+#Bibliography {
+	padding-top: 2em;
+	font-size: 1.2em;
+	color: gray;
+}
