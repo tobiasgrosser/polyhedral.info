@@ -4,5 +4,5 @@ title: polyhedral.info is online
 ---
 
 [polyhedral.info](http://polyhedral.info) is online.
-We invite people to [contribute](contribute.html).
+We invite people to [contribute](/contribute.html).
 
