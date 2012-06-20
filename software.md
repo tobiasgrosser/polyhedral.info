@@ -34,10 +34,11 @@ Dependency analysis
  * [candl] (http://www.lri.fr/~bastoul/development/candl/)
  * [isl] (http://freshmeat.net/projects/isl)
 
-Frameworks / Toolboxes
+Source-to-Source Compilers
 ======================
 
  * [LooPo](http://www.infosun.fmi.uni-passau.de/cl/loopo/)
+ * [Pluto] (http://pluto-compiler.sourceforge.net/)
  * [PoCC](http://www.cse.ohio-state.edu/~pouchet/software/pocc/pocc.html)
 
 Front ends
@@ -66,8 +67,4 @@ Libraries to perform calculations on polyhedra.
  * [piplib] (http://www.piplib.org)
  * [PPL] (bugseng.com/products/ppl/)
 
-Optimizers
-==========
-
- * [Pluto] (http://pluto-compiler.sourceforge.net/)
 
