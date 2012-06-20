@@ -54,6 +54,13 @@ Tools and libraries to translate a high level language into a polyhedral represe
  * [clan](http://www.lri.fr/~bastoul/development/clan/index.html)
  * [pet](http://freecode.com/projects/libpet)
 
+Interactive Environments
+========================
+
+ * [iscc] (http://freecode.com/projects/barvinok)
+ * [Omega calculator] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
+ * [Omega+ calculator] (http://ctop.cs.utah.edu/chen_wiki/index.php?title=Main_Page)
+
 Interchange formats
 ===================
 
