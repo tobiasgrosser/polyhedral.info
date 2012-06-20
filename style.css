@@ -40,8 +40,6 @@ ul, ol {
 }
 
 a {
-	text-decoration: none;
-	border-bottom: 1px dotted #CC0001;
 	color: #FB7600;
 }
 
@@ -312,3 +310,32 @@ a:hover {
 	border-bottom: 1px #FFFFFF dotted;
 }
 
+a.popup {
+	position:relative;
+	border-right: 1em solid white;
+	text-decoration: none;
+}
+
+a.popup span {
+	display: none;
+}
+
+a.popup:hover span {
+	color: black;
+	display: block;
+	position: absolute;
+	top: -1em;
+	left: 4em;
+	text-align:justify;
+	font-size: 1.2em;
+	font-weight:normal;
+	background: white;
+	padding: 0.5em;
+	border: 1px solid black;
+	white-space: pre;
+	font-family: monospace;
+	display: block;
+	cursor: default;
+	z-index:2;
+	margin-bottom: 2em;
+}

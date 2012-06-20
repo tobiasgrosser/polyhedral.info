@@ -174,7 +174,8 @@ function BibtexParser() {
 
   this.key_value_list = function() {
     var kv = this.key_equals_value();
-    this.entries[this.currentEntry][kv[0]] = kv[1];
+    this.entries[this.currentEntry].entries = new Object();
+    this.entries[this.currentEntry].entries[kv[0]] = kv[1];
     while (this.tryMatch(",")) {
       this.match(",");
       // fixes problems with commas at the end of a list
@@ -182,15 +183,16 @@ function BibtexParser() {
         break;
       }
       kv = this.key_equals_value();
-      this.entries[this.currentEntry][kv[0]] = kv[1];
+      this.entries[this.currentEntry].entries[kv[0]] = kv[1];
     }
   }
 
-  this.entry_body = function() {
+  this.entry_body = function(directive) {
     this.currentEntry = this.key();
     this.entries[this.currentEntry] = new Object();    
     this.match(",");
     this.key_value_list();
+    this.entries[this.currentEntry].directive = directive;
   }
 
   this.directive = function () {
@@ -211,8 +213,8 @@ function BibtexParser() {
     this.value(); // this is wrong
   }
 
-  this.entry = function() {
-    this.entry_body();
+  this.entry = function(directive) {
+    this.entry_body(directive);
   }
 
   this.bibtex = function() {
@@ -226,7 +228,7 @@ function BibtexParser() {
       } else if (d == "@COMMENT") {
         this.comment();
       } else {
-        this.entry();
+        this.entry(d);
       }
       this.match("}");
     }
@@ -320,9 +322,24 @@ function BibtexDisplay() {
       
       // find all keys in the entry
       var keys = [];
-      for (var key in entry) {
+      for (var key in entry.entries) {
         keys.push(key.toUpperCase());
       }
+
+      var bibtex = entry.directive
+      bibtex += '{' + entryKey + ',\n';
+      var first = true;
+      for (var key in entry.entries) {
+	if (!first) {
+	  bibtex += ',\n';
+	}
+	first = false;
+	bibtex += '\t' + key + ' = {' + entry.entries[key] + '}'
+      }
+
+      bibtex += '\n}\n';
+      keys.push('BIBTEX');
+      entry.entries['BIBTEX'] = bibtex;
       
       // find all ifs and check them
       var removed = false;
@@ -354,9 +371,13 @@ function BibtexDisplay() {
       // fill in remaining fields 
       for (var index in keys) {
         var key = keys[index];
-        var value = entry[key] || "";
-        tpl.find("span:not(a)." + key.toLowerCase()).html(this.fixValue(value));
-        tpl.find("a." + key.toLowerCase()).attr('href', this.fixValue(value));
+        var value = entry.entries[key] || "";
+
+	if (key != 'BIBTEX') {
+	  value = this.fixValue(value);
+	}
+        tpl.find("span:not(a)." + key.toLowerCase()).html(value);
+        tpl.find("a." + key.toLowerCase()).attr('href', value);
       }
       
       output.append(tpl);
