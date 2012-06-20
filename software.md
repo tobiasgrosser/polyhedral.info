@@ -41,6 +41,8 @@ Source-to-Source Compilers
  * [LooPo](http://www.infosun.fmi.uni-passau.de/cl/loopo/)
  * [Pluto] (http://pluto-compiler.sourceforge.net/)
  * [PoCC](http://www.cse.ohio-state.edu/~pouchet/software/pocc/pocc.html)
+ * [PolyOpt/C] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/C)
+ * [PolyOpt/Fortran] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/Fortran)
 
 Front ends
 ==========
