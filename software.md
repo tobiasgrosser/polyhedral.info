@@ -37,15 +37,11 @@ Dependency analysis
  * [isl] (http://freecode.com/projects/isl)
  * [Petit] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
 
-Source-to-Source Compilers
-======================
+Exchange formats
+===================
 
- * [LooPo](https://www.infosun.fim.uni-passau.de/trac/LooPo)
- * [Pluto] (http://pluto-compiler.sourceforge.net/)
- * [PoCC](http://www.cse.ohio-state.edu/~pouchet/software/pocc/pocc.html)
- * [PolyOpt/C] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/C)
- * [PolyOpt/Fortran] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/Fortran)
- * [R-Stream] (https://www.reservoir.com/products)
+ * [OpenSCoP](http://www.lri.fr/~bastoul/development/openscop/index.html)
+
 
 Front ends
 ==========
@@ -62,11 +58,6 @@ Interactive Environments
  * [Omega calculator] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
  * [Omega+ calculator] (http://ctop.cs.utah.edu/chen_wiki/index.php?title=Main_Page)
 
-Exchange formats
-===================
-
- * [OpenSCoP](http://www.lri.fr/~bastoul/development/openscop/index.html)
-
 Libraries
 =========
 
@@ -81,4 +72,13 @@ Libraries to perform calculations on polyhedra.
  * [piplib] (http://www.piplib.org)
  * [PPL] (bugseng.com/products/ppl/)
 
+Source-to-Source Compilers
+======================
+
+ * [LooPo](https://www.infosun.fim.uni-passau.de/trac/LooPo)
+ * [Pluto] (http://pluto-compiler.sourceforge.net/)
+ * [PoCC](http://www.cse.ohio-state.edu/~pouchet/software/pocc/pocc.html)
+ * [PolyOpt/C] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/C)
+ * [PolyOpt/Fortran] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/Fortran)
+ * [R-Stream] (https://www.reservoir.com/products)
 
