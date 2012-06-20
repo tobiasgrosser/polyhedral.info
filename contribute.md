@@ -89,7 +89,7 @@ those to tobias at grosser dot es to submit them to be published on polyhedral.i
 
 #### b) github pull requests
 
-You can use the [github](github.com) web interface to fork the polyhedral.info
-[git-repository] (https://github.com/tobig/polyhedral.info). You can work on
+You can use the [github](http://github.com) web interface to fork the polyhedral.info
+[git-repository] (http://github.com/tobig/polyhedral.info). You can work on
 your fork, push your changes to your github fork and use github merge requests
 to submit your changes to the main repository.
