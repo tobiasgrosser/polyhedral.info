@@ -38,7 +38,7 @@ Dependency analysis
 Source-to-Source Compilers
 ======================
 
- * [LooPo](http://www.infosun.fmi.uni-passau.de/cl/loopo/)
+ * [LooPo](https://www.infosun.fim.uni-passau.de/trac/LooPo)
  * [Pluto] (http://pluto-compiler.sourceforge.net/)
  * [PoCC](http://www.cse.ohio-state.edu/~pouchet/software/pocc/pocc.html)
  * [PolyOpt/C] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/C)
