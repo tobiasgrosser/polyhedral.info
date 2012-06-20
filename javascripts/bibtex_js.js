@@ -371,7 +371,7 @@ function BibtexDisplay() {
 
 function bibtex_js_draw() {
   $(".bibtex_template").hide();
-  $("#bibtex_input").load('http://polyhedral.info/Publications.tex',
+  $("#bibtex_input").load('/Publications.tex',
   	function() {
   (new BibtexDisplay()).displayBibtex($("#bibtex_input").val(), $("#bibtex_display"));
   });
