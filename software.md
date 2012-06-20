@@ -34,6 +34,7 @@ Dependency analysis
 
  * [candl] (http://www.lri.fr/~bastoul/development/candl/)
  * [isl] (http://freecode.com/projects/isl)
+ * [Petit] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
 
 Source-to-Source Compilers
 ======================
