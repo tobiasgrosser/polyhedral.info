@@ -16,6 +16,8 @@ Code Generators
 Tools and libraries to translate a polyhedral representation into source code.
 
  * [CLooG](http://www.cloog.org)
+ * [CodeGen] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
+ * [CodeGen+] (http://ctop.cs.utah.edu/chen_wiki/index.php?title=Main_Page)
 
 Compilers
 =========
@@ -58,6 +60,8 @@ Libraries to perform calculations on polyhedra.
 
  * [isl] (http://freshmeat.net/projects/isl)
  * [Jolylib] (http://www.reservoir.com/)
+ * [Omega] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
+ * [Omega+] (http://ctop.cs.utah.edu/chen_wiki/index.php?title=Main_Page)
  * [polylib] (http://icps.u-strasbg.fr/polylib/)
  * [piplib] (http://www.piplib.org)
  * [PPL] (bugseng.com/products/ppl/)
