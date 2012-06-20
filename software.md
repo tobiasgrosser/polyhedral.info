@@ -43,6 +43,7 @@ Source-to-Source Compilers
  * [PoCC](http://www.cse.ohio-state.edu/~pouchet/software/pocc/pocc.html)
  * [PolyOpt/C] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/C)
  * [PolyOpt/Fortran] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/Fortran)
+ * [R-Stream] (https://www.reservoir.com/products)
 
 Front ends
 ==========
