@@ -33,7 +33,7 @@ Dependency analysis
 ===================
 
  * [candl] (http://www.lri.fr/~bastoul/development/candl/)
- * [isl] (http://freshmeat.net/projects/isl)
+ * [isl] (http://freecode.com/projects/isl)
 
 Source-to-Source Compilers
 ======================
@@ -63,7 +63,7 @@ Libraries
 
 Libraries to perform calculations on polyhedra.
 
- * [isl] (http://freshmeat.net/projects/isl)
+ * [isl] (http://freecode.com/projects/isl)
  * [Jolylib] (http://www.reservoir.com/)
  * [Omega] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
  * [Omega+] (http://ctop.cs.utah.edu/chen_wiki/index.php?title=Main_Page)
