@@ -38,7 +38,7 @@ in the repository use [Markdown syntax] (http://daringfireball.net/projects/mark
 You can also use [MathJax](http://www.mathjax.org) to include latex formulars in your code.
 This code is e.g. rendered as follows:
 
-	When $a \ne 0$, there are two solutions to ax^2 + bx + c = 0$ and they are
+	When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
 	$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
