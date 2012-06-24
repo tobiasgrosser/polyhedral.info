@@ -332,12 +332,21 @@ a.popup:hover span {
 	background: white;
 	padding: 0.5em;
 	border: 1px solid black;
-	white-space: pre;
-	font-family: monospace;
 	display: block;
 	cursor: default;
 	z-index:2;
 	margin-bottom: 2em;
+}
+
+a.popup span.abstract {
+	width: 30em;
+	font-size: 1.2em;
+}
+
+a.popup span.bibtex {
+	white-space: pre;
+	font-family: monospace;
+l
 }
 
 a.citation:before {
