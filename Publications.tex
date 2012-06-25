@@ -53,3 +53,40 @@
  abstract = {Automatic parallelization in the polyhedral model is based on affine transformations from an original computation domain (iteration space) to a target space-time domain, often with a different transformation for each variable. Code generation is an often ignored step in this process that has a significant impact on the quality of the final code. It involves making a trade-off between code size and control code simplification/optimization. Previous methods of doing code generation are based on loop splitting, however they have non-optimal behavior when working on parameterized programs. We present a general parameterized method for code generation based on dual representation of polyhedra. Our algorithm uses a simple recursion on the dimensions of the domains, and enables fine control over the tradeoff between code size and control overhead.}
 }
 
+@article{Feautrier:1992:MonoDimensional,
+ author = {Feautrier, Paul},
+ title = {Some efficient solutions to the affine scheduling problem: I. One-dimensional time},
+ journal = {International Journal of Parallel Programming},
+ issue_date = {Oct. 1992},
+ volume = {21},
+ number = {5},
+ month = oct,
+ year = {1992},
+ issn = {0885-7458},
+ pages = {313--348},
+ numpages = {36},
+ url = {http://dx.doi.org/10.1007/BF01407835},
+ doi = {10.1007/BF01407835},
+ acmid = {171448},
+ publisher = {Kluwer Academic Publishers},
+ address = {Norwell, MA, USA},
+ keywords = {automatic parallelization, automatic systolic array design, scheduling},
+ abstract = {Programs and systems of recurrence equations may be represented as sets of actions which are to be executed subject to precedence constraints. In many cases, actions may be labelled by integral vectors in some iteration domain, and precedence constraints may be described by affine relations. A schedule for such a program is a function which allows one to estimate the intrinsic degree of parallelism of the program and to compile a parallel version for multiprocessor architectures or systolic arrays. This paper deals with the problem of finding closed form schedules as affine or piecewise affine functions of the iteration vector. An efficient algorithm which reduces the scheduling problem to a parametric linear program of small size, which can be readily solved by an efficient algorithm.}
+}
+
+@article{Feautrier:1992:MultiDimensional,
+   author = {Feautrier, Paul},
+   affiliation = {Laboratoire MASI Université de Versailles St-Quentin 45 Avenue des Etats-Unis 78035 Versailles Cedex France},
+   title = {Some efficient solutions to the affine scheduling problem. Part II. Multidimensional time},
+   journal = {International Journal of Parallel Programming},
+   publisher = {Springer Netherlands},
+   issn = {0885-7458},
+   keyword = {Informatique},
+   pages = {389-420},
+   volume = {21},
+   issue = {6},
+   url = {http://dx.doi.org/10.1007/BF01379404},
+   note = {10.1007/BF01379404},
+   year = {1992},
+   abstract = {This paper extends the algorithms which were given in Part I to cases in which there is no affine schedule, i.e. to problems whose parallel complexity is polynomial but not linear. The natural generalization is to multidimensional schedules with lexicographic ordering as temporal succession. Multidimensional affine schedules, are, in a sense, equivalent to polynomial schedules, and are much easier to handle automatically. Furthermore, there is a strong connexion between multidimensional schedules and loop nests, which allows one to prove that a static control program always has a multidimensional schedule. Roughly, a larger dimension indicates less parallelism. In the algorithm which is presented here, this dimension is computed dynamically, and is just sufficient for scheduling the source program. The algorithm lends itself to a "divide and conquer" strategy. The paper gives some experimental evidence for the applicability, performances and limitations of the algorithm.}
+}
