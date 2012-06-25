@@ -57,9 +57,9 @@ adding links to 'newpage.html'.
 
 #### Add a new publication
 
-Publications are added by modifying the 'Publications.tex' file. The publications
+Publications are added by modifying the 'Publications.bib' file. The publications
 page is automatically derived from this tex file. To cite a publication that is part
-of the 'Publications.tex' file, just add `<a class="citation">QUILLERE00</a>`
+of the 'Publications.bib' file, just add `<a class="citation">QUILLERE00</a>`
 to any page. This will create the following citation <a class="citation">QUILLERE00</a>.
 
 
