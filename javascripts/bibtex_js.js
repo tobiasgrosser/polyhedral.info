@@ -367,7 +367,13 @@ function BibtexDisplay() {
 	  bibtex += ',\n';
 	}
 	first = false;
-	bibtex += '\t' + key + ' = {' + entry.entries[key] + '}'
+	bibtex += ' ' + key + ' = {'
+
+	if (key == "ABSTRACT")
+	  bibtex += '\n  ';
+
+	bibtex += entry.entries[key] + '}'
+
       }
 
       bibtex += '\n}\n';
