@@ -72,6 +72,39 @@ try to follow the following style guide.
  }
 }
 
+@PhdThesis{Bastoul04b,
+ author = {Bastoul, C\'{e}dric},
+ title = {Improving Data Locality in Static Control Programs},
+ school = {University Paris 6, Pierre et Marie Curie, France},
+ month = dec,
+ year = 2004,
+ abstract = {
+  Cache memories were invented to decouple fast processors from slow memories.
+  However, this decoupling is only partial and many researchers have attempted to
+  improve cache use by program optimization. Potential benefits are significant
+  since both energy dissipation and performance highly depend on the traffic
+  between memory levels.
+  This thesis will visit most of the steps of high level transformation frameworks
+  in the polyhedral model in order to improve both applicability and target code
+  quality. To achieve this goal, we refine the concept of static control parts
+  (SCoP) and we show experimentally that this program model is relevant to
+  real-life applications. We present a transformation policy freed of classical
+  limitations like considering only unimodular or invertible functions. Lastly,
+  we extend the Quiller\'{e} et al. algorithm to be able to generate efficient codes
+  in a reasonable amount of time. To exploit this transformation framework, we
+  propose a data locality improvement method based on a singular execution scheme
+  where an asymptotic evaluation of the memory traffic is possible. This information
+  is used in our optimization algorithm to find the best reordering of the program
+  operations, at least in an asymptotic sense. This method considers legality
+  and each type of data locality as constraints whose solution is an appropriate
+  transformation. The optimizer has been prototyped and tested with non-trivial
+  programs. Experimental evidence shows that our framework can improve data
+  locality and performance in traditionally challenging programs with e.g.
+  non-perfectly nested loops, complex dependences and non-uniformly generated
+  references.
+ }
+}
+
 @InProceedings{Bastoul04,
  author = {Bastoul, C\'{e}dric},
  title = {Code Generation in the Polyhedral Model Is Easier Than You Think},
