@@ -76,6 +76,7 @@ Libraries to perform calculations on polyhedra.
 Source-to-Source Compilers
 ======================
 
+ * [CHiLL] (http://ctop.cs.utah.edu/chen_wiki/index.php?title=Main_Page)
  * [LooPo](https://www.infosun.fim.uni-passau.de/trac/LooPo)
  * [Pluto] (http://pluto-compiler.sourceforge.net/)
  * [PoCC](http://www.cse.ohio-state.edu/~pouchet/software/pocc/pocc.html)
