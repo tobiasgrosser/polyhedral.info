@@ -33,7 +33,7 @@ Dependency analysis
 ===================
 
  * [candl] (http://www.lri.fr/~bastoul/development/candl/)
- * [FADA toolkit] (http://www.prism.uvsq.fr/~bem/fadalib/)
+ * [FADA toolkit] (https://bitbucket.org/mbelaoucha/fadalib)
  * [isl] (http://freecode.com/projects/isl)
  * [Petit] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
 
