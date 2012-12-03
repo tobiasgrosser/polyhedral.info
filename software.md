@@ -19,6 +19,7 @@ Tools and libraries to translate a polyhedral representation into source code.
  * [CLooG](http://www.cloog.org)
  * [CodeGen] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
  * [CodeGen+] (http://ctop.cs.utah.edu/ctop/?page_id=21)
+ * [isl] (http://freecode.com/projects/isl)
 
 Compilers
 =========
