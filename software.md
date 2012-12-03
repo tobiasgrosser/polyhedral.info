@@ -18,7 +18,7 @@ Tools and libraries to translate a polyhedral representation into source code.
  * [CADGen](https://www.infosun.fim.uni-passau.de/trac/LooPo/wiki/CADGen)
  * [CLooG](http://www.cloog.org)
  * [CodeGen] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
- * [CodeGen+] (http://ctop.cs.utah.edu/chen_wiki/index.php?title=Main_Page)
+ * [CodeGen+] (http://ctop.cs.utah.edu/ctop/?page_id=21)
 
 Compilers
 =========
@@ -56,7 +56,7 @@ Interactive Environments
 
  * [iscc] (http://freecode.com/projects/barvinok)
  * [Omega calculator] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
- * [Omega+ calculator] (http://ctop.cs.utah.edu/chen_wiki/index.php?title=Main_Page)
+ * [Omega+ calculator] (http://ctop.cs.utah.edu/ctop/?page_id=21)
 
 Libraries
 =========
@@ -68,7 +68,7 @@ Libraries to perform calculations on polyhedra.
  * [isl] (http://freecode.com/projects/isl)
  * [Jolylib] (http://www.reservoir.com/)
  * [Omega] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
- * [Omega+] (http://ctop.cs.utah.edu/chen_wiki/index.php?title=Main_Page)
+ * [Omega+] (http://ctop.cs.utah.edu/ctop/?page_id=21)
  * [polylib] (http://icps.u-strasbg.fr/polylib/)
  * [piplib] (http://www.piplib.org)
  * [PPL] (bugseng.com/products/ppl/)
@@ -77,7 +77,7 @@ Libraries to perform calculations on polyhedra.
 Source-to-Source Compilers
 ======================
 
- * [CHiLL] (http://ctop.cs.utah.edu/chen_wiki/index.php?title=Main_Page)
+ * [CHiLL] (http://ctop.cs.utah.edu/ctop/?page_id=21)
  * [LooPo](https://www.infosun.fim.uni-passau.de/trac/LooPo)
  * [Pluto] (http://pluto-compiler.sourceforge.net/)
  * [PoCC](http://www.cse.ohio-state.edu/~pouchet/software/pocc/pocc.html)
