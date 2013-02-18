@@ -72,7 +72,7 @@ Libraries to perform calculations on polyhedra.
  * [Omega+] (http://ctop.cs.utah.edu/ctop/?page_id=21)
  * [polylib] (http://icps.u-strasbg.fr/polylib/)
  * [piplib] (http://www.piplib.org)
- * [PPL] (bugseng.com/products/ppl/)
+ * [PPL] (http://bugseng.com/products/ppl/)
  * [ZPolyTrans] (http://zpolytrans.gforge.inria.fr/)
 
 Source-to-Source Compilers
