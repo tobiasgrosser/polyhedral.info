@@ -9,13 +9,7 @@ Who can contribute?
 Everybody is invited to contribute content to
 [http://polyhedral.info](polyhedral.info). We invite both researchers to
 contribute their own work as well as users who found some interesting work they
-would like to share. The content of this website is currently not peer-reviewed
-before being published. Changes are pushed as soon as they are free from
-obvious content and style issues. However, changes to this website are openly available
-through the git change log. We invite everybody to review these changes.
-
-We may introduce a more formal review process later on, but would like to avoid unnecessary
-overhead.
+would like to share.
 
 How to contribute?
 ==================
@@ -69,24 +63,7 @@ Blog entries are normal pages stored in the folder '_posts' and using the
 naming convention 'yyyy-mm-dd-page-title.md'. They automatically show up in the
 newest post list.
 
-### 3. Test your changes locally
-
-In case you perform more fundamental changes to the website, it might be useful
-to test them before submitting. For this the following steps are required:
-
-a) Install jekyll
-
-There are [install instructions](http://github.com/mojombo/jekyll/wiki/Install) available.
-
-b) Run the website locally
-
-	$jekyll --server
-
-c) View the website at [http://0.0.0.0:4000](http://0.0.0.0:4000)
-
-d) Restart the jekyll server in case of new local changes
-
-### 4. Submit the changes upstream
+### 3. Submit the changes upstream
 
 To contribute your changes upstream, there are two options:
 
