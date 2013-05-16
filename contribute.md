@@ -85,3 +85,9 @@ On Linux (debian/Ubuntu) this can be done by running `apt-get install jekyll`. F
 
 Open [http://0.0.0.0:4000](http://0.0.0.0:4000) with your web browser.
 
+### History of the website
+
+The history of this website including the individual contributors
+and their contributions is available in <a
+href="https://github.com/tobig/polyhedral.info/commits/gh-pages"> the
+git repository</a>.
