@@ -4,7 +4,29 @@ title: Home
 ---
 
 [polyhedral.info](http://polyhedral.info) provides information about
-polyhedral compilation techniques. This includes related
+polyhedral compilation techniques including information about related
 [software](software.html), [publications](publications.html) and
-[events](events.html). We also provide news about about
-polyhedral techniques in our [blog](blog.html).
+[events](events.html).
+
+<hr>
+
+{% for post in site.posts limit: 15 %}
+<div class="post">
+{% capture post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
+{% if post_date != prev_post_date %}
+<div align="right" class="date-container">{{ post.date | date:"%A, %e %B %Y" | upcase }}</div>
+{% endif %}
+{% capture prev_post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
+{% if post.post-link %}
+<h1 class="title"><a href="{{ post.post-link }}" title="External link">{{ post.title }}</a> <a class="glyph-permalink" href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&diams;</a></h1>
+{% else %}
+<h1>{{ post.title }}</h1>
+{% endif %}
+{{ post.content }}
+</div>
+{% if forloop.last == false %}
+</br>
+<hr class="front">
+</br>
+{% endif %}
+{% endfor %}
