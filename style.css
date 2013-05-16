@@ -1,4 +1,3 @@
-
 /*
 Design by Free CSS Templates
 http://www.freecsstemplates.org
@@ -7,9 +6,9 @@ Released for free under a Creative Commons Attribution 2.5 License
 
 body {
 	margin: 0px;
-	background: url(images/img01.gif) repeat-x left top;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #444444;
+	background: lightgray;
 }
 
 h1, h2, h3 {
@@ -50,7 +49,9 @@ a:hover {
 #wrapper {
 	width: 900px;
 	margin: 0 auto;
-	background: url(images/img04.jpg) no-repeat left top;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
+	background: white;
 }
 
 /* Header */
@@ -64,6 +65,8 @@ a:hover {
 	background-repeat: no-repeat;
 	background-size: 15em;
 	background-position: right;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
 }
 
 /* Logo */
@@ -142,9 +145,11 @@ a:hover {
 #menu {
 	width: 900px;
 	height: 44px;
-	background: url(images/img03.jpg) no-repeat left top;
+	background: #444444 no-repeat left top;
 	margin: 0 auto;
 	padding: 0;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
 }
 
 #menu ul {
@@ -295,6 +300,8 @@ a:hover {
 	background: #444444;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #FFFFFF;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
 }
 
 #footer p {
@@ -320,7 +327,7 @@ a.popup span {
 }
 
 a.popup:hover span {
-	color: black;
+	color: #444444;
 	display: block;
 	position: absolute;
 	top: -1em;
