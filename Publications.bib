@@ -228,3 +228,71 @@ try to follow the following style guide.
  }
 }
 
+@article{Feautrier91,
+ title = {Dataflow analysis of array and scalar references},
+ author = {Feautrier, Paul},
+ journal = {International Journal of Parallel Programming},
+ volume = {20},
+ number = {1},
+ pages = {23--53},
+ year = {1991},
+ publisher = {Springer},
+ abstract = {
+  Given a program written in a simple imperative language (assignment
+  statements,for loops, affine indices and loop limits), this paper presents an
+  algorithm for analyzing the patterns along which values flow as the execution
+  proceeds. For each array or scalar reference, the result is the name and
+  iteration vector of the source statement as a function of the iteration
+  vector of the referencing statement. The paper discusses several applications
+  of the method: conversion of a program to a set of recurrence equations,
+  array and scalar expansion, program verification and parallel program
+  construction.
+ }
+}
+
+@article{Lamport74,
+ title = {The parallel execution of DO loops},
+ author = {Lamport, Leslie},
+ journal = {Communications of the ACM},
+ volume = {17},
+ number = {2},
+ pages = {83--93},
+ year = {1974},
+ publisher = {ACM},
+ url = {http://research.microsoft.com/en-us/um/people/lamport/pubs/do-loops.pdf},
+ abstract = {
+  Methods are developed for the parallel execution of different iterations of a
+  DO loop. Both asynchronous multiprocessor computers and array computers are
+  considered. Practical application to the design of compilers for such
+  computers is discussed.
+ }
+}
+
+@article{Karp67,
+ title = {The organization of computations for uniform recurrence equations},
+ author = {Karp, Richard M and Miller, Raymond E and Winograd, Shmuel},
+ journal = {Journal of the ACM (JACM)},
+ volume = {14},
+ number = {3},
+ pages = {563--590},
+ year = {1967},
+ publisher = {ACM},
+ url = {http://dl.acm.org/citation.cfm?id=321418},
+ abstract = {
+  A set equations in the quantities ai(p), where i = 1, 2, · · ·, m and p ranges
+  over a set R of lattice points in n-space, is called a system of uniform
+  recurrence equations if the following property holds: If p and q are in R and
+  w is an integer n-vector, then ai(p) depends directly on aj(p - w) if and
+  only if ai(q) depends directly on aj(q - w). Finite-difference approximations
+  to systems of partial differential equations typically lead to such recurrence
+  equations. The structure of such a system is specified by a dependence graph G
+  having m vertices, in which the directed edges are labeled with integer
+  n-vectors. For certain choices of the set R, necessary and sufficient
+  conditions on G are given for the existence of a schedule to compute all the
+  quantities ai(p) explicitly from their defining equations. Properties of such
+  schedules, such as the degree to which computation can proceed “in parallel,”
+  are characterized. These characterizations depend on a certain iterative
+  decomposition of a dependence graph into subgraphs. Analogous results
+  concerning implicit schedules are also given.
+ }
+}
