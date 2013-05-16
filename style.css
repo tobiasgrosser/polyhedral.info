@@ -144,7 +144,6 @@ a:hover {
 
 #menu {
 	width: 900px;
-	height: 44px;
 	background: #444444 no-repeat left top;
 	margin: 0 auto;
 	padding: 0;
@@ -154,22 +153,22 @@ a:hover {
 
 #menu ul {
 	margin: 0;
-	padding: 13px 0 0 20px;
-	list-style: none;
-	line-height: normal;
+	list-style-type: none;
+	display: inline;
 }
 
 #menu li {
-	float: left;
+	display: inline;
+	padding-right:0.5em;
 }
 
 #menu a {
-	display: block;
-	margin-right: 3px;
-	padding: 5px 20px 7px 20px;
+	padding: 0.3em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
 	text-decoration: none;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
+	font-size: 1em;
 	font-weight: normal;
 	color: #FFFFFF;
 	border: none;
@@ -178,17 +177,16 @@ a:hover {
 #menu a:hover, #menu .current_page_item a {
 }
 
+
+#menu .current_page_item a {
+	color: #FF7900;
+}
+
+
 #menu a:hover {
-	background: #FF7900;
-	text-decoration: none;
+	color: #FF7900
 }
 
-#menu .first {
-	margin-right: 3px;
-	background: #FF7900;
-}
-
-/* Page */
 
 #page {
 	width: 900px;
