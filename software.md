@@ -21,15 +21,6 @@ Tools and libraries to translate a polyhedral representation into source code.
  * [CodeGen+] (http://ctop.cs.utah.edu/ctop/?page_id=21)
  * [isl] (http://freecode.com/projects/isl)
 
-Compilers
-=========
-
-Static compilers that use polyhedral compilation techniques.
-
- * [Graphite] (http://gcc.gnu.org/wiki/Graphite) (for [GCC](http://www.gcc.org))
- * [IBM XL](http://www.ibm.com/software/awdtools/xlcpp/)
- * [Polly](http://polly.llvm.org) (for [LLVM](http://www.llvm.org))
-
 Dependency analysis
 ===================
 
@@ -42,7 +33,6 @@ Exchange formats
 ===================
 
  * [OpenSCoP](http://www.lri.fr/~bastoul/development/openscop/index.html)
-
 
 Front ends
 ==========
@@ -75,8 +65,17 @@ Libraries to perform calculations on polyhedra.
  * [PPL] (http://bugseng.com/products/ppl/)
  * [ZPolyTrans] (http://zpolytrans.gforge.inria.fr/)
 
-Source-to-Source Compilers
-======================
+Compilers
+=========
+
+#### Static C/FORTRAN
+
+ * [Graphite] (http://gcc.gnu.org/wiki/Graphite) (for [GCC](http://www.gcc.org))
+ * [IBM XL](http://www.ibm.com/software/awdtools/xlcpp/)
+ * [Polly](http://polly.llvm.org) (for [LLVM](http://www.llvm.org))
+
+
+#### Source-to-Source
 
  * [CHiLL] (http://ctop.cs.utah.edu/ctop/?page_id=21)
  * [LooPo](https://www.infosun.fim.uni-passau.de/trac/LooPo)
@@ -86,3 +85,6 @@ Source-to-Source Compilers
  * [PolyOpt/Fortran] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/Fortran)
  * [R-Stream] (https://www.reservoir.com/products)
 
+#### Equational Programming
+
+ * [AlphaZ] (http://www.cs.colostate.edu/AlphaZ/)
