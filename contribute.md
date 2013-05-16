@@ -6,20 +6,18 @@ title: Contribute
 Who can contribute?
 ===================
 
+
 Everybody is invited to contribute content to
-[http://polyhedral.info](polyhedral.info). We invite both researchers to
-contribute their own work as well as users who found some interesting work they
+[http://polyhedral.info](polyhedral.info). This includes researchers how want
+to share their work as well as users who found interesting information they
 would like to share.
 
 How to contribute?
 ==================
 
-To contribute your own content to polyhedral.info the following steps are necessary:
+Contribute contend in three easy steps.
 
-### 1. Clone the content to your computer
-
-To obtain the content of this website, use [git](http://git-scm.com) to clone the
-repository of this website to your own computer.
+### 1. Clone the website
 
 	git clone https://github.com/tobig/polyhedral.info.git
 
