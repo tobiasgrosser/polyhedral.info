@@ -18,6 +18,61 @@ try to follow the following style guide.
    the style guide and fixes the existing entries.
 }}
 
+@techreport{Grosser2013Promises,
+ hal_id = {hal-00848691},
+ url = {http://hal.inria.fr/hal-00848691},
+ title = {{The Promises of Hybrid Hexagonal/Classical Tiling for GPU}},
+ author = {Grosser, Tobias and Verdoolaege, Sven and Cohen, Albert and Sadayappan, P.},
+ abstract = {{
+  Time-tiling is necessary for efficient execution of iterative
+  stencil computations. But the usual hyper-rectangular tiles cannot
+  be used because of positive/negative dependence distances along the
+  stencil's spatial dimensions. Several prior efforts have addressed
+  this issue. However, known techniques trade enhanced data reuse
+  for other causes of inefficiency, such as unbalanced parallelism,
+  redundant computations, or increased control flow overhead incompatible
+  with efficient GPU execution. We explore a new path to maximize the
+  effectivness of time-tiling on iterative stencil computations. Our
+  approach is particularly well suited for GPUs. It does not require
+  any redundant computations, it favors coalesced global-memory access
+  and data reuse in shared-memory/cache, avoids thread divergence, and
+  extracts a high degree of parallelism. We introduce hybrid hexagonal
+  tiling, combining hexagonal tile shapes along the time (sequential)
+  dimension and one spatial dimension, with classical tiling for other
+  spatial dimensions. An hexagonal tile shape simultaneously enable
+  parallel tile execution and reuse along the time dimension. Experimental
+  results demonstrate significant performance improvements over existing
+  stencil compilers.
+ }},
+ affiliation = {PARKAS - INRIA Paris-Rocquencourt, Department of Computer
+ Science and Engineering - CSE},
+ type = {Rapport de recherche},
+ institution = {INRIA},
+ number = {RR-8339},
+ year = {2013},
+ month = Jul,
+ pdf = {http://hal.inria.fr/hal-00848691/PDF/RR-8339.pdf},
+}
+
+@article{Verdoolaege2013PPCG,
+ title = {Polyhedral parallel code generation for {CUDA}},
+ author = {Verdoolaege, Sven and Juega, Juan Carlos and Cohen, Albert and
+           G\'{o}mez, Jos{\'e} Ignacio and Tenllado, Christian and
+           Catthoor, Francky},
+ journal = {ACM Transactions on Architecture and Code Optimization},
+ issue_date = {January 2013},
+ volume = {9},
+ number = {4},
+ month = jan,
+ year = {2013},
+ issn = {1544-3566},
+ pages = {54:1--54:23},
+ doi = {10.1145/2400682.2400713},
+ acmid = {2400713},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
 @inproceedings{Verdoolaege2010isl,
  author = {Verdoolaege, Sven},
  title = {isl: {A}n Integer Set Library for the Polyhedral Model},
@@ -70,6 +125,20 @@ try to follow the following style guide.
   our approach through comparisons using linear algebra computations: LU and
   Cholesky decomposition.
  }
+}
+
+@article{Bondhugula2008Pluto,
+ author = {Bondhugula, Uday and Hartono, Albert and Ramanujam, J. and Sadayappan, P.},
+ title = {A practical automatic polyhedral parallelizer and locality optimizer},
+ journal = {SIGPLAN Notices},
+ volume = {43},
+ number = {6},
+ year = {2008},
+ issn = {0362-1340},
+ pages = {101--113},
+ doi = {http://doi.acm.org/10.1145/1379022.1375595},
+ publisher = {ACM},
+ address = {New York, NY, USA},
 }
 
 @PhdThesis{Bastoul2004PhD,
