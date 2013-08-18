@@ -248,6 +248,9 @@ function BibtexDisplay() {
     value = value.replace(/{\\"A}/g, '&Auml;');
     value = value.replace(/{\\"O}/g, '&Ouml;');
     value = value.replace(/{\\"U}/g, '&Uuml;');
+    value = value.replace(/{\\'o}/g, '&oacute;');
+    value = value.replace(/\\'{o}/g, '&oacute;');
+    value = value.replace(/{\\'e}/g, '&eacute;');
     value = value.replace(/\\ss/g, '&szlig;');
     value = value.replace(/\\'\{e\}/g, '&eacute;');
     value = value.replace(/\{(.*?)\}/g, '$1');
