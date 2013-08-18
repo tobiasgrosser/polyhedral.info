@@ -6,11 +6,7 @@ title: Contribute
 Who?
 ====
 
-
-Everybody is invited to contribute to
-[http://polyhedral.info](polyhedral.info). We encourage
-researcher to share their work on polyhedral techniques, but also
-all users who have information worth sharing.
+Everybody is invited to contribute.
 
 How?
 ====
@@ -21,17 +17,43 @@ How?
 
 #### 2. Perform your changes
 
-The pages of this site are stored in individual text files, which can be
-edited with your normal text editor and which are formatted using
-[Markdown] (http://daringfireball.net/projects/markdown/syntax).
 
 #### 3. Submit changes
 
-Use `git format-patch` to obtain patch files containing your changes. Submit
-those patches to [polyhedral@grosser.es] (mailto://polyhedral@grosser.es).
+Use `git format-patch` to obtain patch files containing your changes and
+submit those patches to [polyhedral@grosser.es]
+(mailto://polyhedral@grosser.es).
 
-Details on how to add/change content
+
+How to add/change content
 =================================
+
+#### Add a new page
+
+To add a new page, copy the file `index.md` to `newpage.md` and change the
+`title` tag at the top of the file. You can now reference this page by
+adding links to `newpage.html`.
+
+#### Change a page
+
+To change the content of `software.html`, open the file `software.md` in your
+favorite text editor and modify the content as you like. Pages  are stored in
+individual text files, which can be edited with your normal text editor and
+which are formatted using [Markdown] (http://daringfireball.net/projects/markdown/syntax).
+
+#### Add a new publication
+
+Publications are added by modifying the `Publications.bib` file. The publications
+page is automatically derived from this tex file. To cite a publication that is part
+of the `Publications.bib` file, just add `<a class="citation">QUILLERE2000</a>`
+to any page. This will create the following citation <a class="citation">QUILLERE2000</a>.
+
+#### Write a blog entry
+
+Blog entries are normal pages stored in the folder `_posts` and using the
+naming convention `yyyy-mm-dd-page-title.md`. They automatically show up in the
+newest post list.
+
 
 #### Formulars
 You can also use [MathJax](http://www.mathjax.org) to include latex formulars in your code. The following example shows the code you would create as well as
@@ -42,31 +64,6 @@ its rendered version:
 
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-
-#### Change a page
-
-To change the content of `software.html`, open the file `software.md` in your
-favorite text editor and modify the content as you like.
-
-#### Add a new page
-
-To add a new page, copy the file `index.md` to `newpage.md` and change the
-`title` tag at the top of the file. You can now reference this page by
-adding links to `newpage.html`.
-
-#### Add a new publication
-
-Publications are added by modifying the `Publications.bib` file. The publications
-page is automatically derived from this tex file. To cite a publication that is part
-of the `Publications.bib` file, just add `<a class="citation">QUILLERE2000</a>`
-to any page. This will create the following citation <a class="citation">QUILLERE2000</a>.
-
-
-#### Write a blog entry
-
-Blog entries are normal pages stored in the folder `_posts` and using the
-naming convention `yyyy-mm-dd-page-title.md`. They automatically show up in the
-newest post list.
 
 ### Test changes
 
