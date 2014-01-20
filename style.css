@@ -282,6 +282,7 @@ a:hover {
 
 #sidebar a {
 	border: none;
+	text-decoration: none
 }
 
 #sidebar a:hover {
