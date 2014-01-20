@@ -61,7 +61,6 @@ a:hover {
 	height: 105px;
 	margin: 0 auto;
 	background: white;
-	background-image: url(images/poly_model.svg);
 	background-repeat: no-repeat;
 	background-size: 15em;
 	background-position: right;
@@ -87,10 +86,7 @@ a:hover {
 	letter-spacing: -1px;
 	text-transform: lowercase;
 	font-size: 2.8em;
-}
-
-#logo h1 a {
-	color: #FF7900;
+	color: rgb(68, 68, 68);
 }
 
 #logo p {
