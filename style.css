@@ -252,8 +252,8 @@ a:hover {
 #sidebar {
 	font-size: 0.8em;
 	float: left;
-	width: 210px;
 	padding: 0px 10px 0 20px;
+	border-right: 1px solid black;
 }
 
 #sidebar ul {
@@ -280,8 +280,7 @@ a:hover {
 }
 
 #sidebar h2 {
-	color: #444444;
-	margin-top: 1em;
+	padding-top: 0em;
 }
 
 #sidebar p {

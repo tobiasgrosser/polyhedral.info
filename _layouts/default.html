@@ -88,16 +88,20 @@ Released   : 20081103
 				<li>
 
 					<h2>Recent Posts</h2>
+<hr>
 
 <ul>
 {% for post in site.posts limit: 7 %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
+<br />
 					Subscribe: <a href="/atom.xml">ATOM</a> or
 					<a href="/rss.xml">RSS</a>
 
+<br /><br />
 					<h2>Contribute</h2>
+<hr>
 
 					<p>Learn how to <a href="/contribute.html">participate</a>.</p>
 
