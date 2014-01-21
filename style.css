@@ -37,11 +37,12 @@ ul, ol {
 }
 
 a {
-	color: #FB7600;
+	color: #9999ff;
 }
 
 a:hover {
 	background: none;
+	color: #ff0000;
 }
 
 #wrapper {
@@ -56,14 +57,15 @@ a:hover {
 
 #header {
 	width: 900px;
-	height: 105px;
+	height: 10em;
 	margin: 0 auto;
 	background: white;
 	background-repeat: no-repeat;
-	background-size: 15em;
-	background-position: right;
+	background-size: 70em;
+	background-position: left;
 	border-left: 1px black solid;
 	border-right: 1px black solid;
+        background-image:url(images/tiling.png);
 }
 
 /* Logo */
@@ -71,18 +73,26 @@ a:hover {
 #logo {
 	float: left;
 	width: 640px;
-	color: #000000;
 }
 
 #logo h1, #logo p {
 }
 
 #logo h1 {
+  background: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+              -1px 2px 20px rgba(255, 255, 255, 0.6) inset; 
+	background-color: white;
 	float: left;
-	padding: 30px 0 0 20px;
+	padding: 0.2em;
+	margin-top: 1.5em;
+	margin-left: 1em;
 	margin-right: 10px;
 	letter-spacing: -1px;
-	text-transform: lowercase;
 	font-size: 2.8em;
 	color: rgb(68, 68, 68);
 }
@@ -138,9 +148,11 @@ a:hover {
 
 #menu {
 	width: 900px;
-	background: #444444 no-repeat left top;
+	background: black no-repeat left top;
 	margin: 0 auto;
 	padding: 0;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
 	border-left: 1px black solid;
 	border-right: 1px black solid;
 }
@@ -178,7 +190,7 @@ a:hover {
 
 
 #menu a:hover {
-	color: #FF7900
+	color: #ff0000
 }
 
 
@@ -283,7 +295,7 @@ a:hover {
 
 #sidebar a:hover {
 	text-decoration: underline;
-	color: #787878;
+	color: #ff0000;
 }
 
 /* Footer */
@@ -292,7 +304,7 @@ a:hover {
 	width: 900px;
 	margin: 0 auto;
 	padding: 20px 0 15px 0;
-	background: #444444;
+	background: black;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #FFFFFF;
 	border-left: 1px black solid;
