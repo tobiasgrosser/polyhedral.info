@@ -243,7 +243,7 @@ a:hover {
 	font-size: 0.8em;
 	float: left;
 	width: 210px;
-	padding: 25px 10px 0 20px;
+	padding: 0px 10px 0 20px;
 }
 
 #sidebar ul {
@@ -255,7 +255,6 @@ a:hover {
 }
 
 #sidebar li ul {
-	padding-bottom: 30px;
 	padding-top:0.5em;
 	padding-left:1.5em;
 	list-style: disc;
@@ -272,6 +271,7 @@ a:hover {
 
 #sidebar h2 {
 	color: #444444;
+	margin-top: 1em;
 }
 
 #sidebar p {
