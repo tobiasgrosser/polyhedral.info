@@ -3,7 +3,7 @@ layout: default
 title: Events
 ---
 
-### The International Workshop on Polyhedral Compilation Techniques  
+### IMPACT
 
  * [IMPACT 2014] (http://impact.gforge.inria.fr/impact2014/) (at HiPEAC 2014)
  * [IMPACT 2013] (http://impact.gforge.inria.fr/impact2013/) (at HiPEAC 2013)
