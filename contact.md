@@ -3,16 +3,9 @@ layout: default
 title: Contact
 ---
 
-<br/>
-
-This website was generated collaboratively.
-<a href="/contribute.html">Contributions</a> are encouraged.
-
-<br />
-
-<div style="font-size: 0.8em; padding-left: 1em; max-width: 20em; margin: auto">
-<h3> Administrative Contact </h3>
-<p>
+<div style="max-width: 20em; ">
+<h4>Administrative Contact</h4>
+<p style="line-height:1.4em; background-color: #f3d7d7; padding:1em">
 Tobias Grosser<br />
 Ecole Normale Superieure</br>
 45 rue d'Ulm</br>
@@ -21,3 +14,6 @@ Parkas Group</br>
 <a href="http://www.grosser.es">http://www.grosser.es</a>
 </p>
 </div>
+
+<p>
+The content of this website was generated collaboratively by the members of the polyhedral research community.</p>
