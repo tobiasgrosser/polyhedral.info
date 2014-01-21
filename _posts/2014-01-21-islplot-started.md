@@ -1,6 +1,7 @@
 ---
 layout: default
 title: islplot project started
+author: Tobias Grosser
 ---
 
 The first version of [islplot] (https://github.com/tobig/islplot) was
