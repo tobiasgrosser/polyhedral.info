@@ -204,8 +204,7 @@ a:hover {
 
 #content {
 	float: right;
-	width: 610px;
-	padding: 20px 20px 0 0;
+	width: 640px;
 }
 
 .post {
@@ -250,6 +249,7 @@ a:hover {
 /* Sidebar */
 
 #sidebar {
+	width: 200px;
 	font-size: 0.8em;
 	float: left;
 	padding: 0px 10px 0 20px;
