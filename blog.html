@@ -7,7 +7,7 @@ title: Blog
       <div class="post">
       {% capture post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
       {% if post_date != prev_post_date %}
-        <div align="right" class="date-container">{{ post.date | date:"%A, %e %B %Y" | upcase }}</div>
+        <div align="right" class="date-container">{{ post.date | date:"%e.%m.%Y" | upcase }}</div>
       {% endif %}
       {% capture prev_post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
         {% if post.post-link %}
@@ -18,8 +18,5 @@ title: Blog
         {{ post.content }}
       </div>
       {% if forloop.last == false %}
-      </br>
-      <hr class="front">
-      </br>
       {% endif %}
     {% endfor %}

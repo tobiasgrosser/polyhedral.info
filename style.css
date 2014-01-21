@@ -97,6 +97,10 @@ a:hover {
 	color: rgb(68, 68, 68);
 }
 
+.date-container {
+	padding-right: 1em;
+}
+
 #logo p {
 	float: left;
 	margin: 44px 0 0 0;
@@ -205,10 +209,10 @@ a:hover {
 #content {
 	float: right;
 	width: 640px;
+
 }
 
 .post {
-	margin-left: 20px;
 	padding-bottom: 30px;
 }
 
