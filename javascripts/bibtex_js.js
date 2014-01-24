@@ -347,84 +347,116 @@ function BibtexDisplay() {
     this.printBibtex(entriesCited, output);
   }
 
-  this.printBibtex = function(entries, output) {
-    // save old entries to remove them later
-    var old = output.find("*");
-    for (var entryKey in entries) {
-      var entry = entries[entryKey];
-      
-      // find template
-      var tpl = $(".bibtex_template").clone().removeClass('bibtex_template');
-      
-      // find all keys in the entry
-      var keys = [];
-      for (var key in entry.entries) {
-        keys.push(key.toUpperCase());
-      }
+  this.printBibtexEntry = function(entry, entryKey) {
+    // find template
+    var tpl = $(".bibtex_template").clone().removeClass('bibtex_template');
+    
+    // find all keys in the entry
+    var keys = [];
+    for (var key in entry.entries) {
+      keys.push(key.toUpperCase());
+    }
 
-      var bibtex = entry.directive
-      bibtex += '{' + entryKey + ',\n';
-      var first = true;
-      for (var key in entry.entries) {
+    var bibtex = entry.directive
+    bibtex += '{' + entryKey + ',\n';
+    var first = true;
+    for (var key in entry.entries) {
 	if (!first) {
-	  bibtex += ',\n';
+	bibtex += ',\n';
 	}
 	first = false;
 	bibtex += ' ' + key + ' = {'
 
 	if (key == "ABSTRACT")
-	  bibtex += '\n  ';
+	bibtex += '\n  ';
 
 	bibtex += entry.entries[key] + '}'
 
-      }
+    }
 
-      bibtex += '\n}\n';
-      keys.push('BIBTEX');
-      entry.entries['BIBTEX'] = bibtex;
+    bibtex += '\n}\n';
+    keys.push('BIBTEX');
+    entry.entries['BIBTEX'] = bibtex;
+    
+    // find all ifs and check them
+    var removed = false;
+    do {
+      // find next if
+      var conds = tpl.find(".if");
+      if (conds.size() == 0) {
+        break;
+      }
       
-      // find all ifs and check them
-      var removed = false;
-      do {
-        // find next if
-        var conds = tpl.find(".if");
-        if (conds.size() == 0) {
-          break;
+      // check if
+      var cond = conds.first();
+      cond.removeClass("if");
+      var ifTrue = true;
+      var classList = cond.attr('class').split(' ');
+      $.each( classList, function(index, cls){
+        if(keys.indexOf(cls.toUpperCase()) < 0) {
+          ifTrue = false;
         }
-        
-        // check if
-        var cond = conds.first();
-        cond.removeClass("if");
-        var ifTrue = true;
-        var classList = cond.attr('class').split(' ');
-        $.each( classList, function(index, cls){
-          if(keys.indexOf(cls.toUpperCase()) < 0) {
-            ifTrue = false;
-          }
-          cond.removeClass(cls);
-        });
-        
-        // remove false ifs
-        if (!ifTrue) {
-          cond.remove();
-        }
-      } while (true);
+        cond.removeClass(cls);
+      });
       
-      // fill in remaining fields 
-      for (var index in keys) {
-        var key = keys[index];
-        var value = entry.entries[key] || "";
+      // remove false ifs
+      if (!ifTrue) {
+        cond.remove();
+      }
+    } while (true);
+    
+    // fill in remaining fields 
+    //
+    for (var index in keys) {
+      var key = keys[index];
+      var value = entry.entries[key] || "";
 
 	if (key != 'BIBTEX') {
-	  value = this.fixValue(value);
+	value = this.fixValue(value);
 	}
-        tpl.find("span:not(a)." + key.toLowerCase()).html(value);
-        tpl.find("a." + key.toLowerCase()).attr('href', value);
+      tpl.find("span:not(a)." + key.toLowerCase()).html(value);
+      tpl.find("a." + key.toLowerCase()).attr('href', value);
+    }
+    tpl.find("a.id").attr('name', entryKey);
+    tpl.show();
+    return tpl;
+  }
+
+  this.unique = function(array) {
+    array = array.sort();
+    var results = [];
+    console.log(array);
+    for (var i = 0; i < array.length - 1; i++) {
+      if (array[i] != array[i-1]) {
+        results.push(array[i]);
       }
-      tpl.find("a.id").attr('name', entryKey);
-      
-      output.append(tpl);
-      tpl.show();
+    }
+    return results.reverse();
+  }
+
+  this.printBibtex = function(entries, output) {
+    // save old entries to remove them later
+    var old = output.find("*");
+
+    years = [];
+
+    for (var entryKey in entries) {
+      years.push(parseInt(entries[entryKey].entries["YEAR"]));
+    }
+
+    console.log(years)
+    years = this.unique(years)
+    console.log(years)
+
+    for (var yearIdx in years) {
+      var year = years[yearIdx];
+      var outputGroup = output.append("<h3>" + year + "</h3>")
+      for (var entryKey in entries) {
+        entry = entries[entryKey];
+        if (entry.entries["YEAR"] == year) {
+          outputGroup.append(this.printBibtexEntry(entry, entryKey));
+	}
+      }
     }
     
     // remove old entries
