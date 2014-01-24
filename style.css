@@ -71,14 +71,6 @@ a:hover {
 /* Logo */
 
 #logo {
-	float: left;
-	width: 640px;
-}
-
-#logo h1, #logo p {
-}
-
-#logo h1 {
   background: white;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -87,33 +79,19 @@ a:hover {
   box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7),
               -1px 2px 20px rgba(255, 255, 255, 0.6) inset; 
 	background-color: white;
-	float: left;
 	padding: 0.2em;
 	margin-top: 1.5em;
 	margin-left: 1em;
 	margin-right: 10px;
+        font-size: 0.8em;
+        font-weight: bold;
 	letter-spacing: -1px;
-	font-size: 2.8em;
-	color: rgb(68, 68, 68);
+        color: #222222;
+	text-decoration: none;
 }
 
 .date-container {
 	padding-right: 1em;
-}
-
-#logo p {
-	float: left;
-	margin: 44px 0 0 0;
-	padding: 3px 10px 3px 0px;
-	font: normal 13px Georgia, "Times New Roman", Times, serif;
-	font-style: italic;
-} 
-
-#logo a {
-	border: none;
-	background: none;
-	text-decoration: none;
-	color: #000000;
 }
 
 /* Search */
