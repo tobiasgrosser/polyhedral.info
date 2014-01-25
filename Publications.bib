@@ -18,6 +18,239 @@ try to follow the following style guide.
    the style guide and fixes the existing entries.
 }}
 
+@inproceedings{Darte2014impact,
+ author = {Darte, Alain and Isoard, Alexandre},
+ title = {Parametric Tiling with Inter-Tile Data Reuse},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-darte.pdf},
+ abstract = {
+  Loop tiling is a loop transformation widely used to improve spatial and
+  temporal data locality, increase computation granularity, and enable blocking
+  algorithms, which are particularly useful when offloading kernels on
+  platforms with small memories. When hardware caches are not available, data
+  transfers must be software-managed: they can be reduced by exploiting data
+  reuse between tiles and, this way, avoid some useless external communications.
+  An important parameter of loop tiling is the sizes of the tiles, which impact
+  the size of the necessary local memory. However, for most analyzes that
+  involve several tiles, which is the case for intertile data reuse, the tile
+  sizes induce non-linear constraints, unless they are numerical constants.
+  This complicates or prevents a parametric analysis. In this paper, we show
+  that, actually, parametric tiling with inter-tile data reuse is nevertheless
+  possible, i.e., it is possible to determine, at compile-time and in a
+  parametric fashion, the copy-in and copy-out data sets for all tiles, with
+  inter-tile reuse, as well as the sizes of the induced local memories, without
+  the need to analyze the code for each tile size.
+ }
+}
+@inproceedings{Guo2014impact,
+ author = {Guo, Jing and Bernecky, Robert and
+ 		Thiyagalingam, Jeyarajan and Scholz, Sven-Bodo},
+ title = {Polyhedral Methods for Improving Parallel Update-in-Place},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-guo.pdf},
+ abstract = {
+We demonstrate an optimization, denoted as polyhedral reuse analysis (PRA),
+that uses polyhedral methods to improve the analysis of in-place update for
+single-assignment arrays.  The PRA optimization attempts to determine when
+parallel array operations that jointly deffine new arrays from existing ones can
+reuse the memory of the existing arrays, rather than creating new ones.
+Polyhedral representations and related dependency inference methods facilitate
+that analysis.  In the context of SaC , we demonstrate the impact of this
+optimisation using two non-trivial benchmarks evaluated on conventional shared
+memory machines and on GPUs, obtaining performance improvements of 2-8 times
+for LU Decomposition and of 2-10 times for Needleman-Wunsch, over the same
+computations with PRA disabled.
+ }
+}
+@inproceedings{Iooss2014impact,
+ author = {Iooss, Guillaume and Rajopadhye, Sanjay and
+ 	Alias, Christophe and Zou, Yun},
+ title = {Constant Aspect Ratio Tiling},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-iooss.pdf},
+ abstract = {
+arametric tiling is a well-known transformation which is widely used to improve
+locality, parallelism and granularity.  However, parametric tiling is also a
+non-linear transformation and this prevents polyhedral analysis or further
+polyhedral transformation after parametric tiling. It is therefore generally
+applied during the code generation phase.  In this paper, we present a method
+to remain polyhedral, in a special case of parametric tiling, where all the
+dimensions are tiled and all the tile sizes are constant multiples of a single
+tile size parameter. We call this Constant Aspect Ratio Tiling . We show how to
+mathematically transform a polyhedron and an affine function into their tiled
+counterpart, which are the two main operations needed in such transformation.
+}
+}
+@inproceedings{Li2014impact,
+ author = {Li, Peng and Pouchet, Louis-No{\"e}l and Cong, Jason},
+ title = {Throughput Optimization for High-Level Synthesis
+ 		Using Resource Constraints},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria}
+}
+@inproceedings{Mullapudi2014impact,
+ author = {Mullapudi, Ravi Teja and Bondhugula, Uday},
+ title = {Tiling for Dynamic Scheduling},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-mullapudi.pdf},
+ abstract = {
+Tiling is a key transformation used for coarsening the granularity of
+parallelism and improving locality. It is known that current state-of-the-art
+compiler approaches for tiling affine loop nests make use of sufficient, i.e.,
+conservative conditions for the validity of tiling.  These conservative
+conditions, which are used for static scheduling, miss tiling schemes for which
+the tile schedule is not easy to describe statically. However, the partial
+order of the tiles can be expressed using dependence relations which can be
+used for dynamic scheduling at runtime. Another set of opportunities are missed
+due to the classic reason that finding valid tiling hyperplanes is often harder
+than checking whether a given tiling is valid.  Though the conservative
+conditions for validity of tiling have worked in practice on a large number of
+codes, we show that they fail to find the desired tiling in several cases –
+some of these have dependence patterns similar to real world problems and
+applications. We then look at ways to improve current techniques to address
+this issue. To quantify the potential of the improved techniques, we manually
+tile two dynamic programming algorithms – the Floyd-Warshall algorithm, and
+Zuker’s RNA secondary structure prediction and report their performance on a
+shared memory multicore. Our 3-d tiled dynamically scheduled implementation of
+Zuker’s algorithm outperforms an optimized multi-core implementation GTfold by
+a factor of 2.38. Such a 3-d tiling was possible only by reasoning with more
+precise validity conditions
+}
+}
+@inproceedings{Simbuerger2014impact,
+ author = {Simb{\"u}rger, Andreas and Gr{\"o}{\ss}liger, Armin},
+ title = {On the Variety of Static Control Parts in Real-World Programs:
+     from Affine via Multi-dimensional to Polynomial and Just-in-Time},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-simbuerger.pdf},
+ abstract = {
+The polyhedron model has been used successfully for automatic parallelization
+of code regions with loop nests satisfying certain restrictions, so-called
+static control parts. A popular implementation of this model is Polly (an
+extension of the LLVM compiler), which is able to identify static control parts
+in the intermediate representation of the compiler. We look at static control
+parts found in 50 real-world programs from different domains. We study whether
+these programs are amenable to polyhedral optimization by Polly at compile time
+or at run time. We report the number of static control parts with uniform or
+authorne dependences found and study extensions of the current implementation
+in Polly . We consider extensions which handle multi-dimensional arrays with
+parametric sizes and arrays represented by "pointer-to-pointer" constructs. In
+addition, we extend the modeling capabilities of Polly to a model using
+semi-algebraic sets and real algebra instead of polyhedra and linear algebra.
+We do not only consider the number and size of the code regions found but
+measure the share of the run time the studied programs spend in the identified
+regions for each of the classes of static control parts under study.
+}
+}
+@inproceedings{Verdoolaege2014impact,
+ author = {Verdoolaege, Sven and Guelton, Serge and
+ 	Grosser, Tobias and Cohen, Albert},
+ title = {Schedule Trees},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-verdoolaege.pdf},
+ abstract = {
+ Schedules in the polyhedral model, both those that represent the original
+execution order and those produced by scheduling algorithms, naturally have the
+form of a tree. Generic schedule representations proposed in the literature
+encode this tree structure such that it is only implicitly available.
+Following the internal representation of isl , we propose to represent
+schedules as explicit trees and further extend the concept by introducing
+different kinds of nodes. We compare our schedule trees to other
+representations in detail and illustrate how they have been successfully used
+to simplify the implementation of a non-trivial polyhedral compiler.
+ }
+}
+@inproceedings{Wang2014impact,
+ author = {Wang, Wei and Cavazos, John and Porterfield, Allan},
+ title = {Energy Auto-tuning using the Polyhedral Approach},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-wang.pdf},
+ abstract = {
+As the HPC community moves into the exascale computing era, application energy
+has become a big concern. Tuning for energy will be essential in the effort to
+overcome the limited power envelope. How is tuning for lower energy related to
+tuning for faster execution? Understanding that relationship can guide both
+performance and energy tuning for exascale.  In this paper, a strong
+correlation is presented between the two that allows tuning for execution to be
+used as a proxy for energy tuning. We also show that polyhedral compilers can
+ectively tune a realistic application for both time and energy.  For a large
+number of variants of the Polybench programs and LULESH energy consumption is
+strongly correlated with total execution time. Optimizations can increase the
+power and energy required between variants, but the variant with minimum
+execution time also has the lowest energy usage. The polyhedral framework was
+also used to optimize a 2D cardiac wave propagation simulation application.
+Various loop optimizations including fusion, tiling, vectorization, and
+auto-parallelization, achieved a 20% speedup over the baseline OpenMP
+implementation, with an equivalent reduction in energy on an Intel Sandy Bridge
+system.  On an Intel Xeon Phi system, improvements as high as 21% in execution
+time and 19% reduction in energy are obtained
+
+}
+}
+@inproceedings{Yuki2014impact,
+ author = {Yuki, Tomofumi},
+ title = {Understanding {PolyBench/C} 3.2 Kernels},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-yuki.pdf},
+ abstract = {
+ In this position paper, we argue the need for more rigorous specification of
+kernels in the PolyBench/C benchmark suite.  Currently, the benchmarks are
+mostly specified by their implementation as C code, with a one sentence
+description of what the code is supposed to do. While this is suchcient in the
+context of automated loop transformation, the lack of precise specification may
+have let some questionable behaviors as benchmark kernels remain unnoticed.  As
+an extreme example, two kernels in PolyBench/C 3.2 exhibit parametric speed up
+with respect to the problem size when its questionable properties are used.
+Abusing such properties can provide arbitrary speedup, which can be some factor
+of millions, potentially threatening the credibility of any experimental
+evaluation using PolyBench.
+ }
+}
+
 @techreport{Grosser2013Promises,
  hal_id = {hal-00848691},
  url = {http://hal.inria.fr/hal-00848691},
