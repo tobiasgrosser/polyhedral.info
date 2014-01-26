@@ -553,6 +553,48 @@ suite, SPolly achieves speedups of up to 11-fold as compared to plain Polly.
  address = {New York, NY, USA},
 }
 
+@inproceedings{Bondhugula08cc,
+    author = {Uday Bondhugula and Muthu Baskaran and Sriram
+        Krishnamoorthy and J. Ramanujam and A. Rountev and P.
+            Sadayappan},
+    title = {Automatic Transformations for Communication-Minimized
+        Parallelization and Locality Optimization in the Polyhedral Model},
+    booktitle = {International Conference on Compiler Construction
+        (ETAPS CC)},
+    year = 2008,
+    month = apr,
+    url = {http://drona.csa.iisc.ernet.in/~uday/publications/uday-cc08.pdf},
+    abstract = {
+
+    The polyhedral model provides powerful abstractions to optimize loop nests with 
+    regular accesses.  Affine transformations in this model capture a complex
+    sequence of execution-reordering loop transformations that can
+    improve performance by parallelization as well as locality
+    enhancement.  Although a significant body of research has addressed
+    affine scheduling and partitioning, the problem of automatically
+    finding good affine transforms for communication-optimized
+    coarse-grained parallelization together with locality optimization
+    for the general case of arbitrarily-nested loop sequences remains a
+    challenging problem.
+
+    We propose an automatic transformation framework to
+    optimize arbitrarily-nested loop sequences with affine dependences
+    for parallelism and locality simultaneously. The approach finds
+    good tiling hyperplanes by embedding a powerful and versatile cost
+    function into an Integer Linear Programming formulation. These
+    tiling hyperplanes are used for communication-minimized
+    coarse-grained parallelization as well as for locality
+    optimization. The approach enables the minimization of inter-tile
+    communication volume in the processor space, and minimization of
+    reuse distances for local execution at each node. Programs
+    requiring one-dimensional versus multi-dimensional time schedules
+    (with scheduling-based approaches) are all handled with the same
+    algorithm.  Synchronization-free parallelism, permutable loops or
+    pipelined parallelism at various levels can be detected.
+    Preliminary studies of the framework show promising results.
+    }
+}
+
 @PhdThesis{Bastoul2004PhD,
  author = {Bastoul, C\'{e}dric},
  title = {Improving Data Locality in Static Control Programs},
