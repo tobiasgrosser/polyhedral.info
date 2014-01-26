@@ -306,6 +306,185 @@ evaluation using PolyBench.
  address = {New York, NY, USA},
 }
 
+@proceedings{impact2013,
+  title  = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url     = "http://nbn-resolving.de/urn:nbn:de:bvb:739-opus-26930",
+  note    = "http://impact.gforge.inria.fr/impact2013/"
+}
+
+@inproceedings{feld.2013.impact,
+  author = "Feld, Dustin and Soddemann, Thomas and J{\"u}nger, Michael and Mallach, Sven",
+  title  = "{F}acilitate {SIMD}-{C}ode-{G}eneration in the {P}olyhedral {M}odel by {H}ardware-aware {A}utomatic {C}ode-{T}ransformation",
+  pages  = "45--54",
+  booktitle = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url = "http://impact.gforge.inria.fr/impact2013/papers/impact2013_facilitate_simd_code_generation.pdf",
+  abstract = {
+Although Single Instruction Multiple Data (SIMD) units are available in general
+purpose processors already since the 1990s, state-of-the-art compilers are
+often still not capable to fully exploit them, i.e., they may miss to achieve
+the best possible performance.  We present a new hardware-aware and adaptive
+loop tiling approach that is based on polyhedral transformations and explicitly
+dedicated to improve on auto-vectorization. It is an extension to the tiling
+algorithm implemented within the PluTo framework [4, 5]. In its default
+setting, PluTo uses static tile sizes and is already capable to enable the use
+of SIMD units but not primarily targeted to optimize it. We experimented with
+differnt tile sizes and found a strong relationship between their choice, cache
+size parameters and performance. Based on this, we designed an adaptive
+procedure that speciffically tiles vectorizable loops with dynamically
+calculated sizes. The blocking is automatically fitted to the amount of data
+read in loop iterations, the available SIMD units and the cache sizes. The
+adaptive parts are built upon straightforward calculations that are
+experimentally verified and evaluated. Our results show significant
+improvements in the number of instructions vectorized, cache miss rates and,
+finally, running times.
+  }
+}
+
+@inproceedings{yuki.2013.impact,
+  author = "Yuki, Tomofumi and Rajopadhye, Sanjay",
+  title  = "{M}emory {A}llocations for {T}iled {U}niform {D}ependence {P}rograms",
+  pages  = "13--22",
+  booktitle = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url = "http://impact.gforge.inria.fr/impact2013/papers/impact2013_memory_allocations_for_tiled_uniform_dependence_programs.pdf",
+  abstract = {
+In this paper, we develop a series of extensions to schedule-independent
+storage mapping using Quasi-Universal Occupancy Vectors (QUOVs) targeting tiled
+execution of polyhedral programs. By quasi-universality, we mean that we
+restrict the \universe" of the schedule to those that correspond to tiling.
+This provides the following benefits: (i) the shortest QUOVs may be shorter
+than the fully universal ones, (ii) the shortest QUOVs can be found without any
+search, and (iii) multi-statement programs can be handled.  The resulting
+storage mapping is valid for tiled execution by any tile size.
+}
+}
+
+@inproceedings{fassi.2013.impact,
+  author = "Fassi, Im{\`e}n and Clauss, Philippe and Kuhn, Matthieu and Slama, Yosr",
+  title  = "{M}ultifor for {M}ulticore",
+  pages  = "37--44",
+  booktitle = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url = "http://impact.gforge.inria.fr/impact2013/papers/impact2013_multifor_for_multicore.pdf",
+  abstract = {
+ We propose a new programming control structure called "multifor", allowing to
+take advantage of parallelization models that were not naturally attainable
+with the polytope model before. In a multifor-loop, several loops whose bodies
+are run simultaneously can be defined. Respective iteration domains are mapped
+onto each other according to a run frequency - the grain - and a relative
+position - the offset -. Execution models like dataflow, stencil computations or
+MapReduce can be represented onto one referential iteration domain, while still
+exhibiting traditional polyhedral code analysis and transformation
+opportunities. Moreover, this construct provides ways to naturally exploit
+hybrid parallelization models, thus significantly improving parallelization
+opportunities in the multicore era. Traditional polyhedral software tools are
+used to generate the corresponding code. Additionally, a promising perspective
+related to nonlinear mapping of iteration spaces is also presented, yielding to
+run a loop nest inside any other one by solving the problem of inverting
+"ranking Ehrhart polynomials".
+  }
+}
+
+@inproceedings{verdoolaege.2013.impact,
+  author = "Verdoolaege, Sven and Nikolov, Hristo and Stefanov, Todor",
+  title  = "{O}n {D}emand {P}arametric {A}rray {D}ataflow {A}nalysis",
+  pages  = "23--36",
+  booktitle = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url = "http://impact.gforge.inria.fr/impact2013/papers/impact2013_on_demand_parametric_array_dataflow_analysis.pdf",
+  abstract = {
+We present a novel approach for exact array data ow analysis in the presence of
+constructs that are not static authorne.  The approach is similar to that of
+fuzzy array data ow analysis in that it also introduces parameters that
+represent information that is only available at run-time, but the parameters
+have a diㄦent meaning and are analyzed before they are introduced. The
+approach was motivated by our work on process networks, but should be generally
+useful since fewer parameters are introduced on larger inputs. We include some
+preliminary experimental results.
+}
+}
+
+@inproceedings{wonnacott.2013.impact,
+  author = {Wonnacott, David G. and Mills Strout, Michelle},
+  title  = "{O}n the {S}calability of {L}oop {T}iling {T}echniques",
+  pages  = "3--11",
+  booktitle = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url = "http://impact.gforge.inria.fr/impact2013/papers/impact2013_on_the_scalability_of_loop_tiling_techniques.pdf",
+  abstract = {
+The Polyhedral model has proven to be a valuable tool for improving memory
+locality and exploiting parallelism for optimizing dense array codes. This
+model is expressive enough to describe transformations of imperfectly nested
+loops, and to capture a variety of program transformations, including many
+approaches to loop tiling. Tools such as the highly successful PLuTo automatic
+parallelizer have provided empirical confirmation of the success of
+polyhedral-based optimization, through experiments in which a number of
+benchmarks have been executed on machines with small- to medium-scale
+parallelism.  In anticipation of ever higher degrees of parallelism, we have
+explored the impact of various loop tiling strategies on the asymptotic degree
+of available parallelism. In our analysis, we consider “weak scaling” as
+described by Gustafson, i.e., in which the data set size grows linearly with
+the number of processors available. Some, but not all, of the approaches to
+tiling provide weak scaling. In particular, the tiling currently performed by
+PLuTo does not scale in this sense.  In this article, we review approaches to
+loop tiling in the published literature, focusing on both scalability and
+implementation status. We find that fully scalable tilings are not available in
+general-purpose tools, and call upon the polyhedral compilation community to
+focus on questions of asymptotic scalability. Finally, we identify ongoing work
+that may resolve this issue.
+  }
+}
+
+@inproceedings{doerfert.2013.impact,
+  author = "Doerfert, Johannes and Hammacher, Clemens and Streit, Kevin and Hack, Sebastian",
+  title  = "{SP}olly: {S}peculative {O}ptimizations in the {P}olyhedral {M}odel",
+  pages  = "55--60",
+  booktitle = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url = "http://impact.gforge.inria.fr/impact2013/papers/impact2013_spolly.pdf",
+  abstract = {
+The polyhedral model is only applicable to code regions that form static
+control parts (SCoPs) or slight extensions thereof. To apply polyhedral
+techniques to a piece of code, the compiler usually checks, by static analysis,
+whether all SCoP conditions are fulfilled. However, in many codes, the compiler
+fails to verify that this is the case. In this paper we investigate the
+rejection causes as reported by Polly , the polyhedral optimizer of a
+state-of-the-art compiler. We show that many rejections follow from the
+conservative overapproximation of the employed static analyses. In SPolly , a
+speculative extension of Polly, we employ the knowledge of runtime features to
+supersede this overapproximation. All speculatively generated variants form
+valid SCoPs and are optimizable by the facilities of Polly. Our evaluation
+shows that SPolly is able to ectively widen the applicability of polyhedral
+optimization. On the SPEC 2000 suite, the number of optimizable code regions is
+increased by 131 percent.  In 10 out of the 31 benchmarks of the PolyBench
+suite, SPolly achieves speedups of up to 11-fold as compared to plain Polly.
+  }
+}
+
+
 @inproceedings{Verdoolaege2010isl,
  author = {Verdoolaege, Sven},
  title = {isl: {A}n Integer Set Library for the Polyhedral Model},

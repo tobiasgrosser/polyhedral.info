@@ -252,6 +252,7 @@ function BibtexDisplay() {
     value = value.replace(/{\\'o}/g, '&oacute;');
     value = value.replace(/\\'{o}/g, '&oacute;');
     value = value.replace(/{\\'e}/g, '&eacute;');
+    value = value.replace(/{\\`e}/g, '&egrave;');
     value = value.replace(/\\ss/g, '&szlig;');
     value = value.replace(/\\'\{e\}/g, '&eacute;');
     value = value.replace(/\{(.*?)\}/g, '$1');
