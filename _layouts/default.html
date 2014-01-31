@@ -117,21 +117,24 @@ $(function() {
 	<!-- end #header -->
   <div class="container">
       <div class="row row-offcanvas row-offcanvas-left">
-	<div class="col-sm-4 sidebar-offcanvas" role="navigation">
+	<div class="col-md-4 sidebar-offcanvas" role="navigation">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              Recent Posts
+            </div>
+            <div class="panel-body list-group">
+            {% for post in site.posts limit: 7 %}
+                  <a class="list-group-item" href="{{ post.url }}">{{ post.title }}</a>
+            {% endfor %}
+            </div>
+          </div>
           <div class="panel panel-default">
               <div class="panel-heading">
-                Recent Posts
+                Subscribe 
               </div>
               <div class="panel-body">
-                <ul class="nav nav-pills nav-stacked">
-                {% for post in site.posts limit: 7 %}
-                      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                {% endfor %}
-                </ul>
-                <p>
                 Subscribe: <a href="/atom.xml">ATOM</a> or
                            <a href="/rss.xml">RSS</a>
-                </p>
               </div>
           </div>
           <div class="panel panel-default">
@@ -145,7 +148,7 @@ $(function() {
 	</div>
 	<!-- end #sidebar -->
 
-	<div class="col-8 col-xs-6 col-sm-8">
+	<div class="col-md-7">
 			{{ content }}
 		<div id="bibtex_display_citations">
 		</div>
