@@ -242,6 +242,7 @@ function BibtexDisplay() {
     value = value.replace(/\\ /g, '&nbsp;');
     value = value.replace(/\\url/g, '');
     value = value.replace(/---/g, '&mdash;');
+    value = value.replace(/{\\"e}/g, '&euml;');
     value = value.replace(/{\\"a}/g, '&auml;');
     value = value.replace(/\{\\"o\}/g, '&ouml;');
     value = value.replace(/{\\"u}/g, '&uuml;');
@@ -251,6 +252,7 @@ function BibtexDisplay() {
     value = value.replace(/{\\'o}/g, '&oacute;');
     value = value.replace(/\\'{o}/g, '&oacute;');
     value = value.replace(/{\\'e}/g, '&eacute;');
+    value = value.replace(/{\\`e}/g, '&egrave;');
     value = value.replace(/\\ss/g, '&szlig;');
     value = value.replace(/\\'\{e\}/g, '&eacute;');
     value = value.replace(/\{(.*?)\}/g, '$1');

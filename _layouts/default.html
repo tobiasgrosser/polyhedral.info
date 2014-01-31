@@ -70,8 +70,22 @@ $(function() {
 <div >
   <a class="id"></a><span class="title" style="font-weight: bold;" ></span>
   <br />
-  <span class="author"></span>
+  <span class="if author">
+  <em><span class="author" style="color: darkblue"></span></em>
   <br />
+  </span>
+  <span class="if editor">
+  Edited by <span class="editor"></span></em>
+  <br />
+  </span>
+  <span class="if booktitle">
+  <span class="booktitle"></span>
+  <br />
+  </span>
+  <span class="if journal">
+  <span class="journal"></span>
+  <br />
+  </span>
   <span class="if bibtex" style="margin-left: 10px">
     <a class='popup' style="font-size:0.8em">(bibtex)
       <span class="bibtex"></span>

@@ -20,8 +20,8 @@ How?
 
 #### 3. Submit changes
 
-Use `git format-patch` to obtain patch files containing your changes and
-submit those patches to [polyhedral@grosser.es](mailto://polyhedral@grosser.es).
+Use `git format-patch origin/HEAD` to obtain patch files containing your changes and
+submit those patches to [polyhedral@grosser.es](mailto:polyhedral@grosser.es).
 
 
 How to add/change content

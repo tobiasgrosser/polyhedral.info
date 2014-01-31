@@ -18,6 +18,239 @@ try to follow the following style guide.
    the style guide and fixes the existing entries.
 }}
 
+@inproceedings{Darte2014impact,
+ author = {Darte, Alain and Isoard, Alexandre},
+ title = {Parametric Tiling with Inter-Tile Data Reuse},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-darte.pdf},
+ abstract = {
+  Loop tiling is a loop transformation widely used to improve spatial and
+  temporal data locality, increase computation granularity, and enable blocking
+  algorithms, which are particularly useful when offloading kernels on
+  platforms with small memories. When hardware caches are not available, data
+  transfers must be software-managed: they can be reduced by exploiting data
+  reuse between tiles and, this way, avoid some useless external communications.
+  An important parameter of loop tiling is the sizes of the tiles, which impact
+  the size of the necessary local memory. However, for most analyzes that
+  involve several tiles, which is the case for intertile data reuse, the tile
+  sizes induce non-linear constraints, unless they are numerical constants.
+  This complicates or prevents a parametric analysis. In this paper, we show
+  that, actually, parametric tiling with inter-tile data reuse is nevertheless
+  possible, i.e., it is possible to determine, at compile-time and in a
+  parametric fashion, the copy-in and copy-out data sets for all tiles, with
+  inter-tile reuse, as well as the sizes of the induced local memories, without
+  the need to analyze the code for each tile size.
+ }
+}
+@inproceedings{Guo2014impact,
+ author = {Guo, Jing and Bernecky, Robert and
+ 		Thiyagalingam, Jeyarajan and Scholz, Sven-Bodo},
+ title = {Polyhedral Methods for Improving Parallel Update-in-Place},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-guo.pdf},
+ abstract = {
+We demonstrate an optimization, denoted as polyhedral reuse analysis (PRA),
+that uses polyhedral methods to improve the analysis of in-place update for
+single-assignment arrays.  The PRA optimization attempts to determine when
+parallel array operations that jointly deffine new arrays from existing ones can
+reuse the memory of the existing arrays, rather than creating new ones.
+Polyhedral representations and related dependency inference methods facilitate
+that analysis.  In the context of SaC , we demonstrate the impact of this
+optimisation using two non-trivial benchmarks evaluated on conventional shared
+memory machines and on GPUs, obtaining performance improvements of 2-8 times
+for LU Decomposition and of 2-10 times for Needleman-Wunsch, over the same
+computations with PRA disabled.
+ }
+}
+@inproceedings{Iooss2014impact,
+ author = {Iooss, Guillaume and Rajopadhye, Sanjay and
+ 	Alias, Christophe and Zou, Yun},
+ title = {Constant Aspect Ratio Tiling},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-iooss.pdf},
+ abstract = {
+arametric tiling is a well-known transformation which is widely used to improve
+locality, parallelism and granularity.  However, parametric tiling is also a
+non-linear transformation and this prevents polyhedral analysis or further
+polyhedral transformation after parametric tiling. It is therefore generally
+applied during the code generation phase.  In this paper, we present a method
+to remain polyhedral, in a special case of parametric tiling, where all the
+dimensions are tiled and all the tile sizes are constant multiples of a single
+tile size parameter. We call this Constant Aspect Ratio Tiling . We show how to
+mathematically transform a polyhedron and an affine function into their tiled
+counterpart, which are the two main operations needed in such transformation.
+}
+}
+@inproceedings{Li2014impact,
+ author = {Li, Peng and Pouchet, Louis-No{\"e}l and Cong, Jason},
+ title = {Throughput Optimization for High-Level Synthesis
+ 		Using Resource Constraints},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria}
+}
+@inproceedings{Mullapudi2014impact,
+ author = {Mullapudi, Ravi Teja and Bondhugula, Uday},
+ title = {Tiling for Dynamic Scheduling},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-mullapudi.pdf},
+ abstract = {
+Tiling is a key transformation used for coarsening the granularity of
+parallelism and improving locality. It is known that current state-of-the-art
+compiler approaches for tiling affine loop nests make use of sufficient, i.e.,
+conservative conditions for the validity of tiling.  These conservative
+conditions, which are used for static scheduling, miss tiling schemes for which
+the tile schedule is not easy to describe statically. However, the partial
+order of the tiles can be expressed using dependence relations which can be
+used for dynamic scheduling at runtime. Another set of opportunities are missed
+due to the classic reason that finding valid tiling hyperplanes is often harder
+than checking whether a given tiling is valid.  Though the conservative
+conditions for validity of tiling have worked in practice on a large number of
+codes, we show that they fail to find the desired tiling in several cases –
+some of these have dependence patterns similar to real world problems and
+applications. We then look at ways to improve current techniques to address
+this issue. To quantify the potential of the improved techniques, we manually
+tile two dynamic programming algorithms – the Floyd-Warshall algorithm, and
+Zuker’s RNA secondary structure prediction and report their performance on a
+shared memory multicore. Our 3-d tiled dynamically scheduled implementation of
+Zuker’s algorithm outperforms an optimized multi-core implementation GTfold by
+a factor of 2.38. Such a 3-d tiling was possible only by reasoning with more
+precise validity conditions
+}
+}
+@inproceedings{Simbuerger2014impact,
+ author = {Simb{\"u}rger, Andreas and Gr{\"o}{\ss}liger, Armin},
+ title = {On the Variety of Static Control Parts in Real-World Programs:
+     from Affine via Multi-dimensional to Polynomial and Just-in-Time},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-simbuerger.pdf},
+ abstract = {
+The polyhedron model has been used successfully for automatic parallelization
+of code regions with loop nests satisfying certain restrictions, so-called
+static control parts. A popular implementation of this model is Polly (an
+extension of the LLVM compiler), which is able to identify static control parts
+in the intermediate representation of the compiler. We look at static control
+parts found in 50 real-world programs from different domains. We study whether
+these programs are amenable to polyhedral optimization by Polly at compile time
+or at run time. We report the number of static control parts with uniform or
+authorne dependences found and study extensions of the current implementation
+in Polly . We consider extensions which handle multi-dimensional arrays with
+parametric sizes and arrays represented by "pointer-to-pointer" constructs. In
+addition, we extend the modeling capabilities of Polly to a model using
+semi-algebraic sets and real algebra instead of polyhedra and linear algebra.
+We do not only consider the number and size of the code regions found but
+measure the share of the run time the studied programs spend in the identified
+regions for each of the classes of static control parts under study.
+}
+}
+@inproceedings{Verdoolaege2014impact,
+ author = {Verdoolaege, Sven and Guelton, Serge and
+ 	Grosser, Tobias and Cohen, Albert},
+ title = {Schedule Trees},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-verdoolaege.pdf},
+ abstract = {
+ Schedules in the polyhedral model, both those that represent the original
+execution order and those produced by scheduling algorithms, naturally have the
+form of a tree. Generic schedule representations proposed in the literature
+encode this tree structure such that it is only implicitly available.
+Following the internal representation of isl , we propose to represent
+schedules as explicit trees and further extend the concept by introducing
+different kinds of nodes. We compare our schedule trees to other
+representations in detail and illustrate how they have been successfully used
+to simplify the implementation of a non-trivial polyhedral compiler.
+ }
+}
+@inproceedings{Wang2014impact,
+ author = {Wang, Wei and Cavazos, John and Porterfield, Allan},
+ title = {Energy Auto-tuning using the Polyhedral Approach},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-wang.pdf},
+ abstract = {
+As the HPC community moves into the exascale computing era, application energy
+has become a big concern. Tuning for energy will be essential in the effort to
+overcome the limited power envelope. How is tuning for lower energy related to
+tuning for faster execution? Understanding that relationship can guide both
+performance and energy tuning for exascale.  In this paper, a strong
+correlation is presented between the two that allows tuning for execution to be
+used as a proxy for energy tuning. We also show that polyhedral compilers can
+ectively tune a realistic application for both time and energy.  For a large
+number of variants of the Polybench programs and LULESH energy consumption is
+strongly correlated with total execution time. Optimizations can increase the
+power and energy required between variants, but the variant with minimum
+execution time also has the lowest energy usage. The polyhedral framework was
+also used to optimize a 2D cardiac wave propagation simulation application.
+Various loop optimizations including fusion, tiling, vectorization, and
+auto-parallelization, achieved a 20% speedup over the baseline OpenMP
+implementation, with an equivalent reduction in energy on an Intel Sandy Bridge
+system.  On an Intel Xeon Phi system, improvements as high as 21% in execution
+time and 19% reduction in energy are obtained
+
+}
+}
+@inproceedings{Yuki2014impact,
+ author = {Yuki, Tomofumi},
+ title = {Understanding {PolyBench/C} 3.2 Kernels},
+ booktitle = {Proceedings of the
+     4th International Workshop on Polyhedral Compilation Techniques},
+ editor = {Rajopadhye, Sanjay and Verdoolaege, Sven},
+ year   = 2014,
+ month  = Jan,
+ address = {Vienna, Austria},
+ url = {http://impact.gforge.inria.fr/impact2014/papers/impact2014-yuki.pdf},
+ abstract = {
+ In this position paper, we argue the need for more rigorous specification of
+kernels in the PolyBench/C benchmark suite.  Currently, the benchmarks are
+mostly specified by their implementation as C code, with a one sentence
+description of what the code is supposed to do. While this is suchcient in the
+context of automated loop transformation, the lack of precise specification may
+have let some questionable behaviors as benchmark kernels remain unnoticed.  As
+an extreme example, two kernels in PolyBench/C 3.2 exhibit parametric speed up
+with respect to the problem size when its questionable properties are used.
+Abusing such properties can provide arbitrary speedup, which can be some factor
+of millions, potentially threatening the credibility of any experimental
+evaluation using PolyBench.
+ }
+}
+
 @techreport{Grosser2013Promises,
  hal_id = {hal-00848691},
  url = {http://hal.inria.fr/hal-00848691},
@@ -73,6 +306,185 @@ try to follow the following style guide.
  address = {New York, NY, USA},
 }
 
+@proceedings{impact2013,
+  title  = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url     = "http://nbn-resolving.de/urn:nbn:de:bvb:739-opus-26930",
+  note    = "http://impact.gforge.inria.fr/impact2013/"
+}
+
+@inproceedings{feld.2013.impact,
+  author = "Feld, Dustin and Soddemann, Thomas and J{\"u}nger, Michael and Mallach, Sven",
+  title  = "{F}acilitate {SIMD}-{C}ode-{G}eneration in the {P}olyhedral {M}odel by {H}ardware-aware {A}utomatic {C}ode-{T}ransformation",
+  pages  = "45--54",
+  booktitle = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url = "http://impact.gforge.inria.fr/impact2013/papers/impact2013_facilitate_simd_code_generation.pdf",
+  abstract = {
+Although Single Instruction Multiple Data (SIMD) units are available in general
+purpose processors already since the 1990s, state-of-the-art compilers are
+often still not capable to fully exploit them, i.e., they may miss to achieve
+the best possible performance.  We present a new hardware-aware and adaptive
+loop tiling approach that is based on polyhedral transformations and explicitly
+dedicated to improve on auto-vectorization. It is an extension to the tiling
+algorithm implemented within the PluTo framework [4, 5]. In its default
+setting, PluTo uses static tile sizes and is already capable to enable the use
+of SIMD units but not primarily targeted to optimize it. We experimented with
+differnt tile sizes and found a strong relationship between their choice, cache
+size parameters and performance. Based on this, we designed an adaptive
+procedure that speciffically tiles vectorizable loops with dynamically
+calculated sizes. The blocking is automatically fitted to the amount of data
+read in loop iterations, the available SIMD units and the cache sizes. The
+adaptive parts are built upon straightforward calculations that are
+experimentally verified and evaluated. Our results show significant
+improvements in the number of instructions vectorized, cache miss rates and,
+finally, running times.
+  }
+}
+
+@inproceedings{yuki.2013.impact,
+  author = "Yuki, Tomofumi and Rajopadhye, Sanjay",
+  title  = "{M}emory {A}llocations for {T}iled {U}niform {D}ependence {P}rograms",
+  pages  = "13--22",
+  booktitle = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url = "http://impact.gforge.inria.fr/impact2013/papers/impact2013_memory_allocations_for_tiled_uniform_dependence_programs.pdf",
+  abstract = {
+In this paper, we develop a series of extensions to schedule-independent
+storage mapping using Quasi-Universal Occupancy Vectors (QUOVs) targeting tiled
+execution of polyhedral programs. By quasi-universality, we mean that we
+restrict the \universe" of the schedule to those that correspond to tiling.
+This provides the following benefits: (i) the shortest QUOVs may be shorter
+than the fully universal ones, (ii) the shortest QUOVs can be found without any
+search, and (iii) multi-statement programs can be handled.  The resulting
+storage mapping is valid for tiled execution by any tile size.
+}
+}
+
+@inproceedings{fassi.2013.impact,
+  author = "Fassi, Im{\`e}n and Clauss, Philippe and Kuhn, Matthieu and Slama, Yosr",
+  title  = "{M}ultifor for {M}ulticore",
+  pages  = "37--44",
+  booktitle = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url = "http://impact.gforge.inria.fr/impact2013/papers/impact2013_multifor_for_multicore.pdf",
+  abstract = {
+ We propose a new programming control structure called "multifor", allowing to
+take advantage of parallelization models that were not naturally attainable
+with the polytope model before. In a multifor-loop, several loops whose bodies
+are run simultaneously can be defined. Respective iteration domains are mapped
+onto each other according to a run frequency - the grain - and a relative
+position - the offset -. Execution models like dataflow, stencil computations or
+MapReduce can be represented onto one referential iteration domain, while still
+exhibiting traditional polyhedral code analysis and transformation
+opportunities. Moreover, this construct provides ways to naturally exploit
+hybrid parallelization models, thus significantly improving parallelization
+opportunities in the multicore era. Traditional polyhedral software tools are
+used to generate the corresponding code. Additionally, a promising perspective
+related to nonlinear mapping of iteration spaces is also presented, yielding to
+run a loop nest inside any other one by solving the problem of inverting
+"ranking Ehrhart polynomials".
+  }
+}
+
+@inproceedings{verdoolaege.2013.impact,
+  author = "Verdoolaege, Sven and Nikolov, Hristo and Stefanov, Todor",
+  title  = "{O}n {D}emand {P}arametric {A}rray {D}ataflow {A}nalysis",
+  pages  = "23--36",
+  booktitle = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url = "http://impact.gforge.inria.fr/impact2013/papers/impact2013_on_demand_parametric_array_dataflow_analysis.pdf",
+  abstract = {
+We present a novel approach for exact array data ow analysis in the presence of
+constructs that are not static authorne.  The approach is similar to that of
+fuzzy array data ow analysis in that it also introduces parameters that
+represent information that is only available at run-time, but the parameters
+have a diㄦent meaning and are analyzed before they are introduced. The
+approach was motivated by our work on process networks, but should be generally
+useful since fewer parameters are introduced on larger inputs. We include some
+preliminary experimental results.
+}
+}
+
+@inproceedings{wonnacott.2013.impact,
+  author = {Wonnacott, David G. and Mills Strout, Michelle},
+  title  = "{O}n the {S}calability of {L}oop {T}iling {T}echniques",
+  pages  = "3--11",
+  booktitle = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url = "http://impact.gforge.inria.fr/impact2013/papers/impact2013_on_the_scalability_of_loop_tiling_techniques.pdf",
+  abstract = {
+The Polyhedral model has proven to be a valuable tool for improving memory
+locality and exploiting parallelism for optimizing dense array codes. This
+model is expressive enough to describe transformations of imperfectly nested
+loops, and to capture a variety of program transformations, including many
+approaches to loop tiling. Tools such as the highly successful PLuTo automatic
+parallelizer have provided empirical confirmation of the success of
+polyhedral-based optimization, through experiments in which a number of
+benchmarks have been executed on machines with small- to medium-scale
+parallelism.  In anticipation of ever higher degrees of parallelism, we have
+explored the impact of various loop tiling strategies on the asymptotic degree
+of available parallelism. In our analysis, we consider “weak scaling” as
+described by Gustafson, i.e., in which the data set size grows linearly with
+the number of processors available. Some, but not all, of the approaches to
+tiling provide weak scaling. In particular, the tiling currently performed by
+PLuTo does not scale in this sense.  In this article, we review approaches to
+loop tiling in the published literature, focusing on both scalability and
+implementation status. We find that fully scalable tilings are not available in
+general-purpose tools, and call upon the polyhedral compilation community to
+focus on questions of asymptotic scalability. Finally, we identify ongoing work
+that may resolve this issue.
+  }
+}
+
+@inproceedings{doerfert.2013.impact,
+  author = "Doerfert, Johannes and Hammacher, Clemens and Streit, Kevin and Hack, Sebastian",
+  title  = "{SP}olly: {S}peculative {O}ptimizations in the {P}olyhedral {M}odel",
+  pages  = "55--60",
+  booktitle = "{P}roceedings of the 3rd {I}nternational {W}orkshop on {P}olyhedral {C}ompilation {T}echniques",
+  editor = "Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l",
+  year   = 2013,
+  month  = Jan,
+  address = "Berlin, Germany",
+  url = "http://impact.gforge.inria.fr/impact2013/papers/impact2013_spolly.pdf",
+  abstract = {
+The polyhedral model is only applicable to code regions that form static
+control parts (SCoPs) or slight extensions thereof. To apply polyhedral
+techniques to a piece of code, the compiler usually checks, by static analysis,
+whether all SCoP conditions are fulfilled. However, in many codes, the compiler
+fails to verify that this is the case. In this paper we investigate the
+rejection causes as reported by Polly , the polyhedral optimizer of a
+state-of-the-art compiler. We show that many rejections follow from the
+conservative overapproximation of the employed static analyses. In SPolly , a
+speculative extension of Polly, we employ the knowledge of runtime features to
+supersede this overapproximation. All speculatively generated variants form
+valid SCoPs and are optimizable by the facilities of Polly. Our evaluation
+shows that SPolly is able to ectively widen the applicability of polyhedral
+optimization. On the SPEC 2000 suite, the number of optimizable code regions is
+increased by 131 percent.  In 10 out of the 31 benchmarks of the PolyBench
+suite, SPolly achieves speedups of up to 11-fold as compared to plain Polly.
+  }
+}
+
+
 @inproceedings{Verdoolaege2010isl,
  author = {Verdoolaege, Sven},
  title = {isl: {A}n Integer Set Library for the Polyhedral Model},
@@ -90,7 +502,7 @@ try to follow the following style guide.
            and Sadayappan, P.},
  title = {Compiler-assisted dynamic scheduling for effective parallelization of
           loop nests on multicore processors},
- journal = {SIGPLAN Not.},
+ journal = {SIGPLAN Notices},
  issue_date = {April 2009},
  volume = {44},
  number = {4},
@@ -141,6 +553,48 @@ try to follow the following style guide.
  address = {New York, NY, USA},
 }
 
+@inproceedings{Bondhugula08cc,
+    author = {Uday Bondhugula and Muthu Baskaran and Sriram
+        Krishnamoorthy and J. Ramanujam and A. Rountev and P.
+            Sadayappan},
+    title = {Automatic Transformations for Communication-Minimized
+        Parallelization and Locality Optimization in the Polyhedral Model},
+    booktitle = {International Conference on Compiler Construction
+        (ETAPS CC)},
+    year = 2008,
+    month = apr,
+    url = {http://drona.csa.iisc.ernet.in/~uday/publications/uday-cc08.pdf},
+    abstract = {
+
+    The polyhedral model provides powerful abstractions to optimize loop nests with 
+    regular accesses.  Affine transformations in this model capture a complex
+    sequence of execution-reordering loop transformations that can
+    improve performance by parallelization as well as locality
+    enhancement.  Although a significant body of research has addressed
+    affine scheduling and partitioning, the problem of automatically
+    finding good affine transforms for communication-optimized
+    coarse-grained parallelization together with locality optimization
+    for the general case of arbitrarily-nested loop sequences remains a
+    challenging problem.
+
+    We propose an automatic transformation framework to
+    optimize arbitrarily-nested loop sequences with affine dependences
+    for parallelism and locality simultaneously. The approach finds
+    good tiling hyperplanes by embedding a powerful and versatile cost
+    function into an Integer Linear Programming formulation. These
+    tiling hyperplanes are used for communication-minimized
+    coarse-grained parallelization as well as for locality
+    optimization. The approach enables the minimization of inter-tile
+    communication volume in the processor space, and minimization of
+    reuse distances for local execution at each node. Programs
+    requiring one-dimensional versus multi-dimensional time schedules
+    (with scheduling-based approaches) are all handled with the same
+    algorithm.  Synchronization-free parallelism, permutable loops or
+    pipelined parallelism at various levels can be detected.
+    Preliminary studies of the framework show promising results.
+    }
+}
+
 @PhdThesis{Bastoul2004PhD,
  author = {Bastoul, C\'{e}dric},
  title = {Improving Data Locality in Static Control Programs},
@@ -177,7 +631,7 @@ try to follow the following style guide.
 @InProceedings{Bastoul2004CLooG,
  author = {Bastoul, C\'{e}dric},
  title = {Code Generation in the Polyhedral Model Is Easier Than You Think},
- booktitle = {PACT'13 IEEE International Conference on Parallel Architecture
+ booktitle = {IEEE International Conference on Parallel Architecture
               and Compilation Techniques},
  year = 2004,
  pages = {7--16},
@@ -340,7 +794,7 @@ try to follow the following style guide.
 @article{Karp1967,
  title = {The organization of computations for uniform recurrence equations},
  author = {Karp, Richard M and Miller, Raymond E and Winograd, Shmuel},
- journal = {Journal of the ACM (JACM)},
+ journal = {Journal of the ACM},
  volume = {14},
  number = {3},
  pages = {563--590},

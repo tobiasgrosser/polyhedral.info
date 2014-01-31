@@ -60,8 +60,7 @@ a:hover {
 	height: 10em;
 	margin: 0 auto;
 	background: white;
-	background-repeat: no-repeat;
-	background-size: 70em;
+	background-size: 15em;
 	background-position: left;
 	border-left: 1px black solid;
 	border-right: 1px black solid;
