@@ -12,23 +12,30 @@ Released   : 20081103
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>{{ page.title }} - polyhedral.info </title>
+
 <link href="/style.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="/style.css" rel="stylesheet" type="text/css" media="print" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link type="application/atom+xml" rel="alternate" href="/atom.xml"/>
 <link type="application/rss+xml" rel="alternate" href="/rss.xml" />
 
+<!-- Bootstrap stylesheets -->
 <link href="/bootstrap/css/yeti/bootstrap.css" rel="stylesheet">
 <link href="/bootstrap/css/navbar-fixed-top.css" rel="stylesheet" />
 <link href="/bootstrap/css/jumbotron.css" rel="stylesheet" />
 <link href="/bootstrap/css/offcanvas.css" rel="stylesheet" />
-
 <script type="text/javascript" src="/bootstrap/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/bootstrap/js/jquery-ui-1.10.4.custom.min.js"></script>
+<!-- Bootstrap stylesheets -->
+
 <script type="text/javascript" src="/javascripts/bibtex_js.js"></script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -106,24 +113,29 @@ $(function() {
 	<!-- end #header -->
   <div class="container">
       <div class="row row-offcanvas row-offcanvas-left">
-	<div class="col-4 col-xs-6 col-sm-4 sidebar-offcanvas" role="navigation">
-          <div class="list-group">
-              <div class="list-group-item">
-                <h2 class="list-group-item-heading">Recent Posts</h2>
-                <p class="list-group-item-text">
-                <ul>
+	<div class="col-sm-4 sidebar-offcanvas" role="navigation">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                Recent Posts
+              </div>
+              <div class="panel-body">
+                <ul class="nav nav-pills nav-stacked">
                 {% for post in site.posts limit: 7 %}
                       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                 {% endfor %}
                 </ul>
-                </p>
-                <p class="list-group-item-text">
-                Subscribe: <a href="/atom.xml">ATOM</a> or <a href="/rss.xml">RSS</a>
+                <p>
+                Subscribe: <a href="/atom.xml">ATOM</a> or
+                           <a href="/rss.xml">RSS</a>
                 </p>
               </div>
-              <div class="list-group-item">
-                <h2 class="list-group-item-heading">Contribute</h2>
-                <p class="list-group-item-text">Learn how to <a href="/contribute.html">participate</a>.</p>
+          </div>
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                Contribute
+              </div>
+              <div class="panel-body">
+                Learn how to <a href="/contribute.html">participate</a>.
               </div>
           </div>
 	</div>

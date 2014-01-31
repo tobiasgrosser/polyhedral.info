@@ -4,20 +4,24 @@ title: Blog
 ---
 
     {% for post in site.posts limit: 15 %}
-      <div class="post">
+      <div class="post panel panel-default">
       {% capture post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
+      <div class="panel-heading">
       {% if post_date != prev_post_date %}
-        <div align="right" class="date-container">{{ post.date | date:"%e.%m.%Y" | upcase }}</div>
+          <span class="navbar-right date-container">{{ post.date | date:"%e.%m.%Y" | upcase }}</span>
       {% endif %}
       {% capture prev_post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
         {% if post.post-link %}
-        <h1 class="title"><a href="{{ post.post-link }}" title="External link">{{ post.title }}</a> <a class="glyph-permalink" href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&diams;</a></h1>
+          <span><a href="{{ post.post-link }}" title="External link">{{ post.title }}</a> <a class="glyph-permalink" href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&diams;</a></span>
         {% else %}
-        <h1>{{ post.title }} <a class="glyph-permalink" href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&diams;</a></h1>
+        {{ post.title }} <span><a class="glyph-permalink" href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&diams;</a></span>
         {% endif %}
+      </div>
+      <div class="panel-body">
         {{ post.content }}
 	<span class="author">{{ post.author }}</span>
       </div>
+    </div>
       {% if forloop.last == false %}
       {% endif %}
     {% endfor %}
