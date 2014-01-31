@@ -2,6 +2,7 @@
 layout: default
 title: islplot project started
 author: Tobias Grosser
+post-link: https://github.com/tobig/islplot
 ---
 
 The first version of [islplot] (https://github.com/tobig/islplot) was

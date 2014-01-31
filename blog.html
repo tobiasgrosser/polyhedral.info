@@ -4,24 +4,38 @@ title: Blog
 ---
 
     {% for post in site.posts limit: 15 %}
-      <div class="post panel panel-default">
+      <div class="post">
       {% capture post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
-      <div class="panel-heading">
       {% if post_date != prev_post_date %}
-          <span class="navbar-right date-container">{{ post.date | date:"%e.%m.%Y" | upcase }}</span>
+          <div align="right" class="date-container">{{ post.date | date:"%e.%m.%Y" | upcase }}</div>
       {% endif %}
+      <h3>
       {% capture prev_post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
         {% if post.post-link %}
-          <span><a href="{{ post.post-link }}" title="External link">{{ post.title }}</a> <a class="glyph-permalink" href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&diams;</a></span>
+          <span>
+            <a href="{{ post.post-link }}" title="External link">{{ post.title }}</a>
+            <a class="glyph-permalink" href="{{ post.url }}"
+               title="Permanent link to: '{{ post.title }}'">&diams;
+            </a>
+          </span>
         {% else %}
-        {{ post.title }} <span><a class="glyph-permalink" href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&diams;</a></span>
+          {{ post.title }}
+          <span>
+            <a class="glyph-permalink" href="{{ post.url }}"
+               title="Permanent link to: '{{ post.title }}'">&diams;
+            </a>
+          </span>
         {% endif %}
-      </div>
-      <div class="panel-body">
+      </h3>
+        <blockquote>
+        <p>
         {{ post.content }}
-	<span class="author">{{ post.author }}</span>
+        </p>
+        <!--<span class="author">{{ post.author }}</span>-->
+        <small>{{ post.author }}</small>
+
+      </blockquote>
       </div>
-    </div>
       {% if forloop.last == false %}
       {% endif %}
     {% endfor %}
