@@ -16,31 +16,17 @@
 <link type="application/atom+xml" rel="alternate" href="/atom.xml"/>
 <link type="application/rss+xml" rel="alternate" href="/rss.xml" />
 
+<!--<link href="/bootstrap/css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />-->
+
 <!-- Bootstrap stylesheets -->
-<link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/bootstrap/css/bootstrap.css" rel="stylesheet" />
 <!--<link href="/bootstrap/css/yeti/bootstrap.css" rel="stylesheet">-->
 <link href="/bootstrap/css/navbar-fixed-top.css" rel="stylesheet" />
 <link href="/bootstrap/css/jumbotron.css" rel="stylesheet" />
 <link href="/bootstrap/css/offcanvas.css" rel="stylesheet" />
+<link type="text/css" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+
 <!-- Bootstrap stylesheets -->
-
-<!-- Make stuff "fade in" -->
-<style>
-  .toggler { width: 500px; height: 200px; position: relative; }
-  #button { padding: .5em 1em; text-decoration: none; }
-  #effect {position: relative;  width: 240px;  padding: 1em; letter-spacing: 0; font-size: 1.2em; border: 1px solid #000; background: #eee; color: #333; }
-  .fadeable { text-indent: 40px; letter-spacing: .4em; width: 410px; height: 100px; padding: 30px; margin: 10px; font-size: 1.6em; }
-</style>
-<script>
-$(function() {
-  $( "#button" ).click(function() {
-    $( "#effect" ).toggleClass( "fadeable", 1000 );
-    return false;
-  });
-});
-</script>
-<!-- END Make stuff "fade in" -->
-
 <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 </head>
@@ -48,38 +34,39 @@ $(function() {
 <textarea id="bibtex_input" style="display:none;">
 </textarea>
 <div class="bibtex_template" style="padding: 0.5em">
-<div >
-  <a class="id"></a><span class="title" style="font-weight: bold;" ></span>
-  <br />
-  <span class="if author">
-  <em><span class="author" style="color: darkblue"></span></em>
-  <br />
-  </span>
-  <span class="if editor">
-  Edited by <span class="editor"></span></em>
-  <br />
-  </span>
-  <span class="if booktitle">
-  <span class="booktitle"></span>
-  <br />
-  </span>
-  <span class="if journal">
-  <span class="journal"></span>
-  <br />
-  </span>
-  <span class="if bibtex" style="margin-left: 10px">
-    <a class='popup' style="font-size:0.8em">(bibtex)
-      <span class="bibtex"></span>
-    </a>
-  </span>
-  <span class="if abstract">
-    <a class='popup' style="font-size:0.8em">(abstract)
-      <span class="abstract"></span>
-    </a>
-  </span>
-  <span class="if url">
-    <a class="url" style="font-size: 0.8em; text-decoration: none">(view online)</a>
-  </span>
+<div>
+  <a class="id"></a>
+    <span class="title" style="font-weight: bold;" ></span><br />
+    <span class="if author">
+      <em><span class="author" style="color: darkblue"></span></em><br />
+    </span>
+    <span class="if editor">
+      Edited by <span class="editor"></span></em><br />
+    </span>
+    <span class="if booktitle">
+      <span class="booktitle"></span><br />
+    </span>
+    <span class="if journal">
+      <span class="journal"></span><br />
+    </span>
+
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Abstract</a></li>
+        <li><a href="#tabs-2">Bibtex</a></li>
+        <li><a href="#tabs-3">View online</a></li>
+      </ul>
+
+      <div id="tabs-1">
+        <span class="abstract"></span>
+      </div>
+      <div id="tabs-2">
+        <span class="bibtex"></span>
+      </div>
+      <div id="tabs-3">
+        <a class="url"></a>
+      </div>
+    </div>
 </div>
 </div>
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -111,6 +98,7 @@ $(function() {
 	<div class="col-md-4 sidebar-offcanvas" role="navigation">
           <div class="panel panel-default">
             <div class="panel-heading">
+              <span class="glyphicon glyphicon-book"></span>
               Recent Posts
             </div>
             <div class="panel-body list-group">
@@ -121,15 +109,17 @@ $(function() {
           </div>
           <div class="panel panel-default">
               <div class="panel-heading">
+              <span class="glyphicon glyphicon-globe"></span>
                 Subscribe 
               </div>
               <div class="panel-body">
-                Subscribe: <a href="/atom.xml">ATOM</a> or
-                           <a href="/rss.xml">RSS</a>
+                <a href="/atom.xml">ATOM</a> or
+                <a href="/rss.xml">RSS</a>
               </div>
           </div>
           <div class="panel panel-default">
               <div class="panel-heading">
+                <span class="glyphicon glyphicon-cog"></span>
                 Contribute
               </div>
               <div class="panel-body">
@@ -150,7 +140,7 @@ $(function() {
   </div>
 </body>
 
-<script type="text/javascript" src="/bootstrap/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/bootstrap/js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="/bootstrap/js/jquery-ui-1.10.4.custom.min.js"></script>
 <script type="text/javascript" src="/javascripts/bibtex_js.js"></script>
 <script type="text/x-mathjax-config">
@@ -158,5 +148,9 @@ $(function() {
     tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
   });
 </script>
-
+<script type="text/javascript">
+$(function() {
+    $( "#tabs" ).tabs();
+  });
+</script>
 </html>
