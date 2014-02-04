@@ -15,7 +15,7 @@ If you are in a rush you can try the official
 which provides in addition the ``isl-indent`` format option for a better
 readability of the isl output.
 
-Update 1: Added link to official barvinok online interface.
+Update: Added link to official barvinok online interface.
 
 [barvinok]: http://freecode.com/projects/barvinok
 [compsys-tools]: http://compsys-tools.ens-lyon.fr/iscc/
