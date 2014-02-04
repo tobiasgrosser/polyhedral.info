@@ -11,21 +11,10 @@ title: Blog
       {% endif %}
       <h3>
       {% capture prev_post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
-        {% if post.post-link %}
           <span>
-            <a href="{{ post.post-link }}" title="External link">{{ post.title }}</a>
-            <a class="glyphicon glyphicon-link" href="{{ post.url }}"
-               title="Permanent link to: '{{ post.title }}'">
+            <a href="{{ post.url }}" title="Link to '{{post.title }}'">{{ post.title }}</a>
             </a>
           </span>
-        {% else %}
-          {{ post.title }}
-          <span>
-            <a class="glyph-permalink" href="{{ post.url }}"
-               title="Permanent link to: '{{ post.title }}'">&diams;
-            </a>
-          </span>
-        {% endif %}
       </h3>
         <blockquote>
         <p>

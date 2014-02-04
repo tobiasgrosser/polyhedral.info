@@ -3,7 +3,6 @@ layout: default
 title: ISCC Online Demonstrator
 author: Alexandre Isoard
 email: alexandre.isoard@ens-lyon.fr
-post-link: http://compsys-tools.ens-lyon.fr/iscc
 ---
 ``iscc`` is the command line tool provided with ``barvinok`` that exhibit,
 among others, most of ``isl`` functionalities. The best way to use it is
