@@ -3,6 +3,7 @@ layout: default
 title: ISCC Online Demonstrator
 author: Alexandre Isoard
 email: alexandre.isoard@ens-lyon.fr
+www: perso.ens-lyon.fr/alexandre.isoard/
 ---
 
 ``iscc`` is the command line tool provided with ``barvinok`` that exhibit,
