@@ -148,10 +148,12 @@
                 <!-- We format the footer of a blog post -->
                 {% if page.author %}
                 </p>
-                <small> {{ page.author }} 
-                {% if page.www %}
-                  <a href="http://{{ post.www }}"><span class="glyphicon glyphicon-globe"></span></a>
-                {% endif %}
+                <small>{{ page.author }}
+                  {% if page.www %}
+                    <a href="http://{{ page.www }}">
+                      <span class="glyphicon glyphicon-globe"></span>
+                    </a>
+                  {% endif %}
                 </small>
                 </blockquote>
 		</div>
