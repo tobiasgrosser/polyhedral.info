@@ -11,7 +11,5 @@ on smartphones as well as the usual big screens.
 
 I hope you enjoy it :-).
 
-Andreas
-
 [bootstrap]: http://getbootstrap.com
 [jquery]: http://jquery.com
