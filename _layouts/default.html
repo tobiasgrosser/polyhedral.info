@@ -50,8 +50,8 @@
 
     <div class="jqTabs">
       <ul class="nav nav-pills nav-pills-sm">
-        <li><a class="tab1">Abstract</a></li>
-        <li><a class="tab2">Bibtex</a></li>
+        <li class="if abstract"><a class="tab1">Abstract</a></li>
+        <li class="if bibtex"><a class="tab2">Bibtex</a></li>
         <li class="if url">
             <a class="url">
             <span class="glyphicon glyphicon-eye-open"></span>
@@ -59,13 +59,17 @@
         </li>
       </ul>
 
-      <div class="tab1" id="tabs-1">
-        <div class="well well-sm">
-          <span class="abstract"></span>
+      <div class="if abstract">
+        <div class="tab1" id="tabs-1">
+          <div class="well well-sm">
+            <span class="abstract"></span>
+          </div>
         </div>
       </div>
-      <div class="tab2" id="tabs-1">
-        <pre><span class="bibtex"></span></pre>
+      <div class="if bibtex">
+        <div class="tab2" id="tabs-1">
+          <pre><span class="bibtex"></span></pre>
+        </div>
       </div>
     </div>
 </div>
