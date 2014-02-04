@@ -424,7 +424,7 @@ function BibtexDisplay() {
     // Replace tab{1,2} classes with unique hrefs & ids    
     tpl.find("a.tab1").attr('href', "#" + entryKey + "-1");
     tpl.find("a.tab2").attr('href', "#" + entryKey + "-2");
-    
+
     tpl.find("div.tab1").attr('id', entryKey + "-1");
     tpl.find("div.tab2").attr('id', entryKey + "-2");
     
@@ -434,14 +434,8 @@ function BibtexDisplay() {
     tpl.find("div.jqTabs").tabs(
       { collapsible: true,
         active: false,
-        select: function(event, ui) {
-        var url = $.data(ui.tab, 'load.tabs');
-        if( url ) {
-            location.href = url;
-            return false;
-        }
-        return true;
-        }});
+      });
+    tpl.find("a.url").unbind('click');
 
     tpl.show();
     return tpl;
