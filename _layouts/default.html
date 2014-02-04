@@ -148,7 +148,11 @@
                 <!-- We format the footer of a blog post -->
                 {% if page.author %}
                 </p>
-                <small> {{ page.author }} </small>
+                <small> {{ page.author }} 
+				{% if page.www %}
+					<a href="http://{{ page.www }}">[www]</a>
+				{% endif %}
+				</small>
                 </blockquote>
 		</div>
                 {% endif %}

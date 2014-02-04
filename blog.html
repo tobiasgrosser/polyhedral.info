@@ -5,19 +5,27 @@ title: Blog
 
     {% for post in site.posts limit: 15 %}
       <div class="post">
-      <div align="right" style="float: right" class="date-container">{{ post.date | date:"%e.%m.%Y" | upcase }}</div>
-      <h3>
+      {% capture post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
+      {% if post_date != prev_post_date %}
+        <div align="right" class="date-container">{{ post.date | date:"%e.%m.%Y" | upcase }}</div>
+      {% endif %}
+      {% capture prev_post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
+      	<h3>
           <span>
-            <a href="{{ post.url }}" title="Link to '{{post.title }}'">{{ post.title }}</a>
-            </a>
+            <a href="{{ post.url }}"
+                 title="Link to '{{post.title }}'">{{ post.title }}</a>
           </span>
-      </h3>
+      	</h3>
         <blockquote>
         <p>
         {{ post.content }}
         </p>
         <!--<span class="author">{{ post.author }}</span>-->
-        <small>{{ post.author }}</small>
+        <small>{{ post.author }}
+		{% if post.www %}
+		<a href="http://{{ post.www }}">[www]</a>
+		{% endif %}
+		</small>
 
       </blockquote>
       </div>
