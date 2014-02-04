@@ -102,7 +102,12 @@ Released   : 20081103
 
 <!-- We format the footer of a blog post-->
 {% if page.author %}
-<em> {{ page.author }} </em>
+	<span class="author">
+	{{ page.author }}
+	{% if page.www %}
+		<a href="http://{{ page.www }}">[www]</a>
+	{% endif %}
+        </span>
 {% endif %}
 		<div id="bibtex_display_citations">
 		</div>

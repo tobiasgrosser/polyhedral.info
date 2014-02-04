@@ -16,7 +16,11 @@ title: Blog
         <h1>{{ post.title }} <a class="glyph-permalink" href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&diams;</a></h1>
         {% endif %}
         {{ post.content }}
-	<span class="author">{{ post.author }}</span>
+	<span class="author">{{ post.author }}
+	{% if post.www %}
+		<a href="http://{{ post.www }}">[www]</a>
+	{% endif %}
+        </span>
       </div>
       {% if forloop.last == false %}
       {% endif %}
