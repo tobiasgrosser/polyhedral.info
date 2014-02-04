@@ -2,7 +2,7 @@
 layout: default
 title: Polyhedral.info has a new design!
 author: Andreas Simbuerger
-www: http://www.infosun.fim.uni-passau.de/cl/staff/simbuerger/
+www: www.infosun.fim.uni-passau.de/cl/staff/simbuerger/
 ---
 
 The new design for polyhedral.info is finished. It is based
