@@ -16,17 +16,13 @@
 <link type="application/atom+xml" rel="alternate" href="/atom.xml"/>
 <link type="application/rss+xml" rel="alternate" href="/rss.xml" />
 
-<!--<link href="/bootstrap/css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />-->
-
 <!-- Bootstrap stylesheets -->
 <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" />
-<!--<link href="/bootstrap/css/yeti/bootstrap.css" rel="stylesheet">-->
 <link href="/bootstrap/css/navbar-fixed-top.css" rel="stylesheet" />
 <link href="/bootstrap/css/jumbotron.css" rel="stylesheet" />
 <link href="/bootstrap/css/offcanvas.css" rel="stylesheet" />
-<link type="text/css" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+<!-- END Bootstrap stylesheets -->
 
-<!-- Bootstrap stylesheets -->
 <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 </head>
@@ -36,7 +32,12 @@
 <div class="bibtex_template" style="padding: 0.5em">
 <div>
   <a class="id"></a>
-    <span class="title" style="font-weight: bold;" ></span><br />
+    <span class="title" style="font-weight: bold;" ></span>
+    <span class="if url">
+      <a class="url">
+        <span class="glyphicon glyphicon-folder-open"></span>
+      </a>
+    </span><br />
     <span class="if author">
       <em><span class="author" style="color: darkblue"></span></em><br />
     </span>
@@ -50,21 +51,17 @@
       <span class="journal"></span><br />
     </span>
 
-    <div id="tabs">
-      <ul>
-        <li><a href="#tabs-1">Abstract</a></li>
-        <li><a href="#tabs-2">Bibtex</a></li>
-        <li><a href="#tabs-3">View online</a></li>
+    <div class="jqTabs">
+      <ul class="nav nav-tabs">
+        <li><a class="tab1">Abstract</a></li>
+        <li><a class="tab2">Bibtex</a></li>
       </ul>
 
-      <div id="tabs-1">
+      <div class="tab1" id="tabs-1">
         <span class="abstract"></span>
       </div>
-      <div id="tabs-2">
+      <div class="tab2" id="tabs-2">
         <span class="bibtex"></span>
-      </div>
-      <div id="tabs-3">
-        <a class="url"></a>
       </div>
     </div>
 </div>

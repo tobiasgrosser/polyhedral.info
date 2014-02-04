@@ -420,6 +420,16 @@ function BibtexDisplay() {
       tpl.find("a." + key.toLowerCase()).attr('href', value);
     }
     tpl.find("a.id").attr('name', entryKey);
+    
+    tpl.find("a.tab1").attr('href', "#" + entryKey + "-1");
+    tpl.find("a.tab2").attr('href', "#" + entryKey + "-2");
+    
+    tpl.find("div.tab1").attr('id', entryKey + "-1");
+    tpl.find("div.tab2").attr('id', entryKey + "-2");
+    
+    tpl.find("div.jqTabs").tabs({ collapsible: true,
+                                  active: false });
+
     tpl.show();
     return tpl;
   }
