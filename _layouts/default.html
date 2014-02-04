@@ -128,9 +128,23 @@
           </div>
 	</div>
 	<!-- end #sidebar -->
+        <div class="col-md-7">
+                <!-- We format the header of a blog post -->
+                {% if page.author %}
+                <div style="float: right; padding-right:1em"> {{ page.date| date: "%d.%m.%Y" }} </div>
+                <h1> {{ page.title }} </h1>
+                <blockquote>
+                <p>
+                {% endif %}
 
-	<div class="col-md-7">
-			{{ content }}
+                {{ content }}
+
+                <!-- We format the footer of a blog post -->
+                {% if page.author %}
+                </p>
+                <small> {{ page.author }} </small>
+                </blockquote>
+                {% endif %}
 		<div id="bibtex_display_citations">
 		</div>
 		<!-- end #content -->
