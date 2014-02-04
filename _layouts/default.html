@@ -149,10 +149,10 @@
                 {% if page.author %}
                 </p>
                 <small> {{ page.author }} 
-				{% if page.www %}
-					<a href="http://{{ page.www }}">[www]</a>
-				{% endif %}
-				</small>
+                {% if page.www %}
+                  <a href="http://{{ post.www }}"><span class="glyphicon glyphicon-globe"></span></a>
+                {% endif %}
+                </small>
                 </blockquote>
 		</div>
                 {% endif %}
