@@ -19,4 +19,4 @@ Update 1: Added link to official barvinok online interface.
 
 [barvinok]: http://freecode.com/projects/barvinok
 [compsys-tools]: http://compsys-tools.ens-lyon.fr/iscc/
-[barvinok-cgi]: http://www.cs.kuleuven.be/cgi-bin/dtai/barvinok.cgi]
+[barvinok-cgi]: http://www.cs.kuleuven.be/cgi-bin/dtai/barvinok.cgi
