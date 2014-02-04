@@ -90,7 +90,20 @@ Released   : 20081103
 <div id="wrapper">
 	<div id="page">
 		<div id="content">
+
+<!-- We format the header of a blog post -->
+{% if page.author %}
+<div style="float: right; padding-right:1em"> {{ page.date| date: "%d.%m.%Y" }} </div>
+<h1> {{ page.title }} </h1>
+{% endif %}
+
+
 			{{ content }}
+
+<!-- We format the footer of a blog post-->
+{% if page.author %}
+<em> {{ page.author }} </em>
+{% endif %}
 		<div id="bibtex_display_citations">
 		</div>
 		</div>
