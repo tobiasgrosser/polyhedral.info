@@ -18,6 +18,7 @@
 
 <!-- Bootstrap stylesheets -->
 <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" />
+<link href="/bootstrap/css/bootstrap-custom.css" rel="stylesheet" />
 <link href="/bootstrap/css/navbar-fixed-top.css" rel="stylesheet" />
 <link href="/bootstrap/css/jumbotron.css" rel="stylesheet" />
 <link href="/bootstrap/css/offcanvas.css" rel="stylesheet" />
@@ -52,9 +53,14 @@
     </span>
 
     <div class="jqTabs">
-      <ul class="nav nav-tabs">
+      <ul class="nav nav-pills nav-pills-sm">
         <li><a class="tab1">Abstract</a></li>
         <li><a class="tab2">Bibtex</a></li>
+        <li class="if url">
+            <a class="url">
+            <span class="glyphicon glyphicon-eye-open"></span>
+            </a>
+        </li>
       </ul>
 
       <div class="tab1" id="tabs-1">
@@ -62,7 +68,7 @@
           <span class="abstract"></span>
         </div>
       </div>
-      <div class="tab2" id="tabs-2">
+      <div class="tab2" id="tabs-1">
         <pre><span class="bibtex"></span></pre>
       </div>
     </div>
