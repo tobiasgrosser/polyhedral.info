@@ -131,7 +131,8 @@
         <div class="col-md-8">
                 <!-- We format the header of a blog post -->
                 {% if page.author %}
-                <div style="float: right; padding-right:1em"> {{ page.date| date: "%d.%m.%Y" }} </div>
+		<div class="post">
+      		<div align="right" style="float: right" class="date-container">{{ page.date | date:"%e.%m.%Y" | upcase }}</div>
                 <h3> {{ page.title }} </h3>
                 <blockquote>
                 <p>
@@ -144,6 +145,7 @@
                 </p>
                 <small> {{ page.author }} </small>
                 </blockquote>
+		</div>
                 {% endif %}
 		<div id="bibtex_display_citations">
 		</div>
