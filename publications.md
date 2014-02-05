@@ -6,12 +6,17 @@ title: Publications related to polyhedral techniques
 Publications
 ============
 
-This is an (incomplete) list of papers related to polyhedral techniques. There is also a [Bibtex File](Publications.bib) available.
+This is a growing collection of scientific publications about or related
+to polyhedral techniques. The papers are collected in a [Bibtex
+File](Publications.bib) and are also shown below.
+
 <div id="bibtex_display"> </div>
 <noscript>
-	The list of publications depends on the availablity of javascript. We
-	propose to either enable javascript for this website or to download
-	the [Bibtex File](Publications.) directly.
+<div class="alert alert-danger">
+<strong>Attention!</strong>
+Showing the list of publications requires javascript. Either enable javascript for this website or download
+the raw <a href="/Publications.bib">Bibtex File</a>.
+</div>
 </noscript>
 
 
