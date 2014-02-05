@@ -65,7 +65,9 @@ single-assignment arrays.  The PRA optimization attempts to determine when
 parallel array operations that jointly deffine new arrays from existing ones can
 reuse the memory of the existing arrays, rather than creating new ones.
 Polyhedral representations and related dependency inference methods facilitate
-that analysis.  In the context of SaC , we demonstrate the impact of this
+that analysis.
+
+In the context of SaC , we demonstrate the impact of this
 optimisation using two non-trivial benchmarks evaluated on conventional shared
 memory machines and on GPUs, obtaining performance improvements of 2-8 times
 for LU Decomposition and of 2-10 times for Needleman-Wunsch, over the same
@@ -88,7 +90,9 @@ Parametric tiling is a well-known transformation which is widely used to improve
 locality, parallelism and granularity.  However, parametric tiling is also a
 non-linear transformation and this prevents polyhedral analysis or further
 polyhedral transformation after parametric tiling. It is therefore generally
-applied during the code generation phase.  In this paper, we present a method
+applied during the code generation phase.
+
+In this paper, we present a method
 to remain polyhedral, in a special case of parametric tiling, where all the
 dimensions are tiled and all the tile sizes are constant multiples of a single
 tile size parameter. We call this Constant Aspect Ratio Tiling . We show how to
@@ -127,7 +131,9 @@ the tile schedule is not easy to describe statically. However, the partial
 order of the tiles can be expressed using dependence relations which can be
 used for dynamic scheduling at runtime. Another set of opportunities are missed
 due to the classic reason that finding valid tiling hyperplanes is often harder
-than checking whether a given tiling is valid.  Though the conservative
+than checking whether a given tiling is valid.
+
+Though the conservative
 conditions for validity of tiling have worked in practice on a large number of
 codes, we show that they fail to find the desired tiling in several cases –
 some of these have dependence patterns similar to real world problems and
@@ -212,7 +218,9 @@ tuning for faster execution? Understanding that relationship can guide both
 performance and energy tuning for exascale.  In this paper, a strong
 correlation is presented between the two that allows tuning for execution to be
 used as a proxy for energy tuning. We also show that polyhedral compilers can
-ectively tune a realistic application for both time and energy.  For a large
+ectively tune a realistic application for both time and energy.
+
+For a large
 number of variants of the Polybench programs and LULESH energy consumption is
 strongly correlated with total execution time. Optimizations can increase the
 power and energy required between variants, but the variant with minimum
@@ -242,7 +250,9 @@ kernels in the PolyBench/C benchmark suite.  Currently, the benchmarks are
 mostly specified by their implementation as C code, with a one sentence
 description of what the code is supposed to do. While this is suchcient in the
 context of automated loop transformation, the lack of precise specification may
-have let some questionable behaviors as benchmark kernels remain unnoticed.  As
+have let some questionable behaviors as benchmark kernels remain unnoticed.
+
+As
 an extreme example, two kernels in PolyBench/C 3.2 exhibit parametric speed up
 with respect to the problem size when its questionable properties are used.
 Abusing such properties can provide arbitrary speedup, which can be some factor
@@ -330,7 +340,9 @@ evaluation using PolyBench.
 Although Single Instruction Multiple Data (SIMD) units are available in general
 purpose processors already since the 1990s, state-of-the-art compilers are
 often still not capable to fully exploit them, i.e., they may miss to achieve
-the best possible performance.  We present a new hardware-aware and adaptive
+the best possible performance.
+
+We present a new hardware-aware and adaptive
 loop tiling approach that is based on polyhedral transformations and explicitly
 dedicated to improve on auto-vectorization. It is an extension to the tiling
 algorithm implemented within the PluTo framework [4, 5]. In its default
@@ -440,13 +452,17 @@ approaches to loop tiling. Tools such as the highly successful PLuTo automatic
 parallelizer have provided empirical confirmation of the success of
 polyhedral-based optimization, through experiments in which a number of
 benchmarks have been executed on machines with small- to medium-scale
-parallelism.  In anticipation of ever higher degrees of parallelism, we have
+parallelism.
+
+In anticipation of ever higher degrees of parallelism, we have
 explored the impact of various loop tiling strategies on the asymptotic degree
 of available parallelism. In our analysis, we consider “weak scaling” as
 described by Gustafson, i.e., in which the data set size grows linearly with
 the number of processors available. Some, but not all, of the approaches to
 tiling provide weak scaling. In particular, the tiling currently performed by
-PLuTo does not scale in this sense.  In this article, we review approaches to
+PLuTo does not scale in this sense.
+
+In this article, we review approaches to
 loop tiling in the published literature, focusing on both scalability and
 implementation status. We find that fully scalable tilings are not available in
 general-purpose tools, and call upon the polyhedral compilation community to

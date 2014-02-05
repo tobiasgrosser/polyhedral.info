@@ -28,14 +28,6 @@ h3 {
 	font-size: 1.6em;
 }
 
-p, ul, ol {
-	margin-top: 0;
-	line-height: 180%;
-}
-
-ul, ol {
-}
-
 a {
 	color: #9999ff;
 }
