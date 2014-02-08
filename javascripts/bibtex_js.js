@@ -379,7 +379,13 @@ function BibtexDisplay() {
     bibtex += '\n}\n';
     keys.push('BIBTEX');
     entry.entries['BIBTEX'] = bibtex;
-    
+
+    if ('ABSTRACT' in entry.entries) {
+      value = entry.entries['ABSTRACT'];
+      value = value.replace(/\n\n/g, '</p><p>');
+      entry.entries['ABSTRACT'] = '<p>' + value + '</p>';
+    }
+
     // find all ifs and check them
     var removed = false;
     do {
