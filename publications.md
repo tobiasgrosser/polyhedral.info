@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Publications related to polyhedral techniques
+title: Publications
 ---
 
 Publications
