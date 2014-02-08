@@ -103,17 +103,20 @@
 	<!-- end #menu -->
 
 	<div class="jumbotron" style="background:url('/images/tiling.png'); background-repeat: no-repeat; background-position: center; background-size=1em">
-
 	<div class="container">
-                  <h1>
-		    <a id="logo" href="/">Polyhedral.info</a>
-                  </h1>
+    <h1>
+		  <a id="logo" href="/">Polyhedral.info</a>
+    </h1>
 	</div>
 	</div>
+  <p class="visible-xs">
+        <button type="button" class="btn btn-primary btn-xs"
+              data-toggle="offcanvas">Toggle sidebar</button>
+  </p>
 	<!-- end #header -->
   <div class="container">
       <div class="row row-offcanvas row-offcanvas-left">
-	<div class="col-md-3 sidebar-offcanvas" role="navigation">
+	      <div class="col-xs-12 col-sm-6 col-md-3 sidebar sidebar-offcanvas" role="navigation">
           <div class="panel panel-default">
             <div class="panel-heading">
               <span class="glyphicon glyphicon-book"></span>
@@ -144,48 +147,47 @@
                 Learn how to <a href="/contribute.html">participate</a>.
               </div>
           </div>
-	</div>
-	<!-- end #sidebar -->
-        <div class="col-md-8">
-                <!-- We format the header of a blog post -->
-                {% if page.author %}
-		<div class="post">
-      		<div align="right" style="float: right" class="date-container">{{ page.date | date:"%e.%m.%Y" | upcase }}</div>
-                <h3> {{ page.title }} </h3>
-                <blockquote>
-                <p>
-                {% endif %}
+	      </div>
+        <div class="col-xs-12 col-sm-6 col-md-9">
+            <!-- We format the header of a blog post -->
+            {% if page.author %}
+		        <div class="post">
+              <div align="right" style="float: right" class="date-container">
+                {{ page.date | date:"%e.%m.%Y" | upcase }}
+              </div>
+              <h3> {{ page.title }} </h3>
+              <blockquote>
+              <p>
+            {% endif %}
 
-                {{ content }}
+            {{ content }}
 
-                <!-- We format the footer of a blog post -->
-                {% if page.author %}
-                </p>
-                <small>{{ page.author }}
-                  {% if page.www %}
-                    <a href="http://{{ page.www }}">
-                      <span class="glyphicon glyphicon-globe"></span>
-                    </a>
-                  {% endif %}
-                </small>
-                </blockquote>
-		</div>
+            <!-- We format the footer of a blog post -->
+            {% if page.author %}
+              </p>
+              <small>{{ page.author }}
+                {% if page.www %}
+                <a href="http://{{ page.www }}">
+                  <span class="glyphicon glyphicon-globe"></span>
+                </a>
                 {% endif %}
-		<div id="bibtex_display_citations">
-		</div>
-		<!-- end #content -->
-	</div>
-	<!-- end #page -->
+              </small>
+              </blockquote>
+		        </div>
+            {% endif %}
+		        <div id="bibtex_display_citations">
+		        </div>
+		    </div>
       </div>
 
-      <div class="row">
-      <div class="col-md-6 col-md-offset-6">
-      <small>
-      Built with <a href="http://getbootstrap.com">bootstrap</a> and
-                 <a href="jquery.com">jQuery</a>
-      , licensed under <a href="/bootstrap/LICENSE.txt">MIT</a>
-      </small>
-      </div>
+      <div class="row hidden-xs">
+        <div class="col-xs-12 col-sm-7 col-sm-offset-5 col-md-6 col-md-offset-6">
+        <small>
+        Built with <a href="http://getbootstrap.com">bootstrap</a> and
+                   <a href="jquery.com">jQuery</a>
+        , licensed under <a href="/bootstrap/LICENSE.txt">MIT</a>
+        </small>
+        </div>
       </div>
   </div>
 
@@ -194,6 +196,7 @@
 <script type="text/javascript" src="/bootstrap/js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="/bootstrap/js/jquery-ui-1.10.4.custom.min.js"></script>
 <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="/bootstrap/js/offcanvas.js"></script>
 <script type="text/javascript" src="/javascripts/bibtex_js.js"></script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
