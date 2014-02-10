@@ -5,11 +5,7 @@ title: Blog
 
     {% for post in site.posts limit: 15 %}
       <div class="post">
-      {% capture post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
-      {% if post_date != prev_post_date %}
         <div align="right" style="float: right" class="date-container">{{ post.date | date:"%e.%m.%Y" | upcase }}</div>
-      {% endif %}
-      {% capture prev_post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
       	<h3>
           <span>
             <a href="{{ post.url }}"
