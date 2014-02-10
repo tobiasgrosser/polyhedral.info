@@ -3,11 +3,12 @@ layout: default
 title: People
 ---
 
-## INRIA/ENS Parkas, Paris
+People
+======
 
-Group Website: [www.di.ens.fr/ParkasTeam.html.en](https://www.di.ens.fr/ParkasTeam.html.en)
-
-### Current Members
+This is a non-exhaustive list of people involved in the polyhedral community.
+Whoever feels to be part of this community is invited to
+[contribute](/contribute.html) his personal profile.
 
 #### Albert Cohen
 
