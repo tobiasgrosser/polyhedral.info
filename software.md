@@ -21,6 +21,30 @@ Tools and libraries to translate a polyhedral representation into source code.
  * [CodeGen+] (http://ctop.cs.utah.edu/ctop/?page_id=21)
  * [isl] (http://freecode.com/projects/isl)
 
+Compilers
+=========
+
+#### Static C/FORTRAN
+
+ * [Graphite] (http://gcc.gnu.org/wiki/Graphite) (for [GCC](http://www.gcc.org))
+ * [IBM XL](http://www.ibm.com/software/awdtools/xlcpp/)
+ * [Polly](http://polly.llvm.org) (for [LLVM](http://www.llvm.org))
+
+
+#### Source-to-Source
+
+ * [CHiLL] (http://ctop.cs.utah.edu/ctop/?page_id=21)
+ * [LooPo](https://www.infosun.fim.uni-passau.de/trac/LooPo)
+ * [Pluto] (http://pluto-compiler.sourceforge.net/)
+ * [PoCC](http://www.cse.ohio-state.edu/~pouchet/software/pocc/pocc.html)
+ * [PolyOpt/C] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/C)
+ * [PolyOpt/Fortran] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/Fortran)
+ * [R-Stream] (https://www.reservoir.com/products)
+
+#### Equational Programming
+
+ * [AlphaZ] (http://www.cs.colostate.edu/AlphaZ/)
+
 Dependency analysis
 ===================
 
@@ -65,26 +89,10 @@ Libraries to perform calculations on polyhedra.
  * [PPL] (http://bugseng.com/products/ppl/)
  * [ZPolyTrans] (http://zpolytrans.gforge.inria.fr/)
 
-Compilers
+Scripting
 =========
+ * [islpy] (documen.tician.de/islpy)
 
-#### Static C/FORTRAN
-
- * [Graphite] (http://gcc.gnu.org/wiki/Graphite) (for [GCC](http://www.gcc.org))
- * [IBM XL](http://www.ibm.com/software/awdtools/xlcpp/)
- * [Polly](http://polly.llvm.org) (for [LLVM](http://www.llvm.org))
-
-
-#### Source-to-Source
-
- * [CHiLL] (http://ctop.cs.utah.edu/ctop/?page_id=21)
- * [LooPo](https://www.infosun.fim.uni-passau.de/trac/LooPo)
- * [Pluto] (http://pluto-compiler.sourceforge.net/)
- * [PoCC](http://www.cse.ohio-state.edu/~pouchet/software/pocc/pocc.html)
- * [PolyOpt/C] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/C)
- * [PolyOpt/Fortran] (http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/Fortran)
- * [R-Stream] (https://www.reservoir.com/products)
-
-#### Equational Programming
-
- * [AlphaZ] (http://www.cs.colostate.edu/AlphaZ/)
+Visualization
+=============
+ * [islplot] (https://github.com/tobig/islplot)
