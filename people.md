@@ -22,6 +22,14 @@ general-purpose processors or specialized and embedded architectures.
 
 Website: [who.rocq.inria.fr/Albert.Cohen/](https://who.rocq.inria.fr/Albert.Cohen/)
 
+#### Arturo Gonzalez-Escribano
+
+![Arturo Gonzalez-Escribano](/images/people/arturo.jpg)
+
+Arturo Gonzalez-Escribano received his MS and PhD degrees in Computer Science from the University of Valladolid, Spain, in 1996 and 2003, respectively. He is Associate Professor of Computer Science at the University of Valladolid, and his research interests include parallel and distributed computing, parallel programming models, and embedded computing. He is a Member of the IEEE Computer Society and Member of the ACM.
+
+Website: [www.infor.uva.es/~arturo/](http://www.infor.uva.es/~arturo/)
+
 #### Riyadh Baghdadi
 
 ![Riyadh Baghdadi](/images/people/baghdadi.jpg)
