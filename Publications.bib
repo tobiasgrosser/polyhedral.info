@@ -296,6 +296,99 @@ evaluation using PolyBench.
  }
 }
 
+@ARTICLE{Gonzalez2013tpds,
+  author =  "A. Gonzalez-Escribano and Y. Torres and J. Fresno and D. Llanos",
+  title =  "An extensible system for multilevel automatic data partition and mapping",
+  journal =  "IEEE Transactions on Parallel and Distributed Systems ",
+  year =  "2013",
+  month =  "March",
+  doi="10.1109/TPDS.2013.83",
+  abstract = "
+Automatic data distribution is a key feature to obtain efficient
+implementations from abstract and portable parallel codes. We present a highly
+efficient and extensible runtime library that integrates techniques for
+automatic data partition and mapping. It uses a novel approach to define an
+abstract interface and a plug-in system to encapsulate different types of
+regular and irregular techniques, helping to generate codes which are
+independent of the exact mapping functions selected. Currently, it supports
+hierarchical tiling of arrays with dense and stride domains, that allows the
+implementation of both data and task parallelism using a SPMD model. It
+automatically computes appropriate domain partitions for a selected virtual
+topology, mapping them to available processors with static or dynamic
+load-balancing techniques. Our library also allows the construction of reusable
+communication patterns that efficiently exploit MPI communication capabilities.
+The use of our library greatly reduces the complexity of data distribution and
+communication, hiding the details of the underlying architecture. The library
+can be used as an abstract layer for building generic tiling operations as
+well. Our experimental results show that the use of this library allows to
+achieve similar performance as carefully-implemented manual versions for
+several, well-known parallel kernels and benchmarks in distributed and
+multicore systems, and substantially reduces programming effort.
+
+",
+  url = "http://www.computer.org/csdl/trans/td/preprint/06482561-abs.html"
+}
+
+@ARTICLE{Fresno2013js,
+  author =  "J. Fresno and A. Gonzalez-Escribano and D. Llanos",
+  title =  "Extending a Hierarchical Tiling Arrays Library to Support Sparse Data Partitioning",
+  journal =  "The Journal of Supercomputing",
+  year =  "2013",
+  volume =  "64",
+  number =  "1",
+  pages =  "59--68",
+  month =  "April",
+  doi = "10.1007/s11227-012-0757-y",
+  abstract = "
+Layout methods for dense and sparse data are often seen as two separate
+problems with their own particular techniques. However, they are based on the
+same basic concepts. This paper studies how to integrate automatic data-layout
+and partition techniques for both dense and sparse data structures. In
+particular, we show how to include support for sparse matrices or graphs in
+Hitmap, a library for hierarchical tiling and automatic mapping of arrays. The
+paper shows that it is possible to offer a unique interface to work with both
+dense and sparse data structures. Thus, the programmer can use a single and
+homogeneous programming style, reducing the development effort and simplifying
+the use of sparse data structures in parallel computations. Our experimental
+evaluation shows that this integration of techniques can be effectively done
+without compromising performance.
+",
+  url = "http://link.springer.com/article/10.1007%2Fs11227-012-0757-y"
+}
+
+@INPROCEEDINGS{Torres2013pdpta,
+  author =  "Y. Torres and A. Gonzalez-Escribano and D. Llanos",
+  title =  "Automatic Run-time Mapping of Polyhedral Computations to Heterogeneous Devices with Memory-size Restrictions",
+  booktitle =  "PDPTA'13 - The 2013 International Conference on Parallel and Distributed Processing Techniques and Applications",
+  year =  "2013",
+  volume =  "2",
+  month =  "July",
+  publisher =  "CSREA Press",
+  isbn = "1-60132-256-9, 1-60132-257-7 (1-60132-258-5)",
+  abstract = "
+Tools that aim to automatically map parallel computations to heterogeneous and
+hierarchical systems try to divide the whole computation in parts with
+computational loads adjusted to the capabilities of the target devices. Some
+parts are executed in node cores, while others are executed in accelerator
+devices.  Each part requires one or more data-structure pieces that should be
+allocated in the device memory during the computation.
+
+In this paper we present a model that allows such automatic mapping tools to
+transparently assign computations to heterogeneous devices with different
+memory size restrictions. The model requires the programmer to specify the
+access patterns of the computation threads in a simple abstract form. This
+information is used at run-time to determine the second-level partition of the
+computation assigned to a device, ensuring that the data pieces required by
+each sub-part fit in the target device memory, and that the number of kernels
+launched is minimal.  We present experimental results with a prototype
+implementation of the model that works for regular polyhedral expressions. We
+show how it works for different example applications and access patterns,
+transparently executing big computations in devices with different memory size
+restrictions.
+",
+  url = {http://www.infor.uva.es/~diego/docs/torres13.pdf}
+}
+
 @techreport{Grosser2013Promises,
  hal_id = {hal-00848691},
  url = {http://hal.inria.fr/hal-00848691},
