@@ -11,6 +11,13 @@ Everybody is invited to contribute.
 How?
 ====
 
+### By email
+
+Just send an email to [polyhedral@grosser.es](mailto:polyhedral@grosser.es) and the
+content will be integrated.
+
+### Diretly change the repository
+
 #### 1. Clone the website
 
 	git clone https://github.com/tobig/polyhedral.info.git
