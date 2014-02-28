@@ -628,6 +628,32 @@ suite, SPolly achieves speedups of up to 11-fold as compared to plain Polly.
   }
 }
 
+@article{Grosser2012polly,
+ title = {Polly -- Performing polyhedral optimizations on a low-level intermediate representation},
+ author = {Grosser, Tobias and Gr{\"o}{\ss}linger, Armin and Lengauer, Christian},
+ journal = {Parallel Processing Letters},
+ volume = {22},
+ number = {04},
+ year = {2012},
+ publisher = {World Scientific},
+ abstract = {
+The polyhedral model for loop parallelization has proved to be an effective
+tool for advanced optimization and automatic parallelization of programs in
+higher-level languages. Yet, to integrate such optimizations seamlessly into
+production compilers, they must be performed on the compiler's internal,
+low-level, intermediate representation (IR). With Polly, we present an
+infrastructure for polyhedral optimizations on such an IR. We describe the
+detection of program parts amenable to a polyhedral optimization (so-called
+static control parts), their translation to a Z-polyhedral representation,
+optimizations on this representation and the generation of optimized IR code.
+Furthermore, we define an interface for connecting external optimizers and
+present a novel way of using the parallelism they introduce to generate SIMD
+and OpenMP code. To evaluate Polly, we compile the PolyBench 2.0 benchmarks
+fully automatically with PLuTo as external optimizer and parallelizer. We can
+report on significant speedups.
+},
+ url = {http://www.worldscientific.com/doi/abs/10.1142/S0129626412500107}
+}
 
 @inproceedings{Verdoolaege2010isl,
  author = {Verdoolaege, Sven},
@@ -638,6 +664,25 @@ suite, SPolly achieves speedups of up to 11-fold as compared to plain Polly.
  series={LNCS 4151},
  editor={Andres Iglesias and Nobuki Takayama},
  publisher = {Springer-Verlag},
+}
+
+@inproceedings{Sjodin2009design,
+ title = {Design of graphite and the polyhedral compilation package},
+ author = {Sj{\"o}din, Jan and Pop, Sebastian and Jagasia, Harsha and Grosser, Tobias and Pop, Antoniu and others},
+ booktitle = {GCC Developers' Summit},
+ year = {2009},
+ abstract = "
+Graphite is the loop transformation framework that was introduced in GCC 4.4.
+This paper gives a detailed description of the design and future directions of
+this infrastructure. Graphite uses the polyhedral model as the internal
+representation (GPOLY). The plan is to create a polyhedral compilation package
+(PCP) that will provide loop optimization and analysis capabilities to GCC.
+This package will be separated from GIMPLE via an interface language that is
+restricted to express only what GPOLY can represent. The interface language is
+a set of data structures that encodes the control flow and memory accesses of a
+code region. A syntax for the language is also defined to facilitate debugging
+and testing.",
+ url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.158.2112&rep=rep1&type=pdf},
 }
 
 @article{Baskaran2009,
