@@ -655,6 +655,196 @@ report on significant speedups.
  url = {http://www.worldscientific.com/doi/abs/10.1142/S0129626412500107}
 }
 
+@InProceedings{Darte2011impact,
+  author = 	 {Darte, Alain},
+  title = 	 {Keynote: Approximations in the Polyhedral Model},
+  booktitle =    {1st International Workshop on Polyhedral Compilation Techniques (IMPACT)},
+  year = 	 {2011},
+  editor = 	 {C. Alias and C. Bastoul},
+  address = 	 {Chamonix, France},
+  abstract = {
+The polyhedral model is often viewed as limited, by nature, to a restricted
+class of programs, the set of nested loops with static control, affine loop
+counters, and affine accesses to arrays. But, actually, it is more than that.
+It is really a "model", in the sense that it is indeed not the real life (of
+programs) but it is nevertheless a useful representation that approximates it.
+It is always beneficial to develop transformations and optimizations in the
+polytope model with this perspective in mind, i.e., as being applicable to more
+programs, more general situations, provided that these programs are
+approximated in a suitable way. In this talk, I will recall several cases where
+the polytope model can be used to handle approximated programs: the detection
+of parallelism in loops with approximated dependences, the derivation of
+optimized communications with local reuse, the reuse of memory with
+lattice-based array folding, the analysis of while loops. Other important
+approximations, which will not be covered, concern fuzzy data-flow analysis and
+array region analysis, and the link with abstract interpretation.
+}
+}
+
+@InProceedings{Pradelle2011impact,
+  author = 	 {Pradelle, Benoît and Ketterlin, Alain and Clauss, Philippe},
+  title = 	 {Transparent Parallelization of Binary Code},
+  booktitle =    {1st International Workshop on Polyhedral Compilation Techniques (IMPACT)},
+  year = 	 {2011},
+  editor = 	 {C. Alias and C. Bastoul},
+  address = 	 {Chamonix, France},
+  abstract = {
+This paper describes a system that applies automatic parallelization techniques
+to binary code. The system works by raising x86-64 raw executable code to an
+intermediate representation that exhibits all memory accesses and relevant
+register definitions, but outlines detailed computations that are not relevant
+for parallelization. It then uses an off-the-shelf polyhedral parallelizer,
+firrst applying appropriate enabling transformations if necessary. The last
+phase lowers the internal representation into a new executable fragment,
+re-injecting low-level instructions into the transformed code. The system is
+shown to leverage the power of polyhedral parallelization techniques in the
+absence of source code, with performance approaching those of source-to-source
+tools.
+},
+  url = {http://perso.ens-lyon.fr/christophe.alias/impact2011/impact-03.pdf},
+}
+
+@InProceedings{Ramakrishna2011impact,
+  author = 	 {Upadrasta, Ramakrishna and Cohen, Albert},
+  title = 	 {Potential and Challenges of Two-Variable-Per-Inequality Sub-Polyhedral Compilation},
+  booktitle =    {1st International Workshop on Polyhedral Compilation Techniques (IMPACT)},
+  year = 	 {2011},
+  editor = 	 {C. Alias and C. Bastoul},
+  address = 	 {Chamonix, France},
+  abstract = {
+We explore the potential of sub-polyhedra as a means to fight some of the
+algorithmic complexity challenges in polyhedral compilation. The static
+analysis community has produced a rich variety of sub-polyhedral abstractions,
+trading precision for scalability for interprocedural analysis and symbolic
+model-checking. In this work, we evaluate the potential of the
+Two-Variable-Per-Inequality (TVPI) numerical abstract domain for polyhedral
+compilation. We demonstrate that strongly polynomial-time algorithms can be
+designed for the construction of complex affine transformations, with
+applications to affine scheduling and partitioning, with various objectives
+(parallelization, tiling, latency minimization). We identify some limitations,
+questions and research directions to be explored in depth in what we think is a
+new approach for the construction of scalable polyhedral compilation tools.
+},
+  url = {http://perso.ens-lyon.fr/christophe.alias/impact2011/impact-13.pdf}
+}
+
+@InProceedings{Konstantinidis2011impact,
+  author = 	 {Athanasios Konstantinidis, Athanasios and Kelly, Paul H. J.},
+  title = 	 {More Definite Results from the {P}luTo Scheduling Algorithm},
+  booktitle =    {1st International Workshop on Polyhedral Compilation Techniques (IMPACT)},
+  year = 	 {2011},
+  editor = 	 {C. Alias and C. Bastoul},
+  address = 	 {Chamonix, France},
+  abstract = {
+The PLuTo scheduling algorithm is a well-known algorithm for automatic
+scheduling in the polyhedral compilation model.  It seeks linearly independent
+affine partition mappings for each statement of a Static Control Program
+(SCoP), such that total communication is minimized. In this paper we show that
+this algorithm can be sensitive to the layout of the global constraint matrix
+thus resulting to varying performances of our target code simply by changing
+the order of the constraint coefficients. We propose a simple technique that
+automatically determines the right layout for the constraints and as a result
+immunizes the PLuTo scheduling algorithm from constraint ordering variations.
+},
+  url = {http://perso.ens-lyon.fr/christophe.alias/impact2011/impact-02.pdf},
+}
+
+@InProceedings{Verdoolaege2011impact,
+  author = 	 {Verdoolaege, Sven},
+  title = 	 {Counting Affine Calculator and Applications},
+  booktitle =    {1st International Workshop on Polyhedral Compilation Techniques (IMPACT)},
+  year = 	 {2011},
+  editor = 	 {C. Alias and C. Bastoul},
+  address = 	 {Chamonix, France},
+  abstract = {
+We present an interactive tool, called iscc, for manipulating sets and
+relations of integer tuples bounded by aliasne constraints over the set
+variables, parameters and existentially quantified variables. A distinguishing
+feature of iscc is that it provides a cardinality operation on sets and
+relations that computes a symbolic expression in terms of the parameters and
+domain variables for the number of elements in the set or the image of the
+relation. In particular, these expressions are piecewise quasipolynomials,
+which can be further manipulated in iscc. Besides basic operations on sets and
+piecewise quasipolynomials, iscc also provides an interface to code generation,
+lexicographic optimization, dependence analysis, transitive closures and the
+symbolic computation of upper bounds and sums of piecewise quasipolynomials
+over their domains.
+},
+  url = {http://perso.ens-lyon.fr/christophe.alias/impact2011/impact-02.pdf}
+}
+
+@InProceedings{Amini2011impact,
+  author = 	 {Amini, Mehdi and Ancourt, Corinne and Coelho, Fabien and Creusillet, B{\'e}atrice and Guelton, Serge and Irigoin, François and Jouvelot, Pierre and Keryell, Ronan and Villalon, Pierre},
+  title = 	 {{PIPS} Is not (just) Polyhedral Software},
+  booktitle =    {1st International Workshop on Polyhedral Compilation Techniques (IMPACT)},
+  year = 	 {2011},
+  editor = 	 {C. Alias and C. Bastoul},
+  address = 	 {Chamonix, France},
+  abstract = {
+Parallel and heterogeneous computing are growing in audience thanks to the
+increased performance brought by ubiquitous manycores and GPU s. However,
+available programming models, like OPENCL or CUDA, are far from being
+straightforward to use. As a consequence, several automated or semi-automated
+approaches have been proposed to automatically generate hardware-level codes
+from high-level sequential sources.
+
+Polyhedral models are becoming more popular because of their combination of
+expressiveness, compactness, and accurate abstraction of the data-parallel
+behaviour of programs. These models provide automatic or semi-automatic
+parallelization and code transformation capabilities that target such modern
+parallel architectures.
+
+PIPS is a quarter-century old source-to-source transformation framework that
+initially targeted parallel machines but then evolved to include other targets.
+PIPS uses abstract interpretation on an integer polyhedral lattice to represent
+program code, allowing linear relation analysis on integer variables in an
+interprocedural way. The same representation is used for the dependence test
+and the convex array region analysis. The polyhedral model is also more
+classically used to schedule code from linear constraints.
+
+In this paper, we illustrate the features of this compiler infrastructure on an
+hypothetical input code, demonstrating the combination of polyhedral and non
+polyhedral transformations.  PIPS interprocedural polyhedral analyses are used
+to generate data transfers and are combined with non-polyhedral transformations
+to achieve efficient CUDA code generation.
+},
+  url = {http://perso.ens-lyon.fr/christophe.alias/impact2011/impact-09.pdf},
+}
+
+@InProceedings{Grosser2011impact,
+  author = 	 {Grosser, Tobias and Zheng, Hongbin and Aloor, Ragesh and Simb{\"u}rger, Andreas  and Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l},
+  title = 	 {Polly – Polyhedral Optimization in {LLVM}},
+  booktitle =    {1st International Workshop on Polyhedral Compilation Techniques (IMPACT)},
+  year = 	 {2011},
+  editor = 	 {C. Alias and C. Bastoul},
+  address = 	 {Chamonix, France},
+  abstract = {
+Various powerful polyhedral techniques exist to optimize computation intensive
+programs ectively. Applying these techniques on any non-trivial program is
+still surprisingly dincult and often not as ective as expected. Most polyhedral
+tools are limited to a specific programming language.  Even for this language,
+relevant code needs to match specific syntax that rarely appears in existing
+code. It is therefore hard or even impossible to process existing programs
+automatically. In addition, most tools target C or OpenCL code, which prevents
+ective communication with compiler internal optimizers. As a result target
+architecture specific optimizations are either little ective or not approached
+at all.
+
+In this paper we present Polly, a project to enable polyhedral optimizations in
+LLVM. Polly automatically detects and transforms relevant program parts in a
+language-independent and syntactically transparent way. Therefore, it supports
+programs written in most common programming languages and constructs like C++
+iterators, goto based loops and pointer arithmetic. Internally it provides a
+state-of-the-art polyhedral library with full support for Z -polyhedra,
+advanced data dependency analysis and support for external optimizers. Polly
+includes integrated SIMD and OpenMP code generation. Through LLVM, machine code
+for CPUs and GPU accelerators, C source code and even hardware descriptions can
+be targeted.
+},
+  url = {http://perso.ens-lyon.fr/christophe.alias/impact2011/impact-07.pdf},
+}
+
+
 @inproceedings{Verdoolaege2010isl,
  author = {Verdoolaege, Sven},
  title = {isl: {A}n Integer Set Library for the Polyhedral Model},
