@@ -1095,6 +1095,54 @@ and testing.",
  url={http://www.cs.utah.edu/~mhall/cs6963s09/lectures/omega.ps}
 }
 
+@article{Pugh1994static,
+  title={Static analysis of upper and lower bounds on dependences and parallelism},
+  author={Pugh, William and Wonnacott, David},
+  journal={ACM Transactions on Programming Languages and Systems (TOPLAS)},
+  volume={16},
+  number={4},
+  pages={1248--1278},
+  year={1994},
+  publisher={ACM},
+  abstract = {
+Existing compilers often fail to parallelize sequential code, even when a
+program can be manually transformed into parallel form by a sequence of
+well-understood transformations (as in the case for many of the Perfect Club
+Benchmark programs). These failures can occur for several reasons: the code
+transformations implemented in the compiler may not be sufficient to produce
+parallel code, the compiler may not find the proper sequence of
+transformations, or the compiler may not be able to prove that one of the
+necessary transformations is legal. When a compiler fails to extract sufficient
+parallelism from a program, the programmer may try to extract additional
+parallelism. Unfortunately, the programmer is typically left to search for
+parallelism without significant assistance. The compiler generally does not
+give feedback about which parts of the program might contain additional
+parallelism, or about the types of transformations that might be needed to
+realize this parallelism. Standard program transformations and dependence
+abstractions cannot be used to provide this feedback. In this paper, we propose
+a two-step approach to the search for parallelism in sequential programs. In
+the first step, we construct several sets of constraints that describe, for
+each statement, which iterations of that statement can be executed
+concurrently. By constructing constraints that correspond to different
+assumptions about which dependences might be eliminated through additional
+analysis, transformations, and user assertions, we can determine whether we can
+expose parallelism by eliminating dependences. In the second step of our search
+for parallelism, we examine these constraint sets to identify the kinds of
+transformations needed to exploit scalable parallelism. Our tests will identify
+conditional parallelism and parallelism that can be exposed by combinations of
+transformations that reorder the iteration space (such as loop interchange and
+loop peeling). This approach lets us distinguish inherently sequential code
+from code that contains unexploited parallelism. It also produces information
+about the kinds of transformations needed to parallelize the code, without
+worrying about the order of application of the transformations. Furthermore,
+when our dependence test is inexact we can identify which unresolved
+dependences inhibit parallelism by comparing the effects of assuming dependence
+or independence. We are currently exploring the use of this information in
+programmer-assisted parallelization.
+},
+  url={http://drum.lib.umd.edu/bitstream/1903/629/4/CS-TR-3250.pdf},
+}
+
 @article{Feautrier1992multi,
  author = {Feautrier, Paul},
  affiliation = {Laboratoire MASI Université de Versailles St-Quentin 45 Avenue
