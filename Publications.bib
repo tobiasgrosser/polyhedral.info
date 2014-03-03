@@ -1143,6 +1143,34 @@ programmer-assisted parallelization.
   url={http://drum.lib.umd.edu/bitstream/1903/629/4/CS-TR-3250.pdf},
 }
 
+@book{pugh1994exact,
+  title={An exact method for analysis of value-based array data dependences},
+  author={Pugh, William and Wonnacott, David},
+  year={1994},
+  publisher={Springer},
+  abstract={
+Standard array data dependence testing algorithms give information
+about the aliasing of array references. If statement 1 writes a[5],
+and statement 2 later reads a [5], standard techniques described this
+as a flow dependence, even if there was an intervening write. We call
+a dependence between two references to the same memory location a
+memory-based dependence. In contrast, if there are no intervening
+writes, the references touch the same value and we call the
+dependence a value-based dependence.
+
+There has been a surge of recent work on value-based array data
+dependence analysis (also referred to as computation of array
+data-flow dependence information). In this paper, we describe a
+technique that is exact over programs without control flow (other
+than loops) and non-linear references. We compare our proposal with
+the technique proposed by Paul Feautrier, which is the other
+technique that is complete over the same domain as ours. We also
+compare our work with that of Tu and Padua, a representative
+approximate scheme for array privatization.
+},
+  url={http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.22.8688&rep=rep1&type=pdf},
+}
+
 @article{Feautrier1992multi,
  author = {Feautrier, Paul},
  affiliation = {Laboratoire MASI Université de Versailles St-Quentin 45 Avenue
