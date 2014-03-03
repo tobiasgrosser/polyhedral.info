@@ -1288,6 +1288,33 @@ approximate scheme for array privatization.
  }
 }
 
+@inproceedings{Ancourt1991scanning,
+  title={Scanning polyhedra with DO loops},
+  author={Ancourt, Corinne and Irigoin, Fran{\c{c}}ois},
+  booktitle={ACM Sigplan Notices},
+  volume={26},
+  number={7},
+  pages={39--50},
+  year={1991},
+  organization={ACM},
+  abstract={
+Supercompilers perform complex program transformations which often result in
+new loop bounds. This paper shows that, under the usual assumptions in
+automatic parallelization, most transformations on loop nests can be expressed
+as affine transformations on integer sets defined by polyhedra and that the new
+loop bounds can be computed with algorithms using Fourier's pairwise
+elimination method although it is not exact for integer sets. Sufficient
+conditions to use pairwise elimination on integer sets and to extend it to
+pseudo-linear constraints are also given. A tradeoff has to be made between
+dynamic overhead due to some bound slackness and compilation complexity but the
+resulting code is always correct. Thse algorithms can be used to onterchange or
+block loops regardless of the loop bounds or the blocking strategy and to
+safety exchange array parts between two levels of a memory hierarchy or between
+neighboring processors in a distributed memory machine.
+},
+  url={http://hal.inria.fr/docs/00/75/27/74/PDF/A-195.pdf}
+}
+
 @article{Feautrier1988parametric,
   title={Parametric integer programming},
   author={Feautrier, Paul},
