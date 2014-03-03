@@ -256,6 +256,8 @@ function BibtexDisplay() {
     value = value.replace(/\\ss/g, '&szlig;');
     value = value.replace(/\\'\{e\}/g, '&eacute;');
     value = value.replace(/\{(.*?)\}/g, '$1');
+    value = value.replace(/\\c{C}/g, '&Ccedil;');
+    value = value.replace(/\\c{c}/g, '&ccedil;');
     return value;
   }
 
