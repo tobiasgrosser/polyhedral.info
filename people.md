@@ -30,6 +30,20 @@ Arturo Gonzalez-Escribano received his MS and PhD degrees in Computer Science fr
 
 Website: [www.infor.uva.es/~arturo/](http://www.infor.uva.es/~arturo/)
 
+#### Christophe Alias
+
+![Christophe Alias](/images/people/alias.jpg)
+
+Christophe Alias is a research scientist (CR1) at Inria. His research interests
+include theoretical and practical aspects of polyhedral compilation. After a
+PhD thesis on polyhedral program synthesis, he worked on automatic
+parallelization, memory optimization and automated pipelining for high-level
+synthesis.  Beside, he is the main developer of Dcc, a HLS specific polyhedral
+compiler suite, which is the cornerstone of the XtremLogic startup, that he has
+co-founded with Alexandru Plesco.
+
+Website: [perso.ens-lyon.fr/christophe.alias/](perso.ens-lyon.fr/christophe.alias/)
+
 #### Riyadh Baghdadi
 
 ![Riyadh Baghdadi](/images/people/baghdadi.jpg)
