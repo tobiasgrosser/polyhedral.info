@@ -453,8 +453,8 @@ function BibtexDisplay() {
     array = array.sort();
     var results = [];
     console.log(array);
-    for (var i = 0; i < array.length - 1; i++) {
-      if (array[i] != array[i-1]) {
+    for (var i = 0; i < array.length; i++) {
+      if (i == 0 || array[i] != array[i-1]) {
         results.push(array[i]);
       }
     }
