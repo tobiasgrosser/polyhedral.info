@@ -628,6 +628,113 @@ suite, SPolly achieves speedups of up to 11-fold as compared to plain Polly.
   }
 }
 
+@inproceedings{Zuo2013,
+ author = "Zuo, Wei and Li, Peng and Chen, Deming and Pouchet, Louis-No\"{e}l and Zhong, Shunan and Cong, Jason",
+ title = "Improving Polyhedral Code Generation for High-Level Synthesis",
+ booktitle = "International Conference on Hardware/Software Codesign and System Synthesis",
+ year = 2013,
+ url = "http://vast.cs.ucla.edu/sites/default/files/publications/Improving%20Polyhedral%20Code%20Generation%20for%20High-Level%20Synthesis.pdf",
+ abstract = "
+High-level synthesis (HLS) tools are now capable of generating high-quality RTL
+codes for a number of programs. Nevertheless, for best performance aggressive
+program transformations are still required to exploit data reuse and enable
+communication/computation overlap. The polyhedral compilation framework has
+shown great promise in this area with the development of HLS-specific
+polyhedral transformation techniques and tools. However, all these techniques
+rely on polyhedral code generation to translate a schedule for the program's
+operations into an actual C code that is input to the HLS tool. In this work we
+study the changes to the state-of-the-art polyhedral code generator CLooG which
+are required to tailor it for HLS purposes. In particular, we develop various
+techniques to significantly improve resource utilization on the FPGA. We also
+develop a complete technique geared towards effective code generation of
+rectangularly tiled code, leading to further improvements in resource
+utilization. We demonstrate our techniques on a collection of affine
+benchmarks, reducing by 2x on average (up to 10x) the area used after
+high-level synthesis.
+"
+}
+
+@article{Khan2013cudachill,
+ author    = {Malik Murtaza Khan and
+              Protonu Basu and
+              Gabe Rudy and
+              Mary W. Hall and
+              Chun Chen and
+              Jacqueline Chame},
+ title     = {A script-based autotuning compiler system to generate high-performance
+              CUDA code},
+ journal   = {ACM Transactions on Architecture and Code Optimization (TACO)},
+ volume    = {9},
+ number    = {4},
+ year      = {2013},
+ pages     = {31},
+ url = "http://www.cs.utah.edu/~mhall/cs6235s13/hipeac13.pdf",
+ abstract = "
+This article presents a novel compiler framework for CUDA code generation. The
+compiler structure is designed to support autotuning, which employs empirical
+techniques to evaluate a set of alternative mappings of computation kernels and
+select the mapping that obtains the best performance. This article introduces a
+Transformation Strategy Generator, a meta-optimizer that generates a set of
+transformation recipes, which are descriptions of the mapping of the sequential
+code to parallel CUDA code. These recipes comprise a search space of possible
+implementations. This system achieves performance comparable and sometimes
+better than manually tuned libraries and exceeds the performance of a
+state-of-the-art GPU compiler.
+"
+}
+
+@inproceedings{Henretty2013stencil,
+ author = {Henretty, Tom and Veras, Richard and Franchetti, Franz and Pouchet, Louis-No\"{e}l and Ramanujam, J. and Sadayappan, P.},
+ title = {A stencil compiler for short-vector {SIMD} architectures},
+ booktitle = {International Conference on Supercomputing (ICS)},
+ publisher = {ACM},
+ year = {2013},
+ url = "http://www.cs.ucla.edu/~pouchet/doc/ics-article.13.pdf",
+ abstract = "
+Stencil computations are an integral component of applications in a
+number of scientific computing domains. Short-vector SIMD instruction
+sets are ubiquitous on modern processors and can be used to significantly
+increase the performance of stencil computations. Traditional approaches
+to optimizing stencils on these platforms have focused on either
+short-vector SIMD or data locality optimizations. In this paper, we
+propose a domain specific language and compiler for stencil computations
+that allows specification of stencils in a concise manner and automates
+both locality and short-vector SIMD optimizations, along with effective
+utilization of multi-core parallelism. Loop transformations to enhance
+data locality and enable load-balanced parallelism are combined with a
+data layout transformation to effectively increase the performance of
+stencil computations. Performance increases are demonstrated for a number
+of stencils on several modern SIMD architectures.
+"
+}
+
+@inproceedings{Chen2012,
+ author = {Chen, Chun},
+ title = {Polyhedra scanning revisited},
+ booktitle = {Conference on Programming Language Design and Implementation},
+ year = {2012},
+ pages = {499--508},
+ numpages = {10},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {polyhedra scanning, polyhedral transformations},
+ url = "http://ctop.cs.utah.edu/downloads/pldi128-chen.pdf",
+ abstract = "
+This paper presents a new polyhedra scanning system called CodeGen+ to
+address the challenge of generating high-performance code for complex iteration
+spaces resulting from compiler optimization and autotuning systems. The
+strength of our approach lies in two new algorithms. First, a loop overhead
+removal algorithm provides precise control of trade-offs between loop overhead
+and code size based on actual loop nesting depth. Second, an if-statement
+simplification algorithm further reduces the number of comparisons in the code.
+These algorithms combined with the expressive power of Presburger arithmetic
+enable CodeGen+ to support complex optimization strategies expressed in
+iteration spaces. We compare with the state-of-the-art polyhedra scanning tool
+CLooG on five loop nest computations, demonstrating that CodeGen+ generates
+code that is simpler and up to 1.15x faster.
+"
+}
+
 @article{Grosser2012polly,
  title = {Polly -- Performing polyhedral optimizations on a low-level intermediate representation},
  author = {Grosser, Tobias and Gr{\"o}{\ss}linger, Armin and Lengauer, Christian},
@@ -653,6 +760,29 @@ fully automatically with PLuTo as external optimizer and parallelizer. We can
 report on significant speedups.
 },
  url = {http://www.worldscientific.com/doi/abs/10.1142/S0129626412500107}
+}
+
+@InProceedings{Verdoolaege2012,
+ author = {Verdoolaege, Sven and Grosser, Tobias },
+ title = {Polyhedral Extraction Tool},
+ booktitle = { Second International Workshop on Polyhedral Compilation Techniques (IMPACT'12)},
+ address = { Paris, France},
+ month = jan,
+ year = {2012},
+ url = "http://impact.gforge.inria.fr/impact2012/workshop_IMPACT/verdoolaege.pdf",
+ abstract = "
+We present a new library for extracting a polyhedral model from C source. The
+library is based on clang, the LLVM C frontend, and isl, a library for
+manipulating quasi-affine sets and relations. The use of clang for parsing the
+C code brings advanced diagnostics and full support for C99. The use of isl
+allows for an easy construction and a powerful and compact representation of
+the polyhedral model. Besides allowing arbitrary piecewise quasi-affine index
+expressions and conditions, the library also supports some data dependent
+constructs and has special treatment for unsigned integers. The library has
+been successfully used to obtain polyhedral models for use in an equivalence
+checker, a tool for constructing polyhedral process networks, a parallelizer
+targeting GPUs and an interactive polyhedral environment.
+"
 }
 
 @InProceedings{Darte2011impact,
@@ -813,7 +943,7 @@ to achieve efficient CUDA code generation.
 
 @InProceedings{Grosser2011impact,
   author = 	 {Grosser, Tobias and Zheng, Hongbin and Aloor, Ragesh and Simb{\"u}rger, Andreas  and Gr{\"o}{\ss}linger, Armin and Pouchet, Louis-No{\"e}l},
-  title = 	 {Polly – Polyhedral Optimization in {LLVM}},
+  title = 	 {Polly -- Polyhedral Optimization in {LLVM}},
   booktitle =    {1st International Workshop on Polyhedral Compilation Techniques (IMPACT)},
   year = 	 {2011},
   editor = 	 {C. Alias and C. Bastoul},
@@ -844,6 +974,71 @@ be targeted.
   url = {http://perso.ens-lyon.fr/christophe.alias/impact2011/impact-07.pdf},
 }
 
+@inproceedings{Bondhugula2010xlc,
+ author    = {Bondhugula, Uday and
+              G{\"u}nl{\"u}k, Oktay and
+              Dash, Sanjeeb and
+              Renganarayanan, Lakshminarayanan},
+ title     = {A model for fusion and code motion in an automatic parallelizing
+              compiler},
+ booktitle = {International Conference on Parallel Architectures and Compilation Techniques (PACT)},
+ year      = {2010},
+ pages     = {343-352},
+ url = "http://drona.csa.iisc.ernet.in/~uday/publications/uday-pact10.pdf",
+ abstract = "
+Loop fusion has been studied extensively, but in a manner isolated from other
+transformations. This was mainly due to the lack of a powerful intermediate
+representation for application of compositions of high-level transformations.
+Fusion presents strong interactions with parallelism and locality. Currently,
+there exist no models to determine good fusion structures integrated with all
+components of an auto-parallelizing compiler. This is also one of the reasons
+why all the benefits of optimization and automatic parallelization of long
+sequences of loop nests spanning hundreds of lines of code have never been
+explored.
+
+We present a fusion model in an integrated automatic parallelization framework
+that simultaneously optimizes for hardware prefetch stream buffer utilization,
+locality, and parallelism. Characterizing the legal space of fusion structures
+in the polyhedral compiler framework is not difficult. However, incorporating
+useful optimization criteria into such a legal space to pick good fusion
+structures is very hard. The model we propose captures utilization of hardware
+prefetch streams, loss of parallelism, as well as constraints imposed by
+privatization and code expansion into a single convex optimization space. The
+model scales very well to program sections spanning hundreds of lines of code.
+It has been implemented into the polyhedral pass of the IBM XL optimizing
+compiler. Experimental results demonstrate its effectiveness in finding good
+fusion structures for codes including SPEC benchmarks and large applications.
+An improvement ranging from 5% to nearly a factor of 2.75x is obtained over the
+current production compiler optimizer on these benchmarks.
+"
+}
+
+@InProceedings{Trifinovic2010,
+ author = {Trifunovi\'c, Konrad and Cohen, Albert and Edelsohn, David
+           and Li, Feng and Grosser, Tobias and Jagasia, Harsha
+           and Ladelsky, Razya and Pop, Sebastian and Sj\"odin, Jan
+           and Upadrasta, Ramakrishna },
+ title = {{GRAPHITE} Two Years After: First Lessons Learned From
+           eal-World Polyhedral Compilation},
+ booktitle = {2nd GCC Research Opportunities Workshop (GROW)},
+ year = 2010,
+ url = "http://citeseerx.ist.psu.edu/viewdoc/download?rep=rep1&type=pdf&doi=10.1.1.220.3386",
+ abstract = "
+Modern compilers are responsible for adapting the semantics of source programs
+into a form that makes efficient use of a highly complex, heterogeneous
+machine. This adaptation amounts to solve an optimization problem in a huge and
+unstructured search space, while predicting the performance outcome of complex
+sequences of program transformations. The polyhedral model of compilation is
+aimed at these challenges. Its geometrical, non-inductive semantics enables the
+construction of better-structured optimization problems and precise analytical
+models. Recent work demonstrated the scalability of the main polyhedral
+algorithms to real-world programs. Its integration into production compilers is
+under way, pioneered by the Graphite branch of the GNU Compiler Collection
+(GCC). Two years after the effective beginning of the project, this paper
+reports on original questions and innovative solutions that arose during the
+design and implementation of Graphite.
+"
+}
 
 @inproceedings{Verdoolaege2010isl,
  author = {Verdoolaege, Sven},
@@ -880,6 +1075,47 @@ and parallelization, showing performance improvements on benchmarks that were
 thought to be out of reach of the polyhedral model.
 },
   pdf={http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.162.407&rep=rep1&type=pdf}
+}
+
+@inproceedings{Reservoir2010,
+ author = {Leung, Allen and Vasilache, Nicolas and Meister, Beno\^{\i}t and
+Baskaran, Muthu and Wohlford, David and Bastoul, C{\'e}dric and Lethin,
+Richard},
+ title = {A mapping path for multi-{GPGPU} accelerated computers from a
+portable high level programming abstraction},
+ booktitle = {3rd Workshop on General-Purpose Computation on Graphics
+Processing Units (GPGPU)},
+ series = {GPGPU '10},
+ year = {2010},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ url = "http://www.researchgate.net/publication/220938996_A_mapping_path_for_multi-GPGPU_accelerated_computers_from_a_portable_high_level_programming_abstraction/file/79e41502512b8a3f2b.pdf",
+ abstract = "
+Programmers for GPGPU face rapidly changing substrate of programming
+abstractions, execution models, and hardware implementations. It has been
+established, through numerous demonstrations for particular conjunctions of
+application kernel, programming languages, and GPU hardware instance, that it
+is possible to achieve significant improvements in the price/performance and
+energy/performance over general purpose processors. But these demonstrations
+are each the result of significant dedicated programmer labor, which is likely
+to be duplicated for each new GPU hardware architecture to achieve performance
+portability.
+
+This paper discusses the implementation, in the R-Stream compiler, of a source
+to source mapping pathway from a high-level, textbook-style algorithm
+expression method in ANSI C, to multi-GPGPU accelerated computers. The compiler
+performs hierarchical decomposition and parallelization of the algorithm
+between and across host, multiple GPGPUs, and within-GPU. The semantic
+transformations are expressed within the polyhedral model, including
+optimization of integrated parallelization, locality, and contiguity tradeoffs.
+Hierarchical tiling is performed. Communication and synchronizations operations
+at multiple levels are generated automatically. The resulting mapping is
+currently emitted in the CUDA programming language.
+
+The GPU backend adds to the range of hardware and accelerator targets for
+R-Stream and indicates the potential for performance portability of single
+sources across multiple hardware targets.
+"
 }
 
 @inproceedings{Sjodin2009design,
@@ -944,6 +1180,28 @@ and testing.",
  }
 }
 
+@inproceedings{Verdoolaege2009equivalence,
+ author = "Verdoolaege, Sven and Janssens, Gerda and Bruynooghe, Maurice",
+ title = "Equivalence checking of static affine programs using widening to handle recurrences",
+ booktitle = "Computer Aided Verification 21",
+ month = Jun,
+ year = 2009,
+ pages = "599--613",
+ publisher = "Springer",
+ url = "http://www.cs.kuleuven.ac.be/publicaties/rapporten/cw/CW565.pdf",
+ abstract = "
+Designers often apply manual or semi-automatic loop and data transformations on
+array and loop intensive programs to improve performance. The transformations
+should preserve the functionality, however, and this paper presents an
+automatic method for constructing equivalence proofs for the class of static
+affine programs. The equivalence checking is performed on a dependence graph
+abstraction and uses a new approach based on widening to handle recurrences.
+Unlike transitive closure based approaches, this widening approach can also
+handle non-uniform recurrences. The implementation is publicly available and is
+the first of its kind to fully support commutative operations.
+"
+}
+
 @article{Bondhugula2008Pluto,
  author = {Bondhugula, Uday and Hartono, Albert and Ramanujam, J. and Sadayappan, P.},
  title = {A practical automatic polyhedral parallelizer and locality optimizer},
@@ -998,6 +1256,92 @@ and testing.",
     pipelined parallelism at various levels can be detected.
     Preliminary studies of the framework show promising results.
     }
+}
+
+@TECHREPORT{Chen2008chill,
+ author = {Chen, Chun and Chame, Jacqueline and Hall, Mary},
+ title = {A framework for composing high-level loop transformations},
+ institution = {USC},
+ year = {2008},
+ url = "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.214.8396&rep=rep1&type=pdf",
+ abstract = "
+This paper describes a general and robust loop transformation framework that
+enables compilers to generate efficient code on complex loop nests. Despite two
+decades of prior research on loop optimization, performance of
+compiler-generated code often falls short of manually optimized versions, even
+for some well-studied BLAS kernels. There are two primary reasons for this.
+First, today’s compilers employ fixed transformation strategies, making it
+difficult to adapt to different optimization requirements for different
+application codes. Second, code transformations are treated in isolation, not
+taking into account the interactions between different transformations. This
+paper addresses such limitations in a unified framework that supports a broad
+collection of transformations, (permutation, tiling, unroll-and-jam, data
+copying, iteration space splitting, fusion, distribution and others), which go
+beyond existing polyhedral transformation models. This framework is a key
+element of a compiler we are developing which performs empirical optimization
+to evaluate a collection of alternative optimized variants of a code segment. A
+script interface to code generation and empirical search permits transformation
+parameters to be adjusted independently and tested; alternative scripts are
+used to represent different code variants. By applying this framework to
+example codes, we show performance results on automaticallygenerated code for
+the Pentium M and MIPS R10000 that are comparable to the best hand-tuned codes,
+and significantly better (up to a 14x speedup) than the native compilers.
+"
+}
+
+@inproceedings{Vasilache2006real,
+ author = {Nicolas Vasilache and
+           C{\'e}dric Bastoul and
+           Albert Cohen},
+ title = {Polyhedral Code Generation in the Real World},
+ year = {2006},
+ pages = {185-201},
+ booktitle = {International Conference on Compiler Construction (CC)},
+ address = {Vienna},
+ publisher = {Springer},
+ series = {LNCS},
+ volume = {3923},
+ url = "http://icps.u-strasbg.fr/~bastoul/research/papers/VBC06-CC.pdf",
+ abstract = "
+The polyhedral model is known to be a powerful framework to reason about high
+level loop transformations. Recent developments in optimizing compilers broke
+some generally accepted ideas about the limitations of this model. First,
+thanks to advances in dependence analysis for irregular access patterns, its
+applicability which was supposed to be limited to very simple loop nests has
+been extended to wide code regions. Then, new algorithms made it possible to
+compute the target code for hundreds of statements while this code generation
+step was expected not to be scalable. Such theoretical advances and new
+software tools allowed actors from both academia and industry to study more
+complex and realistic cases. Unfortunately, despite strong optimization
+potential of a given transformation for e.g., parallelism or data locality,
+code generation may still be challenging or result in high control overhead.
+This paper presents scalable code generation methods that make possible the
+application of increasingly complex program transformations. By studying the
+transformations themselves, we show how it is possible to benefit from their
+properties to dramatically improve both code generation quality and space/time
+complexity, with respect to the best state-of-the-art code generation tool. In
+addition, we build on these improvements to present a new algorithm improving
+generated code performance for strided domains and reindexed schedules.
+"
+}
+
+@article{Girbal2006,
+ author = {Girbal, Sylvain and Vasilache, Nicolas and Bastoul, C{\'e}dric and Cohen, Albert and Parello, David and Sigler, Marc and Temam, Olivier},
+ title = {Semi-automatic composition of loop transformations for deep parallelism and memory hierarchies},
+ journal = {Int. J. Parallel Program.},
+ issue_date = {June 2006},
+ volume = {34},
+ number = {3},
+ month = jun,
+ year = {2006},
+ issn = {0885-7458},
+ pages = {261--317},
+ numpages = {57},
+ doi = {10.1007/s10766-006-0012-3},
+ acmid = {1165153},
+ publisher = {Kluwer Academic Publishers},
+ address = {Norwell, MA, USA},
+ keywords = {automatic parallelization, compiler optimization, polyhedral model, semi-automatic program transformation},
 }
 
 @PhdThesis{Bastoul2004PhD,
@@ -1063,6 +1407,32 @@ and testing.",
  }
 }
 
+@inproceedings{Darte2001,
+ athor= {Alain Darte and Yves Robert and Fr\'ed\'eric Vivien},
+ booktitle = {Compiler Optimizations for Scalable Parallel Systems: Languages, Compilation Techniques and Run Time Systems},
+ publisher = {Springer Verlag},
+ series = {LNCS},
+ volume = {1808},
+ title = {Loop parallelization algorithms},
+ pages = {141-171},
+ year = {2001},
+ url = "http://graal.ens-lyon.fr/~fvivien/Publications/Chapter-LNCS.pdf",
+ abstract = "
+This chapter is devoted to a comparative survey of loop parallelization
+algorithms. Various algorithms have been presented in the literature, such as
+those introduced by Allen and Kennedy, Wolf and Lam, Darte and Vivien, and
+Feautrier. These algorithms make use of different mathematical tools. Also,
+they do not rely on the same representation of data dependences. In this
+chapter, we survey each of these algorithms, and we assess their power and
+limitations, both through examples and by stating “optimality” results. An
+important contribution of this chapter is to characterize which algorithm is
+the most suitable for a given representation of dependences. This result is of
+practical interest, as it provides guidance for a compiler-parallelizer: given
+the dependence analysis that is available, the simplest and cheapest
+parallelization algorithm that remains optimal should be selected.
+"
+}
+
 @article{Quillere2000,
  author = {Quiller\'{e}, Fabien and Rajopadhye, Sanjay and Wilde, Doran},
  title = {Generation of Efficient Nested Loops from Polyhedra},
@@ -1118,8 +1488,49 @@ distributed.
 @article{Kelly1996omega,
  title = {The Omega calculator and library, version 1.1.0},
  author = {Kelly, Wayne and Maslov, Vadim and Pugh, William and Rosser, Evan and Shpeisman, Tatiana and Wonnacott, Dave},
- year = {1996},
+ year = 1996,
  url={http://www.cs.utah.edu/~mhall/cs6963s09/lectures/omega.ps}
+}
+
+@inproceedings{Kelly1995code,
+ author = "Kelly, Wayne and Pugh, William and Rosser, Evan",
+ title = "Code Generation for Multiple Mappings",
+ booktitle = "The 5th Symposium on the Frontiers of Massively Parallel Computation",
+ address = "McLean, VA",
+ year = 1995,
+ url = "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.23.8696&rep=rep1&type=pdf",
+ abstract = "
+There has been a great amount of recent work toward unifying iteration
+reordering transformations. Many of these approaches represent transformations
+as affine mappings from the original iteration space to a new iteration space.
+These approaches show a great deal of promise, but they all rely on the ability
+to generate code that iterates over the points in these new iteration spaces in
+the appropriate order. This problem has been fairly well-studied in the case
+where all statements use the same mapping. We have developed an algorithm for
+the less well-studied case where each statement uses a potentially different
+mapping. Unlike many other approaches, our algorithm can also generate code
+from mappings corresponding to loop blocking. We address the important
+trade-off between reducing control overhead and duplicating code.
+"
+}
+
+@conference{Kelly1995unifying,
+ author = {Kelly, Wayne and Pugh, William},
+ title = {A unifying framework for iteration reordering transformations},
+ booktitle = {IEEE First Int. Conf. on Algorithms and Architectures for Parallel Processing (ICAPP 95)},
+ volume = {1},
+ year = {1995},
+ month = apr,
+ url = "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.24.1382&rep=rep1&type=ps",
+ abstract = "
+We present a framework for unifying iteration reordering transformations such
+as loop interchange, loop distribution, skewing, tiling, index set splitting
+and statement reordering. The framework is based on the idea that a
+transformation can be represented as a mapping from the original iteration
+space to a new iteration space. The framework is designed to provide a uniform
+way to represent and reason about transformations. We also provide algorithms
+to test the legality of mappings, and to generate optimized code for mappings.
+"
 }
 
 @article{Pugh1994static,
