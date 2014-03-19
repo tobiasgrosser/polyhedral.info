@@ -28,7 +28,7 @@ Compilers
 
  * [Graphite] (http://gcc.gnu.org/wiki/Graphite) (for [GCC](http://www.gcc.org))
  * [IBM XL](http://www.ibm.com/software/awdtools/xlcpp/)
- * [Polly](http://polly.llvm.org) (for [LLVM](http://www.llvm.org))
+ * [Polly](http://polly.llvm.org) (for [LLVM](http://www.llvm.org)), <a class="citation">GROSSER2012POLLY</a>
 
 
 #### Source-to-Source
@@ -64,13 +64,13 @@ Front ends
 Tools and libraries to translate a high level language into a polyhedral representation.
 
  * [clan](http://www.lri.fr/~bastoul/development/clan/index.html)
- * [pet](http://freecode.com/projects/libpet)
+ * [pet](http://freecode.com/projects/libpet), <a class="citation">VERDOOLAEGE2012</a>
 
 Interactive Environments
 ========================
 
- * [iscc] (http://freecode.com/projects/barvinok)
- * [Omega calculator] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
+ * [iscc] (http://freecode.com/projects/barvinok), <a class="citation">VERDOOLAEGE2011IMPACT</a>
+ * [Omega calculator] (http://www.cs.umd.edu/projects/omega/release-1.0.html), <a class="citation">KELLY1996OMEGA</a>
  * [Omega+ calculator] (http://ctop.cs.utah.edu/ctop/?page_id=21)
 
 Libraries
@@ -80,9 +80,9 @@ Libraries to perform calculations on polyhedra.
 
  * [barvinok] (http://freecode.com/projects/barvinok)
  * [IEGenLib] (http://www.cs.colostate.edu/hpc/PIES/iegenlib.php)
- * [isl] (http://freecode.com/projects/isl)
+ * [isl] (http://freecode.com/projects/isl), <a class="citation">VERDOOLAEGE2010ISL</a>
  * [Jolylib] (http://www.reservoir.com/)
- * [Omega] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
+ * [Omega] (http://www.cs.umd.edu/projects/omega/release-1.0.html), <a class="citation">KELLY1996OMEGA</a>
  * [Omega+] (http://ctop.cs.utah.edu/ctop/?page_id=21)
  * [polylib] (http://icps.u-strasbg.fr/polylib/)
  * [piplib] (http://www.piplib.org)
