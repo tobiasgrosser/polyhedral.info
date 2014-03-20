@@ -43,7 +43,7 @@ Compilers
 
 #### Equational Programming
 
- * [AlphaZ] (http://www.cs.colostate.edu/AlphaZ/)
+ * [AlphaZ] (http://www.cs.colostate.edu/AlphaZ/), <a class="citation">YUKI2012ALPHAZ</a>
 
 Dependency analysis
 ===================
