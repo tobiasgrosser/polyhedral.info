@@ -75,6 +75,35 @@ Code Generation for GPUs},
  address = {Orlando, FL, United States},
 }
 
+@InProceedings{Grosser2014Relation,
+ author = 	 {Tobias Grosser and Sven Verdoolaege and Albert Cohen and P. Sadayappan},
+ title =	{The relation between diamond tiling and hexagonal tiling},
+ booktitle = {1st International Workshop on High-Performance Stencil Computations (HiStencils 2014)},
+ address = {Vienna, Austria},
+ month = 	 jan,
+ year = 	 {2014},
+ url = {http://www.exastencils.org/histencils/histencils2014.pdf#page=75},
+ abstract = {
+Iterative stencil computations are important in scientific computing and more
+and more also in the embedded and mobile domain. Recent publications have shown
+that tiling schemes that ensure concurrent start provide efficient ways to
+execute these kernels. Diamond tiling and hybrid-hexagonal tiling are two
+successful tiling schemes that enable concurrent start. Both have different
+advantages: diamond tiling is integrated in a general purpose optimization
+framework and uses a cost function to choose among tiling hyperplanes, whereas
+the more flexible tile sizes of hybrid-hexagonal tiling have proven to be
+effective for the generation of GPU code.
+
+We show that these two approaches are even more interesting when combined. We
+revisit the formalization of diamond and hexagonal tiling, present the effects
+of tile size and wavefront choices on tile-level parallelism, and formulate
+constraints for optimal diamond tile shapes. We then extend the diamond tiling
+formulation into a hexagonal tiling one, combining the benefits of both. The
+paper closes with an outlook of hexagonal tiling in higher dimensional spaces,
+an important generalization suitable for massively parallel architectures.
+}
+}
+
 @inproceedings{Darte2014impact,
  author = {Darte, Alain and Isoard, Alexandre},
  title = {Parametric Tiling with Inter-Tile Data Reuse},
@@ -316,6 +345,37 @@ Abusing such properties can provide arbitrary speedup, which can be some factor
 of millions, potentially threatening the credibility of any experimental
 evaluation using PolyBench.
  }
+}
+
+@inproceedings{Grosser2013split,
+ title={Split tiling for {GPU}s: automatic parallelization using trapezoidal tiles},
+ author={Grosser, Tobias and Cohen, Albert and Kelly, Paul HJ and Ramanujam, J and Sadayappan, P and Verdoolaege, Sven},
+ booktitle={GPGPU-6},
+ pages={24--31},
+ year={2013},
+ organization={ACM},
+ pdf = {http://hal.inria.fr/hal-00786812/PDF/paper.pdf},
+ abstract = {
+Tiling is a key technique to enhance data reuse. For computations structured as
+one sequential outer "time" loop enclosing a set of parallel inner loops,
+tiling only the parallel inner loops may not enable enough data reuse in the
+cache. Tiling the inner loops along with the outer time loop enhances data
+locality but may require other transformations like loop skewing that inhibit
+inter-tile parallelism.
+
+One approach to tiling that enhances data locality without inhibiting
+inter-tile parallelism is split tiling, where tiles are subdivided into a
+sequence of trapezoidal computation steps. In this paper, we develop an
+approach to generate split tiled code for GPUs in the PPCG polyhedral code
+generator. We propose a generic algorithm to calculate index-set splitting that
+enables us to perform tiling for locality and synchronization avoidance, while
+simultaneously maintaining parallelism, without the need for skewing or
+redundant computations. Our algorithm performs split tiling for an arbitrary
+number of dimensions and without the need to construct any large integer linear
+program. The method and its implementation are evaluated on standard stencil
+kernels and compared with a state-of-the-art polyhedral compiler and with a
+domain-specific stencil compiler, both targeting CUDA GPUs.
+}
 }
 
 @ARTICLE{Gonzalez2013tpds,
@@ -727,6 +787,85 @@ data locality and enable load-balanced parallelism are combined with a
 data layout transformation to effectively increase the performance of
 stencil computations. Performance increases are demonstrated for a number
 of stencils on several modern SIMD architectures.
+"
+}
+
+@inproceedings{Bandishti2012,
+ title={Tiling stencil computations to maximize parallelism},
+ author={Bandishti, Vinayaka and Pananilath, Irshad and Bondhugula, Uday},
+ booktitle={Supercomputing},
+ pages={40},
+ year={2012},
+ organization={IEEE Computer Society Press},
+ url={http://www.csa.iisc.ernet.in/~uday/publications/stencils_sc12.pdf},
+ abstract = "
+Most stencil computations allow tile-wise concurrent start, i.e., there always
+exists a face of the iteration space and a set of tiling hyperplanes such that
+all tiles along that face can be started concurrently. This provides load
+balance and maximizes parallelism. However, existing automatic tiling
+frameworks often choose hyperplanes that lead to pipelined start-up and load
+imbalance. We address this issue with a new tiling technique that ensures
+concurrent start-up as well as perfect load-balance whenever possible. We first
+provide necessary and sufficient conditions on tiling hyperplanes to enable
+concurrent start for programs with affine data accesses. We then provide an
+approach to find such hyperplanes. Experimental evaluation on a 12-core Intel
+Westmere shows that our code is able to outperform a tuned domain-specific
+stencil code generator by 4% to 27%, and previous compiler techniques by a
+factor of 2x to 10.14 x.
+"
+}
+
+@inproceedings{Holewinski2012,
+ title={High-performance code generation for stencil computations on {GPU} architectures},
+ author={Holewinski, Justin and Pouchet, Louis-No{\"e}l and Sadayappan, P},
+ booktitle={International Conference on Supercomputing (ICS)},
+ year={2012},
+ url={http://www.cse.ohio-state.edu/~pouchet/doc/ics-article.12.pdf},
+ abstract= "
+Stencil computations arise in many scientific computing domains, and often
+represent time-critical portions of applications. There is significant interest
+in offloading these computations to high-performance devices such as GPU
+accelerators, but these architectures offer challenges for developers and
+compilers alike. Stencil computations in particular require careful attention
+to off-chip memory access and the balancing of work among compute units in GPU
+devices.
+
+In this paper, we present a code generation scheme for stencil computations on
+GPU accelerators, which optimizes the code by trading an increase in the
+computational workload for a decrease in the required global memory bandwidth.
+We develop compiler algorithms for automatic generation of efficient,
+time-tiled stencil code for GPU accelerators from a high-level description of
+the stencil operation. We show that the code generation scheme can achieve high
+performance on a range of GPU architectures, including both nVidia and AMD
+devices.
+"
+}
+
+@inproceedings{Ravishankar2012sc,
+ author = {Ravishankar, Mahesh and Eisenlohr, John and Pouchet, Louis-No{\"e}l
+and Ramanujam, J. and Rountev, Atanas and Sadayappan, P.},
+ title = {Code Generation for Parallel Execution of a Class of Irregular Loops on Distributed Memory Systems},
+ booktitle = {Supercomputing},
+ year = {2012},
+ location = {Salt Lake City, Utah},
+ pages = {1--11},
+ url = {http://www.cse.ohio-state.edu/presto/pubs/sc12.pdf},
+ abstract = "
+Parallelization and locality optimization of affine loop nests has been
+successfully addressed for shared-memory machines. However, many large-scale
+simulation applications must be executed in a distributed-memory environment,
+and use irregular/sparse computations where the control-flow and array-access
+patterns are data-dependent.
+
+In this paper, we propose an approach for effective parallel execution of a
+class of irregular loop computations in a distributed-memory environment, using
+a combination of static and runtime analysis. We discuss algorithms that
+analyze sequential code to generate an inspector and an executor. The inspector
+captures the data-dependent behavior of the computation in parallel and without
+requiring complete replication of any of the data structures used in the
+original computation. The executor performs the computation in parallel. The
+effectiveness of the framework is demonstrated on several benchmarks and a
+climate modeling application.
 "
 }
 
