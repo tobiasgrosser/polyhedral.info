@@ -16,9 +16,9 @@ Code Generators
 Tools and libraries to translate a polyhedral representation into source code.
 
  * [CADGen](https://www.infosun.fim.uni-passau.de/trac/LooPo/wiki/CADGen)
- * [CLooG](http://www.cloog.org)
+ * [CLooG](http://www.cloog.org), <a class="citation">BASTOUL2004CLOOG</a>
  * [CodeGen] (http://www.cs.umd.edu/projects/omega/release-1.0.html)
- * [CodeGen+] (http://ctop.cs.utah.edu/ctop/?page_id=21)
+ * [CodeGen+] (http://ctop.cs.utah.edu/ctop/?page_id=21), <a class="citation">CHEN2012</a>
  * [isl] (http://freecode.com/projects/isl)
 
 Compilers
