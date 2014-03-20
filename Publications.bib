@@ -807,6 +807,34 @@ targeting GPUs and an interactive polyhedral environment.
 "
 }
 
+@inproceedings{Yuki2012alphaz,
+ title={{AlphaZ}: A System for Design Space Exploration in the Polyhedral Model},
+ author={Yuki, Tomofumi and Gupta, Gautam and Kim, DaeGon and Pathan, Tanveer and Rajopadhye, Sanjay},
+ booktitle={Proceedings of the 25th International Workshop on Languages and Compilers for Parallel Computing},
+ year={2012},
+ url={http://people.rennes.inria.fr/Tomofumi.Yuki/papers/yuki-lcpc2012.pdf},
+ abstract={
+The polyhedral model is now a well established and effective formalism for
+program optimization and parallelization. However, finding optimal
+transformations is a long-standing open problem. It is therefore important to
+develop tools that, rather than following predefined optimization criteria,
+allow practitioners to explore different choices through script-driven or
+user-guided transformations. More than practitioners, such flexibility is even
+more important for compiler researchers and auto-tuner developers. In addition,
+tools must also raise the level of abstraction by representing and manipulating
+reductions and scans explicitly. And third, the tools must also be able to
+explore transformation choices that consider memory (re)-allocation.
+
+AlphaZ is a system that allows exploration of optimizing transformations in the
+polyhedral model that meets these goals. We illustrate its power through two
+examples of optimizations that existing parallelization tools cannot perform,
+but can be systematically applied using our system. One is time-tiling of a
+code from PolyBench that resembles the Alternating Direction Implicit (ADI)
+method, and the other is a transformation that brings down the algorithmic
+complexity of a kernel in UNAfold, a sequence alignment software, from O(N^4)
+to O(N^3).}
+}
+
 @InProceedings{Darte2011impact,
   author = 	 {Darte, Alain},
   title = 	 {Keynote: Approximations in the Polyhedral Model},
@@ -1159,6 +1187,15 @@ and testing.",
  url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.158.2112&rep=rep1&type=pdf},
 }
 
+@PhdThesis{Pouchet2010,
+  author = 	 {Louis-No{\"e}l Pouchet},
+  title = 	 {Interative Optimization in the Polyhedral Model},
+  school = 	 {University of Paris-Sud 11},
+  year = 	 {2010},
+  address = 	 {Orsay, France},
+  month = 	 Jan
+}
+
 @article{Baskaran2009,
  author = {Baskaran, Muthu Manikandan and Vydyanathan, Nagavijayalakshmi and
            Bondhugula, Uday Kumar Reddy and Ramanujam, J. and Rountev, Atanas
@@ -1309,6 +1346,41 @@ example codes, we show performance results on automaticallygenerated code for
 the Pentium M and MIPS R10000 that are comparable to the best hand-tuned codes,
 and significantly better (up to a 14x speedup) than the native compilers.
 "
+}
+
+@phdthesis{Vasilache2007PhD,
+ author = {Vasilache, Nicolas T.},
+ keywords = {model, optimization, polyhedral, scalable, thesis, vasilache},
+ month = {September},
+ school = {Universit\'{e} Paris Sud XI, Orsay},
+ title = {Scalable Program Optimization Techniques in the Polyhedral Model},
+ year = {2007},
+ url = {http://www.researchgate.net/publication/230759973_Scalable_Program_Optimization_Techniques_in_the_Polyhedral_Model/file/9fcfd503fb50e9ef18.pdf},
+ abstract = {
+Limited by ever-increasing power consumption and control complexity, current
+processors have evolved to multiprocessor architectures on a chip with
+increasingly many cores per chip and multiple threads per core. Compilers are
+responsible for translating the idealistic operational semantics of the source
+program into a form that makes efficient use of a highly complex heterogeneous
+machine.
+
+The polyhedral model is a sound mathematical abstraction to represent programs
+with affine control loops. It alleviates many tradeoffs hampering current
+optimizing compilers.  In the first part of this thesis, we discuss the
+problems faced by compilers. We abstract from these and show how a
+semi-automatic approach alleviates the user from producing complex code for
+long sequences of transformations. In the second part, we discuss the
+scheduling problem. We provide a new formulation to express the set of all
+legal multidimensional schedules in a single optimization problem. We take a
+fresh look at dependence analysis and program legality. This allows us to
+devise a complex sequences automatic correction process to fix illegal
+transformations. In the third part we discuss the code generation issues and
+build the first fully reentrant framework based on the polyhedral model. We
+introduce the concept of code generation optimizing transformations and
+schedule equivalence to tailor syntactical optimizations at the finest possible
+grain.  All the contributions have been implemented either in the URU K
+framework on top of the Open64 compiler, or as part of IBM’s XLC compiler.
+}
 }
 
 @inproceedings{Vasilache2006real,
@@ -1507,11 +1579,68 @@ distributed.
   url={http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.2146&rep=rep1&type=pdf}
 }
 
+@inbook{Feautrier1996automatic,
+ author = "Paul Feautrier",
+ chapter = "Automatic Parallelization in the Polytope Model",
+ title = "The Data Parallel Programming Model",
+ year = "1996",
+ publisher = "Springer-Verlag",
+ volume = "1132",
+ series = "LNCS",
+ url = {http://www.researchgate.net/publication/2508644_Automatic_Parallelization_in_the_Polytope_Model/file/5046351a4f6b578814.pdf},
+ abstract = "
+The aim of this paper is to explain the importance of polytope and polyhedra in
+automatic parallelization. We show that the semantics of parallel programs is
+best described geometrically, as properties of sets of integral points in
+n-dimensional spaces, where n is related to the maximum nesting depth of DO
+loops. The needed properties translate nicely to properties of polyhedra, for
+which many algorithms have been designed for the needs of optimization and
+operation research. We show how these ideas apply to scheduling, placement and
+parallel code generation.
+"
+}
+
 @article{Kelly1996omega,
  title = {The Omega calculator and library, version 1.1.0},
  author = {Kelly, Wayne and Maslov, Vadim and Pugh, William and Rosser, Evan and Shpeisman, Tatiana and Wonnacott, Dave},
  year = 1996,
  url={http://www.cs.utah.edu/~mhall/cs6963s09/lectures/omega.ps}
+}
+
+@phdthesis{Kelly96optimization,
+ author = "Wayne Kelly",
+ title = "Optimization within a Unified Transformation Framework",
+ number = "CS-TR-3725",
+ institution =   "Dept. of CS, Univ. of Maryland, College Park",
+ year = "1996",
+ url = "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.24.8219&rep=rep1&type=pdf"
+}
+
+@article{Creusillet1996,
+ author = {Creusillet, B\'{e}atrice and Irigoin, Francois},
+ title = {Interprocedural array region analyses},
+ journal = {International Journal of Parallel Programming},
+ volume = {24},
+ issue = {6},
+ month = {December},
+ year = {1996},
+ issn = {0885-7458},
+ url = "http://link.springer.com/chapter/10.1007/BFb0014191",
+ abstract = "
+Many program optimizations require exact knowledge of the sets of array
+elements that are referenced in or that flow between statements or procedures.
+Some examples are array privatization, generation of communications in
+distributed memory machines, or compile-time optimization of cache behavior in
+hierarchical memory machines.
+
+Exact array region analysis is introduced in this article. These regions
+exactly represent the effects of statements and procedures upon array
+variables. To represent the flow of these data, we also introduce two new types
+of array region analyses: IN and OUT regions.
+
+The intraprocedural propagation is presented, as well as a general linear
+framework for interprocedural analyses, that handles array reshapes.
+"
 }
 
 @inproceedings{Kelly1995code,
@@ -1629,6 +1758,39 @@ compare our work with that of Tu and Padua, a representative
 approximate scheme for array privatization.
 },
   url={http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.22.8688&rep=rep1&type=pdf},
+}
+
+@inproceedings{Maslov1994lazy,
+ author = {Maslov, Vadim},
+ booktitle = {POPL},
+ editor = {Boehm, Hans-Juergen and Lang, Bernard and Yellin, Daniel M.},
+ isbn = {0-89791-636-0},
+ publisher = {ACM Press},
+ title = {Lazy Array Data-Flow Dependence Analysis},
+ year = 1994,
+ url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.37.9427&rep=rep1&type=pdf},
+ abstract = "
+Automatic parallelization of real FORTRAN programs does not live up to users
+expectations yet, and dependence analysis algorithms which either produce too
+many false dependences or are too slow to contribute significantly to this. In
+this paper we introduce dataflow dependence analysis algorithm which exactly
+computes value-based dependence relations for program fragments in which all
+subscripts, loop bound and IF conditions are affine. Our algorithm also
+computes good affine approximations of dependence relations for non-affine
+program fragments. Actually, we do not know about any other algorithm which can
+compute better approximations. And our algorithm is efficient too, because it
+is lazy. When searching for write statements that supply values used by a given
+read statement, it starts with statements which are lexicographically close to
+the read statement in iteration space. Then if some of the read statement
+instances are not “satisfied” with these close writes, the algorithm broadens
+its search scope by looking into more distant writes. The search scope keeps
+broadening until all read instances are satisfied or no write candidates are
+left. We timed our algorithm on several benchmark programs and the timing
+results suggest that our algorithm is fast enough to be used in commercial
+compilers—it usually takes 5 to 15 percent of f77 -02 compilation time to
+analyze a program. Most programs in the 100-line range take less than 1 second
+to analyze on a SUN SparcStation IPX.
+"
 }
 
 @article{Feautrier1992multi,
