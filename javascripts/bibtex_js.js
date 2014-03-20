@@ -257,6 +257,7 @@ function BibtexDisplay() {
     value = value.replace(/\\'\{e\}/g, '&eacute;');
     value = value.replace(/\{(.*?)\}/g, '$1');
     value = value.replace(/\\c{C}/g, '&Ccedil;');
+    value = value.replace(/\\\^\\i/g, '&icirc;');
     value = value.replace(/\\c{c}/g, '&ccedil;');
     return value;
   }
