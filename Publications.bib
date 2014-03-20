@@ -923,6 +923,15 @@ report on significant speedups.
  url = {http://www.worldscientific.com/doi/abs/10.1142/S0129626412500107}
 }
 
+@InProceedings{Vasilache2012,
+ author = 	 {Nicolas Vasilache and Benoit Meister and Muthu Baskaran and Richard Lethin},
+ title =	{Joint Scheduling and Layout Optimization to Enable Multi-Level Vectorization},
+ booktitle = {IMPACT},
+ address = {Paris, France},
+ month = 	 jan,
+ year = 	 {2012}
+}
+
 @InProceedings{Verdoolaege2012,
  author = {Verdoolaege, Sven and Grosser, Tobias },
  title = {Polyhedral Extraction Tool},
@@ -1487,6 +1496,60 @@ and significantly better (up to a 14x speedup) than the native compilers.
 "
 }
 
+@article{Verdoolaege2007parametric,
+ author = "Verdoolaege, Sven and Seghir, Rachid and Beyls, Beyls and Loechner, Vincent and Bruynooghe, Maurice",
+ title = "Counting integer points in parametric polytopes using {Barvinok}'s rational functions",
+ journal = "Algorithmica",
+ year = 2007,
+ volume = 48,
+ number = 1,
+ month = jun,
+ publisher = "Springer New York",
+ pages = "37--66",
+ url = {http://dtai.cs.kuleuven.be/publications/files/41970.pdf},
+ abstract = "
+Many compiler optimization techniques depend on the ability to calculate the
+number of elements that satisfy certain conditions. If these conditions can be
+represented by linear constraints, then such problems are equivalent to
+counting the number of integer points in (possibly) parametric polytopes. It is
+well known that the enumerator of such a set can be represented by an explicit
+function consisting of a set of quasi-polynomials, each associated with a
+chamber in the parameter space. Previously, interpolation was used to obtain
+these quasi-polynomials, but this technique has several disadvantages. Its
+worst-case computation time for a single quasi-polynomial is exponential in the
+input size, even for fixed dimensions. The worst-case size of such a
+quasi-polynomial (measured in bits needed to represent the quasi-polynomial) is
+also exponential in the input size. Under certain conditions this technique
+even fails to produce a solution. Our main contribution is a novel method for
+calculating the required quasi-polynomials analytically. It extends an existing
+method, based on Barvinok's decomposition, for counting the number of integer
+points in a non-parametric polytope. Our technique always produces a solution
+and computes polynomially-sized enumerators in polynomial time (for fixed
+dimensions). 
+"
+}
+
+@inproceedings{Krishnamoorthy2007,
+ author = {Krishnamoorthy, Sriram and Baskaran, Muthu and Bondhugula, Uday and Ramanujam, J. and Rountev, Atanas and Sadayappan, P.},
+ title = {Effective automatic parallelization of stencil computations},
+ booktitle = {Conference on Programming Language Design and Implementation (PLDI)},
+ year = {2007},
+ pages = {235--244},
+ url = {http://drona.csa.iisc.ernet.in/~uday/publications/uday-pldi07.pdf},
+ abstract = {
+Performance optimization of stencil computations has been widely studied in the
+literature, since they occur in many computationally intensive scientific and
+engineering applications. Compiler frameworks have also been developed that can
+transform sequential stencil codes for optimization of data locality and
+parallelism. However, loop skewing is typically required in order to tile
+stencil codes along the time dimension, resulting in load imbalance in
+pipelined parallel execution of the tiles. In this paper, we develop an
+approach for automatic parallelization of stencil codes, that explicitly
+addresses the issue of load-balanced execution of tiles. Experimental results
+are provided that demonstrate the effectiveness of the approach.
+}
+}
+
 @phdthesis{Vasilache2007PhD,
  author = {Vasilache, Nicolas T.},
  keywords = {model, optimization, polyhedral, scalable, thesis, vasilache},
@@ -2020,6 +2083,27 @@ to analyze on a SUN SparcStation IPX.
   array and scalar expansion, program verification and parallel program
   construction.
  }
+}
+
+@InProceedings{Irigoin1988,
+ author = 	 {Irigoin, Francois and Triolet, Remi},
+ title = 	 {Supernode Partitioning},
+ booktitle = 	 {Symposium on Principles of Programming Languages (POPL)},
+ pages =	 {319--328},
+ year =	 1988,
+ address =	 {San Diego, CA},
+ month =	 jan,
+ url = {http://ssh.cri.ensmp.fr/classement/doc/A-179.pdf},
+ abstract = "
+Supercompilers must reschedule computations defined by nested DO-loops in order
+to make an efficient use of supercomputer features (vector units, multiple
+elementary processors, cache memory, etc…). Many rescheduling techniques like
+loop interchange, loop strip-mining or rectangular partitioning have been
+described to speedup program execution. We present here a class of
+partitionings that encompasses previous techniques and provides enough
+flexibility to adapt code to multiprocessors with two levels of parallelism and
+two levels of memory.
+"
 }
 
 @inproceedings{Ancourt1991scanning,
