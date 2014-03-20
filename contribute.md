@@ -16,7 +16,7 @@ How?
 Just send an email to [polyhedral@grosser.es](mailto:polyhedral@grosser.es) and the
 content will be integrated.
 
-### Diretly change the repository
+### Directly change the repository
 
 #### 1. Clone the website
 
