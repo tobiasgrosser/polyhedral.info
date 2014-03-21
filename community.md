@@ -1,9 +1,9 @@
 ---
 layout: default
-title: People
+title: Community
 ---
 
-People
+Community
 ======
 
 This is a non-exhaustive list of people involved in the polyhedral community.
