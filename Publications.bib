@@ -983,6 +983,13 @@ complexity of a kernel in UNAfold, a sequence alignment software, from O(N^4)
 to O(N^3).}
 }
 
+@misc{Pouchet2011polyopt,
+  title={Polyopt, a polyhedral optimizer for the rose compiler},
+  author={Pouchet, Louis-No{\"e}l},
+  year={2011},
+  publisher={July}
+}
+
 @InProceedings{Darte2011impact,
   author = 	 {Darte, Alain},
   title = 	 {Keynote: Approximations in the Polyhedral Model},
@@ -1170,6 +1177,90 @@ for CPUs and GPU accelerators, C source code and even hardware descriptions can
 be targeted.
 },
   url = {http://perso.ens-lyon.fr/christophe.alias/impact2011/impact-07.pdf},
+}
+
+@article{Belaoucha2010fadalib,
+ title={FADAlib: an open source C++ library for fuzzy array dataflow analysis},
+ author={Belaoucha, Marouane and Barthou, Denis and Eliche, Adrien and Touati, Sid-Ahmed-Ali},
+ journal={Procedia Computer Science},
+ volume={1},
+ number={1},
+ pages={2075--2084},
+ year={2010},
+ publisher={Elsevier},
+ url={http://www-sop.inria.fr/members/Sid.Touati/publis/Touati-PAPP2010.pdf},
+ abstract={
+Ubiquitous multicore architectures require that many levels of parallelism have
+to be found in codes. Dependence analysis is the main approach in compilers for
+the detection of parallelism. It enables vectorisation and automatic
+parallelisation, among many other optimising transformations, and is therefore
+of crucial importance for optimising compilers. This paper presents new open
+source software, \texttt{FADAlib}, performing an instance-wise dataflow
+analysis for scalar and array references. The software is a C++ implementation
+of the Fuzzy Array Dataflow Analysis (FADA) method. This method can be applied
+on codes with irregular control such as \texttt{while}-loops,
+\texttt{if-then-else} or non-regular array accesses, and computes exact
+instance-wise dataflow analysis on regular codes. As far as we know,
+\texttt{FADAlib} is the first released open source C++ implementation of
+instance-wise data flow dependence handling larger classes of programs. In
+addition, the library is technically independent from an existing compiler; It
+can be plugged in many of them; this article shows an example of a successful
+integration inside gcc/GRAPHITE. We give details concerning the library
+implementation and then report some initial results with gcc and possible use
+for trace scheduling on irregular codes.
+}
+}
+
+@article{Verdoolaege2010Experience,
+ title={Experience with widening based equivalence checking in realistic multimedia systems},
+ author={Verdoolaege, Sven and Palkovi{\v{c}}, Martin and Bruynooghe, Maurice and Janssens, Gerda and Catthoor, Francky},
+ journal={Journal of Electronic Testing},
+ volume={26},
+ number={2},
+ pages={279--292},
+ year={2010},
+ publisher={Springer},
+ url={http://www.cs.kuleuven.be/publicaties/rapporten/cw/CW572.pdf},
+ abstract={
+The application of loop and data transformations to array and loop intensive
+programs is crucial to obtain a good performance. Designers often apply these
+transformations manually or semi-automatically. For the class of static affine
+programs, automatic methods exist for proving the correctness of these
+transformations. Realistic multimedia systems, however, often contain
+constructs that fall outside of this class. We present an extension of a
+widening based approach to handle the most relevant of these constructs, viz.
+accesses to array slices, data dependent accesses and data dependent
+assignments, and report on some experiments with non-trivial applications.
+}
+}
+
+@inproceedings{Nadezhkin2010translating,
+ title={Translating affine nested-loop programs with dynamic loop bounds into polyhedral process networks},
+ author={Nadezhkin, Dmitry and Nikolov, Hristo and Stefanov, Todor},
+ booktitle={Embedded Systems for Real-Time Multimedia (ESTIMedia), 2010 8th IEEE Workshop on},
+ pages={21--30},
+ year={2010},
+ organization={IEEE},
+ url={http://www.researchgate.net/publication/221536495_Translating_affine_nested-loop_programs_with_dynamic_loop_bounds_into_Polyhedral_Process_Networks/file/50463519f145f25b63.pdf},
+ abstract={
+The Process Network (PN) is a suitable parallel model of computation (MoC) used
+to specify embedded streaming applications in a parallel form facilitating the
+efficient mapping onto embedded parallel execution platforms. Unfortunately,
+specifying an application using a parallel MoC is very difficult and highly
+error-prone task. To overcome the associated difficulties, an automated
+procedure exists for derivation of a specific polyhedral process networks (PPN)
+from static affine nested loop programs (SANLPs). This procedure is implemented
+in the pn complier. However, there are many applications, e.g., multimedia
+applications (MPEG coders/decoders, smart cameras, etc.) that have adaptive and
+dynamic behavior which can not be expressed as SANLPs. Therefore, in order to
+handle more dynamic multimedia applications, in this paper we address the
+important question whether we can relax some of the restrictions of the SANLPs
+while keeping the ability to perform compile-time analysis and to derive PPNs.
+Achieving this would significantly extend the range of applications that can be
+parallelized in an automated way. The main contribution of this paper is a
+first approach for automated translation of affine nested loops programs with
+dynamic loop bounds into input-output equivalent polyhedral process networks.
+}
 }
 
 @inproceedings{Bondhugula2010xlc,
@@ -1409,6 +1500,38 @@ the first of its kind to fully support commutative operations.
 "
 }
 
+@article{Bagnara2008parma,
+ title={The Parma Polyhedra Library: Toward a complete set of numerical abstractions for the analysis and verification of hardware and software systems},
+ author={Bagnara, Roberto and Hill, Patricia M and Zaffanella, Enea},
+ journal={Science of Computer Programming},
+ volume={72},
+ number={1},
+ pages={3--21},
+ year={2008},
+ publisher={Elsevier},
+ url={http://bugseng.com/products/ppl/documentation/BagnaraHZ08SCP.pdf},
+ abstract={
+Since its inception as a student project in 2001, initially just for the
+handling (as the name implies) of convex polyhedra, the Parma Polyhedra Library
+has been continuously improved and extended by joining scrupulous research on
+the theoretical foundations of (possibly non-convex) numerical abstractions to
+a total adherence to the best available practices in software development. Even
+though it is still not fully mature and functionally complete, the Parma
+Polyhedra Library already offers a combination of functionality, reliability,
+usability and performance that is not matched by similar, freely available
+libraries. In this paper, we present the main features of the current version
+of the library, emphasizing those that distinguish it from other similar
+libraries and those that are important for applications in the field of
+analysis and verification of hardware and software systems.
+}
+}
+
+@misc{Bastoul2008clan,
+  title={Clan - A polyhedral representation extractor for high level programs},
+  author={Bastoul, Cedric},
+  year={2008},
+}
+
 @article{Bondhugula2008Pluto,
  author = {Bondhugula, Uday and Hartono, Albert and Ramanujam, J. and Sadayappan, P.},
  title = {A practical automatic polyhedral parallelizer and locality optimizer},
@@ -1493,6 +1616,65 @@ used to represent different code variants. By applying this framework to
 example codes, we show performance results on automaticallygenerated code for
 the Pentium M and MIPS R10000 that are comparable to the best hand-tuned codes,
 and significantly better (up to a 14x speedup) than the native compilers.
+"
+}
+
+@inproceedings{Alias2007bee,
+ title={Bee+ cl@ k: An implementation of lattice-based array contraction in the source-to-source translator rose},
+ author={Alias, Christophe and Baray, Fabrice and Darte, Alain},
+ booktitle={ACM SIGPLAN Notices},
+ volume={42},
+ number={7},
+ pages={73--82},
+ year={2007},
+ organization={ACM},
+ url = {http://perso.ens-lyon.fr/christophe.alias/pub/lctes2007.pdf},
+ abstract = {
+ We build on prior work on intra-array memory reuse, for which a general
+theoretical framework was proposed based on lattice theory. Intra-array memory
+reuse is a way of reducing the size of a temporary array by folding, thanks to
+affine mappings and modulo operations, reusing memory locations when they
+contain a value not used later. We describe the algorithms needed to implement
+such a strategy. Our implementation has two parts. The first part, Bee, uses
+the source-to-source transformer ROSE to extract from the program all necessary
+information on the lifetime of array elements and to generate the code after
+memory reduction. The second part, Cl@k, is a stand-alone mathematical tool
+dedicated to optimizations on polyhedra, in particular the computation of
+successive minima and the computation of good admissible lattices, which are
+the basis for lattice-based memory reuse. Both tools are developed in C++ and
+use linear programming and polyhedra manipulations. They can be used either for
+embedded program optimizations, e.g., to limit memory expansion introduced for
+parallelization, or in high-level synthesis, e.g., to design memories between
+communicating hardware accelerators.
+}
+}
+
+@article{Verdoolaege2007pn,
+ title={PN: a tool for improved derivation of process networks},
+ author={Verdoolaege, Sven and Nikolov, Hristo and Stefanov, Todor},
+ journal={EURASIP journal on Embedded Systems},
+ volume={2007},
+ number={1},
+ pages={19--19},
+ year={2007},
+ publisher={Hindawi Publishing Corp.},
+ url= {http://artemisia.liacs.nl/publications/Verdoolaege2007PN.pdf},
+ abstract = "
+Current emerging embedded System-on-Chip platforms are increasingly becoming
+multiprocessor architectures. System designers experience significant
+difficulties in programming these platforms. The applications are typically
+specified as sequential programs that do not reveal the available parallelism
+in an application, thereby hindering the effcient mapping of an application
+onto a parallel multiprocessor platform. In this paper, we present our compiler
+techniques for facilitating the migration from a sequential application
+specification to a parallel application specification using the process network
+model of computation. Our work is inspired by a previous research project
+called Compaan. With our techniques we address optimization issues such as the
+generation of process networks with simplified topology and communication
+without sacrificing the process networks' performance. Moreover, we describe a
+technique for compile-time memory requirement estimation which we consider as
+an important contribution of this paper. We demonstrate the usefulness of our
+techniques on several examples.
 "
 }
 
@@ -1585,6 +1767,14 @@ framework on top of the Open64 compiler, or as part of IBM’s XLC compiler.
 }
 }
 
+@article{Schweitz2006rstream,
+ title={R-stream: A parametric high level compiler},
+ author={Schweitz, Eric and Lethin, Richard and Leung, Allen and Meister, Benoit},
+ journal={Proceedings of HPEC},
+ year={2006},
+ url={http://llwww.ll.mit.edu/HPEC/agendas/proc06/Day2/21_Schweitz_Pres.pdf},
+}
+
 @inproceedings{Vasilache2006real,
  author = {Nicolas Vasilache and
            C{\'e}dric Bastoul and
@@ -1621,6 +1811,39 @@ generated code performance for strided domains and reindexed schedules.
 "
 }
 
+@inproceedings{Pop2006graphite,
+ title={GRAPHITE: Polyhedral analyses and optimizations for GCC},
+ author={Pop, Sebastian and Cohen, Albert and Bastoul, C{\'e}dric and Girbal, Sylvain and Silber, Georges-Andr{\'e} and Vasilache, Nicolas},
+ booktitle={Proceedings of the 2006 GCC Developers Summit},
+ pages={2006},
+ year={2006},
+ pdf = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.307.1260&rep=rep1&type=pdf#page=185},
+ abstract = {
+We present a plan to add loop nest optimizations in GCC based on polyhedral
+representations of loop nests. We advocate a static analysis approach based on
+a hierarchy of interchangeable abstractions with solvers that range from the
+exact solvers such as OMEGA, to faster but less precise solvers based on more
+coarse abstractions. The intermediate representation GRAPHITE (GIMPLE
+Represented as Polyhedra with Interchangeable Envelopes), built on GIMPLE and
+the natural loops, hosts the high level loop transformations. We base this
+presentation on the WRaP-IT project developed in the Alchemy group at INRIA
+Futurs and Paris-Sud University, on the PIPS compiler developed at École des
+mines de Paris, and on a joint work with several members of the static analysis
+and polyhedral compilation community in France. The main goal of this project
+is to bring more high level loop optimizations to GCC: loop fusion, tiling,
+strip mining, etc. Thanks to the WRaP-IT experience, we know that the
+polyhedral analyzes and transformations are affordable in a production
+compiler. A second goal of this project is to experiment with compile time
+reduction versus attainable precision when replacing operations on polyhedra
+with faster operations on more abstract domains. However, the use of a too
+coarse representation for computing might also result in an over approximated
+solution that cannot be used in subsequent computations. There exists a trade
+off between speed of the computation and the attainable precision that has not
+yet been analyzed for real world programs.
+}
+}
+
+
 @article{Girbal2006,
  author = {Girbal, Sylvain and Vasilache, Nicolas and Bastoul, C{\'e}dric and Cohen, Albert and Parello, David and Sigler, Marc and Temam, Olivier},
  title = {Semi-automatic composition of loop transformations for deep parallelism and memory hierarchies},
@@ -1638,6 +1861,13 @@ generated code performance for strided domains and reindexed schedules.
  publisher = {Kluwer Academic Publishers},
  address = {Norwell, MA, USA},
  keywords = {automatic parallelization, compiler optimization, polyhedral model, semi-automatic program transformation},
+}
+
+@phdthesis{Stefanov2004phd,
+  title={Converting weakly dynamic programs to equivalent process network specifications},
+  author={Stefanov, Todor},
+  year={2004},
+  publisher={T. Stefanov}
 }
 
 @PhdThesis{Bastoul2004PhD,
@@ -1754,6 +1984,55 @@ parallelization algorithm that remains optimal should be selected.
  }
 }
 
+@misc{Loechner1999polylib,
+ title={PolyLib: A library for manipulating parameterized polyhedra},
+ author={Loechner, Vincent},
+ year={1999},
+ url={http://camlunity.ru/swap/Library/Conflux/Techniques%20-%20Code%20Analysis%20and%20Transformations%20(Polyhedral)/Free%20Libraries/polylib.ps}
+}
+
+@article{Kelly1995petit,
+  title={New user interface for Petit and other interfaces: user guide},
+  author={Kelly, W and Maslov, V and Pugh, W and Rosser, E and Shpeisman, T and Wonnacott, D},
+  journal={University of Maryland},
+  year={1995}
+}
+
+@inproceedings{Collard1995fuzzy,
+ title={Fuzzy array dataflow analysis},
+ author={Collard, Jean-Fran{\c{c}}ois and Barthou, Denis and Feautrier, Paul},
+ booktitle={ACM SIGPLAN Notices},
+ volume={30},
+ number={8},
+ pages={92--101},
+ year={1995},
+ organization={ACM},
+ url={http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.47.187&rep=rep1&type=pdf},
+ abstract={
+Exact array dataflow analysis can be achieved in the general case if the only
+control structures are do-loops and structural ifs, and if loop counter bounds
+and array subscripts are affine expressions of englobing loop counters and
+possibly some integer constants. In this paper, we begin the study of dataflow
+analysis of dynamic control programs, where arbitrary ifs and whiles are
+allowed. In the general case, this dataflow analysis can only be fuzzy.
+}
+}
+
+@book{Catthoor1998custom,
+ title={Custom memory management methodology: Exploration of memory organisation for embedded multimedia system design},
+ author={Catthoor, Francky and Greef, Eddy de and Suytack, Sven},
+ year={1998},
+ publisher={Kluwer Academic Publishers},
+}
+
+@article{Geigl1997,
+  title={Parallelization of loop nests with general bounds in the polyhedron model},
+  author={Geigl, Max},
+  journal={Master's thesis, Universit at Passau},
+  year={1997},
+  publisher={Citeseer}
+}
+
 @article{Loechner1997parameterized,
   title={Parameterized polyhedra and their vertices},
   author={Loechner, Vincent and Wilde, Doran K},
@@ -1779,6 +2058,17 @@ polyhedra based on the Polyhedral Library has been written in C and is freely
 distributed. 
 },
   url={http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.2146&rep=rep1&type=pdf}
+}
+
+@inproceedings{Griebl1996loopo,
+ title={The loop parallelizer LooPo},
+ author={Griebl, Martin and Lengauer, Christian},
+ booktitle={Proc. Sixth Workshop on Compilers for Parallel Computers},
+ volume={21},
+ pages={311--320},
+ year={1996},
+ organization={Citeseer},
+ url={http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.30.6700&rep=rep1&type=pdf},
 }
 
 @inbook{Feautrier1996automatic,
@@ -1843,6 +2133,25 @@ of array region analyses: IN and OUT regions.
 The intraprocedural propagation is presented, as well as a general linear
 framework for interprocedural analyses, that handles array reshapes.
 "
+}
+
+@inproceedings{Amarasinghe1995overview,
+ title={An Overview of the SUIF Compiler for Scalable Parallel Machines.},
+ author={Amarasinghe, Saman P and Anderson, Jennifer-Ann M and Lam, Monica S and Tseng, Chau-Wen},
+ booktitle={PPSC},
+ pages={662--667},
+ year={1995},
+ url={http://www.researchgate.net/publication/2646829_Chapter_1_An_Overview_of_the_SUIF_Compiler_for_Scalable_Parallel_Machines/file/60b7d5193bc4fef52b.pdf},
+ abstract={
+We are building a compiler that automatically translates sequential scientic
+programs into parallel code for scalable parallel machines. Many of the
+compiler techniques needed to generate correct and effcient code are common
+across all scalable machines, regardless of whether its address space is shared
+or distributed. This paper describes the structure of the compiler, emphasizing
+the common analyses and optimizations. We focus on the three major phases of
+the compiler: parallelism and locality analysis, communication and
+synchronization analysis, and code generation.
+}
 }
 
 @inproceedings{Kelly1995code,
