@@ -318,7 +318,11 @@ function BibtexDisplay() {
 	keys[key] = true;
      });
 
-    this.displayBibtexCited(input,  $("#bibtex_display_citations"), keys);
+    var KeyToIdx = this.displayBibtexCited(input,  $("#bibtex_display_citations"), keys);
+
+    $('body').find('a.citation').each(function() {
+	this.text = KeyToIdx[this.text]
+     });
 
     if ($('a.citation').length)
       $("#bibtex_display_citations").prepend("<h2 id='Bibliography'>Bibliography</h2>");
@@ -349,10 +353,10 @@ function BibtexDisplay() {
       if (keys[entryKey])
 	entriesCited[entryKey] = entries[entryKey];
 
-    this.printBibtex(entriesCited, output);
+    return this.printBibtex(entriesCited, output);
   }
 
-  this.printBibtexEntry = function(entry, entryKey) {
+  this.printBibtexEntry = function(entry, entryKey, i) {
     // find template
     var tpl = $(".bibtex_template").clone().removeClass('bibtex_template');
     
@@ -388,6 +392,8 @@ function BibtexDisplay() {
       value = value.replace(/\n\n/g, '</p><p>');
       entry.entries['ABSTRACT'] = '<p>' + value + '</p>';
     }
+
+    entry.entries['TITLE'] = '[' + i + '] ' + entry.entries['TITLE'];
 
     // find all ifs and check them
     var removed = false;
@@ -465,6 +471,8 @@ function BibtexDisplay() {
   this.printBibtex = function(entries, output) {
     // save old entries to remove them later
     var old = output.find("*");
+    var i = 1;
+    var KeyToIdx = {};
 
     years = [];
 
@@ -482,13 +490,16 @@ function BibtexDisplay() {
       for (var entryKey in entries) {
         entry = entries[entryKey];
         if (entry.entries["YEAR"] == year) {
-          outputGroup.append(this.printBibtexEntry(entry, entryKey));
+          outputGroup.append(this.printBibtexEntry(entry, entryKey, i));
+          KeyToIdx[entryKey] = i;
+          i = i + 1;
 	}
       }
     }
     
     // remove old entries
     old.remove();
+    return KeyToIdx;
   }
 
 }
