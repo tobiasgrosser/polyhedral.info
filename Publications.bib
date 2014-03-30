@@ -347,6 +347,38 @@ evaluation using PolyBench.
  }
 }
 
+@inproceedings{Kong2013polyhedral,
+ title={When polyhedral transformations meet SIMD code generation},
+ author={Kong, Martin and Veras, Richard and Stock, Kevin and Franchetti, Franz and Pouchet, Louis-No{\"e}l and Sadayappan, P},
+ booktitle={Proceedings of the 34th ACM SIGPLAN conference on Programming language design and implementation},
+ pages={127--138},
+ year={2013},
+ organization={ACM},
+ url={http://users.ece.cmu.edu/~franzf/papers/pldi13.pdf},
+ abstract={
+Data locality and parallelism are critical optimization objectives for
+performance on modern multi-core machines. Both coarse-grain parallelism (e.g.,
+multi-core) and fine-grain parallelism (e.g., vector SIMD) must be effectively
+exploited, but despite decades of progress at both ends, current compiler
+optimization schemes that attempt to address data locality and both kinds of
+parallelism often fail at one of the three objectives.
+
+We address this problem by proposing a 3-step framework, which aims for
+integrated data locality, multi-core parallelism and SIMD execution of
+programs. We define the concept of vectorizable codelets, with properties
+tailored to achieve effective SIMD code generation for the codelets. We
+leverage the power of a modern high-level transformation framework to
+restructure a program to expose good ISA-independent vectorizable codelets,
+exploiting multi-dimensional data reuse. Then, we generate ISA-specific
+customized code for the codelets, using a collection of lower-level
+SIMD-focused optimizations.
+
+We demonstrate our approach on a collection of numerical kernels that we
+automatically tile, parallelize and vectorize, exhibiting significant
+performance improvements over existing compilers.
+}
+}
+
 @inproceedings{Grosser2013split,
  title={Split tiling for {GPU}s: automatic parallelization using trapezoidal tiles},
  author={Grosser, Tobias and Cohen, Albert and Kelly, Paul HJ and Ramanujam, J and Sadayappan, P and Verdoolaege, Sven},
@@ -1178,6 +1210,37 @@ be targeted.
 },
   url = {http://perso.ens-lyon.fr/christophe.alias/impact2011/impact-07.pdf},
 }
+
+@inproceedings{Baskaran2010ctocuda,
+ title={Automatic C-to-CUDA code generation for affine programs},
+ author={Baskaran, Muthu Manikandan and Ramanujam, Jj and Sadayappan, P},
+ booktitle={Compiler Construction},
+ pages={244--263},
+ year={2010},
+ organization={Springer},
+ url = {http://www.researchgate.net/publication/221302775_Automatic_C-to-CUDA_Code_Generation_for_Affine_Programs/file/79e4150e7f97085734.pdf},
+ abstract = {
+Graphics Processing Units (GPUs) offer tremendous computational power. CUDA
+(Compute Unified Device Architecture) provides a multi-threaded parallel
+programming model, facilitating high performance implementations of
+general-purpose computations. However, the explicitly managed memory hierarchy
+and multi-level parallel view make manual development of high-performance CUDA
+code rather complicated. Hence the automatic transformation of sequential input
+programs into efficient parallel CUDA programs is of considerable interest.
+
+This paper describes an automatic code transformation system that generates
+parallel CUDA code from input sequential C code, for regular (affine) programs.
+Using and adapting publicly available tools that have made polyhedral compiler
+optimization practically effective, we develop a C-to-CUDA transformation
+system that generates two-level parallel CUDA code that is optimized for
+efficient data access. The performance of automatically generated code is
+compared with manually optimized CUDA code for a number of benchmarks. The
+performance of the automatically generated CUDA code is quite close to
+hand-optimized CUDA code and considerably better than the benchmarks’
+performance on a multicore CPU.
+}
+}
+
 
 @article{Belaoucha2010fadalib,
  title={FADAlib: an open source C++ library for fuzzy array dataflow analysis},
@@ -2372,6 +2435,15 @@ to analyze on a SUN SparcStation IPX.
  }
 }
 
+@inproceedings{Pugh1991uniform,
+ title={Uniform techniques for loop optimization},
+ author={Pugh, William},
+ booktitle={Proceedings of the 5th international conference on Supercomputing},
+ pages={341--352},
+ year={1991},
+ organization={ACM},
+}
+
 @article{Feautrier1991,
  title = {Dataflow analysis of array and scalar references},
  author = {Feautrier, Paul},
@@ -2470,7 +2542,7 @@ We prove that the resulting algorithm always terminate and give an estimative of
   url={http://camlunity.ru/swap/Library/Conflux/Techniques%20-%20Code%20Analysis%20and%20Transformations%20%28Polyhedral%29/Integer%20Programming/parametric_integer_programming.pdf},
 }
 
-@inproceedings{feautrier1988array,
+@inproceedings{Feautrier1988array,
   title={Array expansion},
   author={Feautrier, Paul},
   booktitle={Proceedings of the 2nd international conference on Supercomputing},
