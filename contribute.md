@@ -45,7 +45,7 @@ adding links to `newpage.html`.
 To change the content of `software.html`, open the file `software.md` in your
 favorite text editor and modify the content as you like. Pages  are stored in
 individual text files, which can be edited with your normal text editor and
-which are formatted using [Markdown] (http://daringfireball.net/projects/markdown/syntax).
+which are formatted using [Markdown](http://kramdown.gettalong.org/quickref.html).
 
 #### Add a new publication
 
@@ -78,7 +78,7 @@ website at home.
 
 #### Install jekyll
 
-On Linux (debian/Ubuntu) this can be done by running `apt-get install jekyll`. For other systems see the detailed [install instructions](http://github.com/mojombo/jekyll/wiki/Install).
+On Linux (debian/Ubuntu) this can be done by running `apt-get install jekyll`. For other systems see the detailed [install instructions](https://help.github.com/articles/using-jekyll-with-pages)
 
 #### Run the website locally
 
