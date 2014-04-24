@@ -1211,6 +1211,27 @@ be targeted.
   url = {http://perso.ens-lyon.fr/christophe.alias/impact2011/impact-07.pdf},
 }
 
+
+@InCollection{Wonnacott2011,
+  author =	 {David Wonnacott},
+  title =	 {{O}mega Calculator/Library/Project/Test},
+  booktitle =	 {Encyclopedia of Parallel Computing},
+  pages =	 {1355-1365},
+  publisher =	 {Springer},
+  year =	 2011,
+  editor =	 {David Padua}
+}
+
+@InCollection{Feautrier2011,
+  author =	 {Paul Feautrier and Christian Lengauer},
+  title =	 {The Polyhedron Model},
+  booktitle =	 {Encyclopedia of Parallel Computing},
+  pages =	 {1581-1592},
+  publisher =	 {Springer},
+  year =	 2011,
+  editor =	 {David Padua}
+}
+
 @inproceedings{Baskaran2010ctocuda,
  title={Automatic C-to-CUDA code generation for affine programs},
  author={Baskaran, Muthu Manikandan and Ramanujam, Jj and Sadayappan, P},
@@ -1392,15 +1413,17 @@ design and implementation of Graphite.
 "
 }
 
+
 @inproceedings{Verdoolaege2010isl,
- author = {Verdoolaege, Sven},
- title = {isl: {A}n Integer Set Library for the Polyhedral Model},
- booktitle = {Mathematical Software (ICMS 2010)},
- year = {2010},
- pages={299--302},
- series={LNCS 4151},
- editor={Andres Iglesias and Nobuki Takayama},
- publisher = {Springer-Verlag},
+  author =	 {Verdoolaege, Sven},
+  title =	 {isl: An Integer Set Library for the Polyhedral Model},
+  booktitle =	 {Mathematical Software (ICMS'10)},
+  year =	 2010,
+  pages =	 {299--302},
+  series =	 {LNCS 6327},
+  editor =	 {Fukuda, Komei and Hoeven, Joris and Joswig, Michael and
+                  Takayama, Nobuki},
+  publisher =	 {Springer-Verlag},
 }
 
 @inproceedings{Benabderrahmane2010polyhedral,
@@ -2156,7 +2179,7 @@ parallel code generation.
 }
 
 @article{Kelly1996omega,
- title = {The Omega calculator and library, version 1.1.0},
+ title = {The {O}mega Calculator and Library, Version 1.1.0},
  author = {Kelly, Wayne and Maslov, Vadim and Pugh, William and Rosser, Evan and Shpeisman, Tatiana and Wonnacott, Dave},
  year = 1996,
  url={http://www.cs.utah.edu/~mhall/cs6963s09/lectures/omega.ps}
@@ -2196,6 +2219,16 @@ of array region analyses: IN and OUT regions.
 The intraprocedural propagation is presented, as well as a general linear
 framework for interprocedural analyses, that handles array reshapes.
 "
+}
+
+@inproceedings{Clauss1996,
+  author =	 {Philippe Clauss},
+  title =	 {Counting Solutions to Linear and Nonlinear Constraints
+                  Through {E}hrhart Polynomials: Applications to Analyze and
+                  Transform Scientific Programs},
+  booktitle =	 {International Conference on Supercomputing (ICS'96)},
+  year =	 1996,
+  pages =	 {278-285},
 }
 
 @inproceedings{Amarasinghe1995overview,
@@ -2367,6 +2400,16 @@ to analyze on a SUN SparcStation IPX.
 "
 }
 
+
+@TechReport{Wilde1993polylib,
+  author =	 {Doran K. Wilde},
+  title =	 {A Library for Doing Polyhedral Operations},
+  institution =	 {IRISA},
+  year =	 1993,
+  number =	 785,
+  month =	 dec
+}
+
 @article{Feautrier1992multi,
  author = {Feautrier, Paul},
  affiliation = {Laboratoire MASI Université de Versailles St-Quentin 45 Avenue
@@ -2436,16 +2479,16 @@ to analyze on a SUN SparcStation IPX.
 }
 
 @inproceedings{Pugh1991uniform,
- title={Uniform techniques for loop optimization},
+ title={Uniform Techniques for Loop Optimization},
  author={Pugh, William},
- booktitle={Proceedings of the 5th international conference on Supercomputing},
+ booktitle={5th International Conference on Supercomputing (ICS'91)},
  pages={341--352},
  year={1991},
  organization={ACM},
 }
 
 @article{Feautrier1991,
- title = {Dataflow analysis of array and scalar references},
+ title = {Dataflow Analysis of Array and Scalar References},
  author = {Feautrier, Paul},
  journal = {International Journal of Parallel Programming},
  volume = {20},
@@ -2467,24 +2510,24 @@ to analyze on a SUN SparcStation IPX.
 }
 
 @InProceedings{Irigoin1988,
- author = 	 {Irigoin, Francois and Triolet, Remi},
- title = 	 {Supernode Partitioning},
- booktitle = 	 {Symposium on Principles of Programming Languages (POPL)},
- pages =	 {319--328},
- year =	 1988,
- address =	 {San Diego, CA},
- month =	 jan,
- url = {http://ssh.cri.ensmp.fr/classement/doc/A-179.pdf},
- abstract = "
-Supercompilers must reschedule computations defined by nested DO-loops in order
-to make an efficient use of supercomputer features (vector units, multiple
-elementary processors, cache memory, etc…). Many rescheduling techniques like
-loop interchange, loop strip-mining or rectangular partitioning have been
-described to speedup program execution. We present here a class of
-partitionings that encompasses previous techniques and provides enough
-flexibility to adapt code to multiprocessors with two levels of parallelism and
-two levels of memory.
-"
+  author =	 {Irigoin, Francois and Triolet, Remi},
+  title =	 {Supernode Partitioning},
+  booktitle =	 {Symposium on Principles of Programming Languages (POPL'88)},
+  pages =	 {319--328},
+  year =	 1988,
+  address =	 {San Diego, CA},
+  month =	 jan,
+  url =		 {http://ssh.cri.ensmp.fr/classement/doc/A-179.pdf},
+  abstract =	 " Supercompilers must reschedule computations defined by
+                  nested DO-loops in order to make an efficient use of
+                  supercomputer features (vector units, multiple elementary
+                  processors, cache memory, etc…). Many rescheduling
+                  techniques like loop interchange, loop strip-mining or
+                  rectangular partitioning have been described to speedup
+                  program execution. We present here a class of partitionings
+                  that encompasses previous techniques and provides enough
+                  flexibility to adapt code to multiprocessors with two levels
+                  of parallelism and two levels of memory. "
 }
 
 @inproceedings{Ancourt1991scanning,
@@ -2515,7 +2558,7 @@ neighboring processors in a distributed memory machine.
 }
 
 @article{Feautrier1988parametric,
-  title={Parametric integer programming},
+  title={Parametric Integer Programming},
   author={Feautrier, Paul},
   journal={RAIRO Recherche op{\'e}rationnelle},
   volume={22},
@@ -2543,9 +2586,9 @@ We prove that the resulting algorithm always terminate and give an estimative of
 }
 
 @inproceedings{Feautrier1988array,
-  title={Array expansion},
+  title={Array Expansion},
   author={Feautrier, Paul},
-  booktitle={Proceedings of the 2nd international conference on Supercomputing},
+  booktitle={2nd International Conference on Supercomputing (ICS'88)},
   pages={429--441},
   year={1988},
   organization={ACM},
@@ -2564,26 +2607,39 @@ program checking, collecting array predicates, etc ...
   url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.29.5704&rep=rep1&type=pdf}
 }
 
+@inproceedings{Cousot1978,
+  author =	 {Cousot, Patrick and Halbwachs, Nicolas},
+  title =	 {Automatic Discovery of Linear Restraints Among Variables of a
+                  Program},
+  booktitle =	 {5th ACM SIGACT-SIGPLAN Symposium on Principles of Programming
+                  Languages (POPL'78)},
+  year =	 1978,
+  address =	 {Tucson, Arizona},
+  pages =	 {84--96},
+  doi =		 {10.1145/512760.512770},
+  publisher =	 {ACM},
+} 
+
 @article{Lamport1974,
- title = {The parallel execution of DO loops},
- author = {Lamport, Leslie},
- journal = {Communications of the ACM},
- volume = {17},
- number = {2},
- pages = {83--93},
- year = {1974},
- publisher = {ACM},
- url = {http://research.microsoft.com/en-us/um/people/lamport/pubs/do-loops.pdf},
- abstract = {
-  Methods are developed for the parallel execution of different iterations of a
-  DO loop. Both asynchronous multiprocessor computers and array computers are
-  considered. Practical application to the design of compilers for such
-  computers is discussed.
- }
+  title =	 {The Parallel Execution of {DO} Loops},
+  author =	 {Lamport, Leslie},
+  journal =	 {Communications of the ACM},
+  volume =	 17,
+  number =	 2,
+  pages =	 {83--93},
+  year =	 1974,
+  publisher =	 {ACM},
+  url =
+                  {http://research.microsoft.com/en-us/um/people/lamport/pubs/do-loops.pdf},
+  abstract =	 { Methods are developed for the parallel execution of
+                  different iterations of a DO loop. Both asynchronous
+                  multiprocessor computers and array computers are
+                  considered. Practical application to the design of compilers
+                  for such computers is discussed. }
 }
 
 @article{Karp1967,
- title = {The organization of computations for uniform recurrence equations},
+ title = {The Organization of Computations for Uniform Recurrence Equations},
  author = {Karp, Richard M and Miller, Raymond E and Winograd, Shmuel},
  journal = {Journal of the ACM},
  volume = {14},

@@ -18,9 +18,11 @@ Polyhedral Compilation
 
 Polyhedral compilation encompasses the compilation techniques that rely on the
 representation of programs, especially those involving nested loops and arrays,
-thanks to parametric polyhedra <a class="citation">FEAUTRIER1988PARAMETRIC</a>
-<a class="citation">LOECHNER1999POLYLIB</a> (*cite Ehrhart*) or Presburger relations
-<a class="citation">KELLY1996OMEGA</a><a class="citation">VERDOOLAEGE2010ISL</a>,
+thanks to parametric polyhedra <a
+class="citation">FEAUTRIER1988PARAMETRIC</a><a
+class="citation">WILDE1993POLYLIB</a><a
+class="citation">LOECHNER1999POLYLIB</a> or Presburger relations <a
+class="citation">KELLY1996OMEGA</a><a class="citation">VERDOOLAEGE2010ISL</a>,
 and that exploit combinatorial and geometrical optimizations on these objects
 to analyze and optimize the programs. Initially proposed in the context of
 compilers-parallelizers, it is now used for a wide range of applications,
@@ -50,27 +52,34 @@ Organization of Computations for Uniform Recurrence Equations* by Karp, Miller,
 and Winograd (1968) <a class="citation">KARP1967</a> and *Array Expansion*
 (1988) <a class="citation">FEAUTRIER1988ARRAY</a> and *Dataflow Analysis of
 Array and Scalar References* (1991) <a class="citation">FEAUTRIER1991</a> by
-Feautrier, and was built on important contributions in the 80s on loop
-transformations (work of Lamport, Banerjee, Wolfe, Allen and Kennedy, Irigoin
-and Triolet, etc.) and on systolic arrays design (work of Quinton, Rajopadhye,
-Delosme, etc.), before the *big picture* emerged. The development of
-optimizations tools such as PIP (parametric integer programming) in 1988, which
-enables parametric optimization on polyhedra, Polylib (with developments since
-1987, on top of Chernikova's algorithm), and Omega around 1990 (by Bill Pugh)
-were key contributions to make such polyhedral optimizations possible. The 1978
-seminal paper on abstract interpretation *Automatic Discovery of Linear
-Restraints Among Variables of a Program* by Cousot and Halbwachs can also be
-considered as one axis of foundations for polyhedral analysis, even if it gave
-rise to an initially-disjoint community.
+P. Feautrier, and was built on important contributions in the 80s on loop
+transformations (work of Lamport <a class="citation">LAMPORT1974</a>, Banerjee,
+Wolfe, Allen and Kennedy, Irigoin and Triolet <a
+class="citation">IRIGOIN1988</a>, etc.) and on systolic arrays design (work of
+Quinton, Rajopadhye, Delosme, etc.), before the *big picture* emerged. The
+development of optimizations tools such as PIP <a
+class="citation">FEAUTRIER1988PARAMETRIC</a> (parametric integer programming)
+in 1988, which enables parametric optimization on polyhedra, Polylib <a
+class="citation">WILDE1993POLYLIB</a><a
+class="citation">LOECHNER1999POLYLIB</a> (with developments since 1987, on top
+of Chernikova's algorithm), and Omega <a class="citation">KELLY1996OMEGA</a>
+around 1990 <a class="citation">PUGH1991UNIFORM</a> (by Bill Pugh and his
+group) were key contributions to make such polyhedral optimizations
+possible. The 1978 seminal paper on abstract interpretation *Automatic
+Discovery of Linear Restraints Among Variables of a Program* by Cousot and
+Halbwachs<a class="citation">COUSOT1978</a> can also be considered as one axis
+of foundations for polyhedral analysis, even if it gave rise to an
+initially-disjoint community.
 
 Since then, in the last 20 years, the research community has extended the
 theory and the available polyhedral tools and libraries with Ehrhart
-polynomials, Barvinok's counting algorithm, lattice optimizations, Presburger
-formulas manipulations, code generation algorithms. The development of
-freely-available tools such as ISL, CLooG, Pluto, PIPS, Fadalib, Cl@k, Gecos,
-to quote but a few, and the introduction of polyhedral libraries in GCC and
-LLVM were important steps for the dissemination of polyhedral compilation. The
-field of applications now covers a wide range of directions such as:
+polynomials <a class="citation">CLAUSS1996</a>, Barvinok's counting algorithm,
+lattice optimizations, Presburger formulas manipulations, code generation
+algorithms. The development of freely-available tools such as ISL, CLooG,
+Pluto, PIPS, Fadalib, Cl@k, Gecos, to quote but a few, and the introduction of
+polyhedral libraries in GCC and LLVM were important steps for the dissemination
+of polyhedral compilation. The field of applications now covers a wide range of
+directions such as:
 
 * #### Program analysis
 	+ Dependence analysis
