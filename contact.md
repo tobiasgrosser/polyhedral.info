@@ -16,28 +16,19 @@ title: Contact
   </div>
 </div>
 
-<div class="row">
-<div class="col-md-8">
-<address>
-  <h3>Administrative Contact</h3>
-  <strong>Tobias Grosser</strong><br>
-  Ecole Normale Superieure</br>
-  45 rue d'Ulm</br>
-  Parkas Group</br>
-  75005 Paris, France</br>
-  <a href="http://www.grosser.es">http://www.grosser.es</a>
-</address>
-</div>
-<div class="col-md-8 ">
-<address>
-  <h3>Design</h3>
-  <strong>Andreas Simb&uuml;rger</strong><br>
-  University of Passau</br>
-  Innstrasse 33</br>
-  Programming Group</br>
-  94032 Passau, Germany</br>
-  <a href="http://www.infosun.fim.uni-passau.de/cl/staff/simbuerger/">http://www.infosun.fim.uni-passau.de/cl/staff/simbuerger/</a>
-</address>
-</div>
-</div>
+### Administrative Contact
+**Tobias Grosser**  
+Ecole Normale Superieure  
+45 rue d'Ulm  
+Parkas Group  
+75005 Paris, France  
+[http://www.grosser.es](http://www.grosser.es)
+
+### Design
+**Andreas Simb&uuml;rger**  
+University of Passau  
+Innstrasse 33  
+Programming Group  
+94032 Passau, Germany  
+[http://www.infosun.fim.uni-passau.de/cl/staff/simbuerger/](http://www.infosun.fim.uni-passau.de/cl/staff/simbuerger/)
 
