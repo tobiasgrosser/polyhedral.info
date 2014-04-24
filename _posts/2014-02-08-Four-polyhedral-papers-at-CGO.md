@@ -14,7 +14,7 @@ program](http://cgo.org/cgo2014/conference/program/) lists the following papers.
 
 - __Fix the code. Don’t tweak the hardware: A new compiler approach to Voltage-Frequency scaling__, <a class="citation">JIMBOREAN2014CGO</a>
 
-- __Non-affine Extensions to Polyhedral Code Generation __, <a class="citation">VENKAT2014CGO</a>
+- __Non-affine Extensions to Polyhedral Code Generation__, <a class="citation">VENKAT2014CGO</a>
 
 - __Adaptive Mapping and Parameter Selection Scheme to Improve Automatic
 Code Generation for GPUs__, <a class="citation">JUEGA2014CGO</a>
