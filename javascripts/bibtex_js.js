@@ -244,6 +244,7 @@ function BibtexDisplay() {
     value = value.replace(/---/g, '&mdash;');
     value = value.replace(/{\\"e}/g, '&euml;');
     value = value.replace(/{\\"a}/g, '&auml;');
+    value = value.replace(/\\"\{o\}/g, '&ouml;');
     value = value.replace(/\{\\"o\}/g, '&ouml;');
     value = value.replace(/{\\"u}/g, '&uuml;');
     value = value.replace(/{\\"A}/g, '&Auml;');
