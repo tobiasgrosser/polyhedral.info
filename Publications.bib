@@ -1493,6 +1493,45 @@ sources across multiple hardware targets.
 "
 }
 
+@inproceedings{Yuki2010TileSizeModels,
+ author = {Yuki, Tomofumi and Renganarayanan, Lakshminarayanan and Rajopadhye, Sanjay and Anderson, Charles and Eichenberger, Alexandre E. and O'Brien, Kevin},
+ title = {Automatic Creation of Tile Size Selection Models},
+ booktitle = {Proceedings of the 8th Annual IEEE/ACM International Symposium on Code Generation and Optimization},
+ series = {CGO '10},
+ year = {2010},
+ isbn = {978-1-60558-635-9},
+ location = {Toronto, Ontario, Canada},
+ pages = {190--199},
+ numpages = {10},
+ url = {http://www.cs.colostate.edu/~yuki/papers/yuki-cgo2010.pdf},
+ doi = {10.1145/1772954.1772982},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {machine learning, neural network, performance modeling, tiling},
+ abstract = {
+Tiling is a widely used loop transformation for exposing/exploiting parallelism
+and data locality. Effective use of tiling requires selection and tuning of the
+tile sizes. This is usually achieved by hand-crafting tile size selection (TSS)
+models that characterize the performance of the tiled program as a function of
+tile sizes. The best tile sizes are selected by either directly using the TSS
+model or by using the TSS model together with an empirical search.
+Hand-crafting accurate TSS models is hard, and adapting them to different
+architecture/compiler, or even keeping them up-to-date with respect to the
+evolution of a single compiler is often just as hard. Instead of hand-crafting
+TSS models, can we automatically learn or create them? In this paper, we show
+that for a specific class of programs fairly accurate TSS models can be
+automatically created by using a combination of simple program features,
+synthetic kernels, and standard machine learning techniques. The automatic TSS
+model generation scheme can also be directly used for adapting the model and/or
+keeping it up-to-date. We evaluate our scheme on six different
+architecture-compiler combinations (chosen from three different architectures
+and four different compilers). The models learned by our method have
+consistently shown near-optimal performance (within 5% of the optimal on
+average) across all architecture-compiler combinations.
+}
+} 
+
+
 @inproceedings{Grosslinger2009,
  author = {Gr\"{o}\sslinger, Armin},
  title = {Precise Management of Scratchpad Memories for Localising Array Accesses in Scientific Codes},
@@ -1729,6 +1768,31 @@ the Pentium M and MIPS R10000 that are comparable to the best hand-tuned codes,
 and significantly better (up to a 14x speedup) than the native compilers.
 "
 }
+
+@inproceedings{Renganarayana2008positivity,
+  title={Positivity, posynomials and tile size selection},
+  author={Renganarayana, Lakshminarayanan and Rajopadhye, Sanjay},
+  booktitle={High Performance Computing, Networking, Storage and Analysis, 2008. SC 2008. International Conference for},
+  pages={1--12},
+  year={2008},
+  organization={IEEE},
+  abstract={
+Tiling is a widely used loop transformation for exposing/exploiting parallelism
+and data locality. Effective use of tiling requires selection and tuning of the
+tile sizes. This is usually achieved by developing cost models that
+characterize the performance of the tiled program as a function of tile sizes.
+All previous approaches to tile size selection (TSS) are cost model specific.
+Due to this they are neither extensible (e.g., to richer program classes/newer
+architectures) nor scalable (e.g., to multiple levels of tiling). This paper
+identifies positivity as a fundamental property shared by the functions and
+parameters commonly used in TSS models. We show how this positivity can be used
+as a basis to derive a TSS framework which is both efficient and scalable. We
+also show that almost all TSS models proposed in the literature (including
+those used in production compilers and auto-tuners) can be reduced to our
+framework.
+}
+}
+
 
 @inproceedings{Alias2007bee,
  title={Bee+ cl@ k: An implementation of lattice-based array contraction in the source-to-source translator rose},
@@ -2532,6 +2596,14 @@ to analyze on a SUN SparcStation IPX.
   array and scalar expansion, program verification and parallel program
   construction.
  }
+}
+
+@TECHREPORT{Schreiber90automaticblocking,
+ author = {Robert Schreiber and Jack J. Dongarra and Robert Schreiber and Jack J. Dongarra and Jack J. Dongarra T},
+ title = {Automatic blocking of nested loops},
+ institution = {},
+ year = {1990},
+ url = {http://www.netlib.org/utk/papers/autoblock/paper.ps},
 }
 
 @InProceedings{Irigoin1988,
