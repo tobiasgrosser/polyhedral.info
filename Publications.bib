@@ -2235,6 +2235,32 @@ parallelization algorithm that remains optimal should be selected.
 "
 }
 
+@article{Griebl2000index,
+  title={Index set splitting},
+  author={Griebl, Martin and Feautrier, Paul and Lengauer, Christian},
+  journal={International Journal of Parallel Programming},
+  volume={28},
+  number={6},
+  pages={607--631},
+  year={2000},
+  publisher={Springer},
+  url={http://www.infosun.fim.uni-passau.de/cl/publications/docs/GFL00ijpp.pdf},
+  abstract="
+There are many algorithms for the space-time mapping of nested loops. Some
+of them even make the optimal choices within their framework. We propose a
+preprocessing phase for algorithms in the polytope model, which extends the
+model and yields space-time mappings whose schedule is, in some cases, orders
+of magnitude faster. These are cases in which the dependence graph has small
+irregularities. The basic idea is to split the index set of the loop nests into parts
+with a regular dependence structure and apply the existing space-time mapping
+algorithms to these parts individually. This work is based on a seminal idea in
+the more limited context of loop parallelization at the code level. We elevate the
+idea to the model level (our model is the polytope model), which increases its
+applicability by providing a clearer and wider range of choices at an acceptable
+analysis cost. Index set splitting is one facet in the effort to extend the power of
+the polytope model and to enable the generation of competitive target code."
+}
+
 @article{Quillere2000,
  author = {Quiller\'{e}, Fabien and Rajopadhye, Sanjay and Wilde, Doran},
  title = {Generation of Efficient Nested Loops from Polyhedra},
