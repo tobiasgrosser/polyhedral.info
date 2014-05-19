@@ -33,7 +33,7 @@ Compilers
 
 #### Source-to-Source
 
- * [CHiLL](http://ctop.cs.utah.edu/ctop/?page_id=21), <a class="citation">GROSSER2012POLLY</a>
+ * [CHiLL](http://ctop.cs.utah.edu/ctop/?page_id=21), <a class="citation">CHEN2008CHILL</a>
  * [LooPo](https://www.infosun.fim.uni-passau.de/trac/LooPo), <a class="citation">GRIEBL1996LOOPO</a>
  * [Pluto](http://pluto-compiler.sourceforge.net/), <a class="citation">BONDHUGULA2008PLUTO</a>
  * [PoCC](http://www.cse.ohio-state.edu/~pouchet/software/pocc/pocc.html)
