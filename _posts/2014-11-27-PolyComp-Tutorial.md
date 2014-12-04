@@ -6,7 +6,7 @@ www: www.grosser.es
 ---
 
 At HiPEAC 2015, the [PolyComp
-2015](https://www.hipeac.org/2015/amsterdam/workshop-and-tutorials/) tutorial
+2015](http://polycomp.gforge.inria.fr/) tutorial
 will discuss *polyhedral compilation without polyhedra*.
 
 This tutorial follows the tradition of the Omega Project and use a
