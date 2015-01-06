@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PolyComp Tutorial at HiPEAC 2015
+title: PolyComp Tutorial at HiPEAC
 author: Tobias Grosser
 www: www.grosser.es
 ---
