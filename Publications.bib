@@ -18,6 +18,78 @@ try to follow the following style guide.
    the style guide and fixes the existing entries.
 }}
 
+@inproceedings{Mullapudi2015asplos,
+ author    = {Mullapudi, Ravi Teja and
+              Vasista, Vinay and
+              Bondhugula, Uday.},
+ title     = {PolyMage: Automatic Optimization for Image Processing Pipelines},
+ booktitle = {International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
+ year      = {2015},
+ url = {http://mcl.csa.iisc.ernet.in/polymage.html},
+ abstract = {
+    This paper presents the design and implementation of PolyMage, a
+    domain-specific language and compiler for image processing pipelines.
+    An image processing pipeline can be viewed as a graph of interconnected
+    stages which process images successively. Each stage typically performs
+    one of point-wise, stencil, reduction or data-dependent operations on
+    image pixels. Individual stages in a pipeline typically exhibit abundant
+    data parallelism that can be exploited with relative ease. However, the
+    stages also require high memory bandwidth preventing effective
+    utilization of parallelism available on modern architectures. For
+    applications that demand high performance, the traditional options are
+    to use optimized libraries like OpenCV or to optimize manually.  While
+    using libraries precludes optimization across library routines, manual
+    optimization accounting for both parallelism and locality is very
+    tedious.
+
+    The focus of our system, PolyMage, is on automatically generating
+    high-performance implementations of image processing pipelines expressed
+    in a high-level declarative language. Our optimization approach
+    primarily relies on the transformation and code generation capabilities
+    of the polyhedral compiler framework. To the best of our knowledge, this
+    is the first model-driven compiler for image processing pipelines that
+    performs complex fusion, tiling, and storage optimization automatically.
+    Experimental results on a modern multicore system show that the
+    performance achieved by our automatic approach is up to 1.81$\times$
+    better than that achieved through manual tuning in Halide, a
+    state-of-the-art language and compiler for image processing pipelines.
+    For a camera raw image processing pipeline, our performance is
+    comparable to that of a hand-tuned implementation.}
+}
+
+@inproceedings{Acharya2015ppopp,
+ author    = {Acharya, Aravind and
+              Bondhugula, Uday.},
+ title     = {Pluto+: Near-Complete Modeling of Affine Transformations for Parallelism and Locality},
+ booktitle = {ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming (PPoPP)},
+ year      = {2015},
+ url = {http://mcl.csa.iisc.ernet.in/downloads/publications/acharya15ppopp.pdf},
+ abstract = {
+    Affine transformations have proven to be very powerful for loop restructuring
+    due to their ability to model a very wide range of transformations.  A
+    single multi-dimensional affine function can represent a long and complex
+    sequence of simpler transformations. Existing affine transformation
+    frameworks like the Pluto algorithm, that include a cost function for
+    modern multicore architectures where coarse-grained parallelism and
+    locality are crucial, consider only a sub-space of transformations to avoid
+    a combinatorial explosion in finding the transformations. The ensuing
+    practical tradeoffs lead to the exclusion of certain useful
+    transformations, in particular, transformation compositions involving loop
+    reversals and loop skewing by negative factors. In this paper, we propose
+    an approach to address this limitation by modeling a much larger space of
+    affine transformations in conjunction with the Pluto algorithm's cost
+    function. We perform an experimental evaluation of both, the effect on
+    compilation time, and performance of generated codes.  The evaluation shows
+    that our new framework, Pluto+, provides no degradation in performance in
+    any of the Polybench benchmarks.  For Lattice Boltzmann Method (LBM) codes
+    with periodic boundary conditions, it provides a mean speedup of 1.33$\times$ over
+    Pluto.  We also show that Pluto+ does not increase compile times
+    significantly.  Experimental results on Polybench show that Pluto+
+    increases overall polyhedral source-to-source optimization time only by
+    15%. In cases where it improves execution time significantly, it increased
+    polyhedral optimization time only by 2.04$\times$.}
+}
+
 @inproceedings{Stock2014,
  author    = {Stock, Kevin and
               Kong, Martin and
