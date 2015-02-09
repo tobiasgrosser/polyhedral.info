@@ -130,6 +130,16 @@ Code Generation for GPUs},
  url = {http://hal.inria.fr/hal-00911177}
 }
 
+@inproceedings{Mehta2014ppopp,
+ author = {Mehta, Sanyam and Lin, Pei-Hung and Yew, Pen-Chung},
+ title = {Revisiting Loop Fusion in the Polyhedral Framework},
+ booktitle = {Proceedings of the 19th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ series = {PPoPP '14},
+ year = {2014},
+ url = {http://www-users.cs.umn.edu/~sanyam/publications/p233-mehta.pdf},
+ abstract = {Loop fusion is an important compiler optimization for improving memory hierarchy performance through enabling data reuse. Traditional compilers have approached loop fusion in a manner decoupled from other high-level loop optimizations, missing several interesting solutions. Recently, the polyhedral compiler framework with its ability to compose complex transformations, has proved to be promising in performing loop optimizations for small programs. However, our experiments with large programs using state-of-the-art polyhedral compiler frameworks reveal suboptimal fusion partitions in the transformed code. We trace the reason for this to be lack of an effective cost model to choose a good fusion partitioning among the possible choices, which increase exponentially with the number of program statements. In this paper, we propose a fusion algorithm to choose good fusion partitions with two objective functions - achieving good data reuse and preserving parallelism inherent in the source code. These objectives, although targeted by previous work in traditional compilers, pose new challenges within the polyhedral compiler framework and have thus not been addressed. In our algorithm, we propose several heuristics that work effectively within the polyhedral compiler framework and allow us to achieve the proposed objectives. Experimental results show that our fusion algorithm achieves performance comparable to the existing polyhedral compilers for small kernel programs, and significantly outperforms them for large benchmark programs such as those in the SPEC benchmark suite.}
+}
+
 @inproceedings{Jimborean2014cgo,
  author = {Jimborean, Alexandra and Koukos, Konstantinos and Spiliopoulos, Vasileios and
  Black-Schaffer, David and Kaxiras, Stefanos},
@@ -487,6 +497,20 @@ program. The method and its implementation are evaluated on standard stencil
 kernels and compared with a state-of-the-art polyhedral compiler and with a
 domain-specific stencil compiler, both targeting CUDA GPUs.
 }
+}
+
+@article{Mehta2013taco,
+ author = {Mehta, Sanyam and Beeraka, Gautham and Yew, Pen-Chung},
+ title = {Tile Size Selection Revisited},
+ journal = {ACM Trans. Archit. Code Optim.},
+ issue_date = {December 2013},
+ volume = {10},
+ number = {4},
+ month = dec,
+ year = {2013},
+ url = {http://www-users.cs.umn.edu/~sanyam/publications/a35-mehta.pdf},
+ abstract = {Loop tiling is a widely used loop transformation to enhance data locality and allow data reuse. In the tiled code, however, tiles of different sizes can lead to significant variation in performance. Thus, selection of an optimal tile size is critical to performance of tiled codes.
+In the past, tile size selection has been attempted using both static analytical and dynamic empirical (auto-tuning) models. Past work using static models assumed a direct-mapped cache for the purpose of analysis and thus proved to be less robust. On the other hand, the auto-tuning models involve an exhaustive search in a large space of tiled codes. In this article, we propose a new analytical model for tile size selection that leverages the high set associativity in modern caches to minimize conflict misses. Our tile size selection model targets data reuse in multiple levels of cache. In addition, it considers the interaction of tiling with the SIMD unit in modern processors in estimating the optimal tile size. We find that these factors, not considered in previous models, are critical in developing a robust model for tile size selection. We implement our tile size selection model in a polyhedral compiler and test it on 12 benchmark kernels using two different problem sizes. Our model outperforms the previous analytical models that are based on reusing data in a single level of cache and achieves an average performance improvement of 9.7\% and 20.4\%, respectively, over the best square (cubic) tiles for the two problem sizes. In addition, the tile size chosen by our tile size selection algorithm is similar to the best performing size obtained through an extensive search, validating the analytical model underlying the algorithm.}
 }
 
 @ARTICLE{Gonzalez2013tpds,
