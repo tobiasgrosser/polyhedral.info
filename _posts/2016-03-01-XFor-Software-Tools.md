@@ -6,7 +6,7 @@ author: Philippe Clauss
 
 All the software tools related to
 the XFOR loop programming structure are now available by following this
-link: http://xfor.gforge.inria.fr
+link: [http://xfor.gforge.inria.fr](http://xfor.gforge.inria.fr)
 
 The tools include:
 - the source-to-source compiler IBB, that translates any XFOR program into an
