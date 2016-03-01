@@ -1,6 +1,6 @@
 ---
 layout: default
-title: XFOR software tools
+title: XFOR software tools released
 author: Philippe Clauss
 ---
 
