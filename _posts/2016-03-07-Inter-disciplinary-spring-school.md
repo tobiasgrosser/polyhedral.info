@@ -47,23 +47,23 @@ for a single room, 200 euros for a double room) and will cover the
 whole week (food and lodging).
 
 More details are provided on the web page of the school:
-http://mathsinfohpc.sciencesconf.org/
+[http://mathsinfohpc.sciencesconf.org/](http://mathsinfohpc.sciencesconf.org/)
 
 Note that this spring school is the second event of a larger thematic
 quarter on high performance computing
-(http://hpc-milyon.universite-lyon.fr/) organized in Lyon and around,
+([http://hpc-milyon.universite-lyon.fr/](http://hpc-milyon.universite-lyon.fr/)) organized in Lyon and around,
 with several events, from April to July 2016. The other events, which
 may also be of interest for you, are:
 
 - Keynotes "HPC days" with invited speakers Eric Blayo, Jack
 Dongarra, Marc Massot, Yousef Saad, Marc Snir, Eric Sonnendrücker
-(http://hpc-days-lyon.sciencesconf.org/?lang=en) and additional
+([http://hpc-days-lyon.sciencesconf.org/?lang=en](http://hpc-days-lyon.sciencesconf.org/?lang=en)) and additional
 mini-symposia on related topics.
 
 - JLESC Workshop, on exascale computing.
 
 - Tutorial and SWIM Workshop on interval methods
-(http://swim2016.sciencesconf.org/)
+([http://swim2016.sciencesconf.org/](http://swim2016.sciencesconf.org/))
 
 Best regards,
 
