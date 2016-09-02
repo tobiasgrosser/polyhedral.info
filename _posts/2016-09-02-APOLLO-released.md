@@ -1,6 +1,6 @@
 ---
 layout: default
-title: APOLLO released: runtime speculative polyhedral loop optimizer
+title: APOLLO released - runtime speculative polyhedral loop optimizer
 author: Philippe Clauss
 www: http://icps.u-strasbg.fr/~clauss/http://icps.u-strasbg.fr/~clauss/
 ---
