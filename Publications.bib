@@ -18,6 +18,54 @@ try to follow the following style guide.
    the style guide and fixes the existing entries.
 }}
 
+@article{Sukumaran-Rajam2015NonLinearLoops,
+ author = {Sukumaran-Rajam, Aravind and Clauss, Philippe},
+ title = {The Polyhedral Model of Nonlinear Loops},
+ journal = {ACM Transactions on Architecture and Code Optimization},
+ issue_date = {January 2016},
+ volume = {12},
+ number = {4},
+ month = dec,
+ year = {2015},
+ issn = {1544-3566},
+ pages = {48:1--48:27},
+ articleno = {48},
+ numpages = {27},
+ url = {http://doi.acm.org/10.1145/2838734},
+ doi = {10.1145/2838734},
+ acmid = {2838734},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Speculative and dynamic loop parallelization, nonlinear memory references, polyhedral model},
+ abstract = {
+Runtime code optimization and speculative execution are becoming increasingly
+prominent to leverage performance in the current multi- and many-core era.
+However, a wider and more efficient use of such techniques is mainly hampered
+by the prohibitive time overhead induced by centralized data race detection,
+dynamic code behavior modeling, and code generation. Most of the existing
+Thread Level Speculation (TLS) systems rely on naively slicing the target loops
+into chunks and trying to execute the chunks in parallel with the help of a
+centralized performance-penalizing verification module that takes care of data
+races. Due to the lack of a data dependence model, these speculative systems
+are not capable of doing advanced transformations, and, more importantly, the
+chances of rollback are high. The polyhedral model is a well-known mathematical
+model to analyze and optimize loop nests. The current state-of-art tools limit
+the application of the polyhedral model to static control codes. Thus, none of
+these tools can generally handle codes with while loops, indirect memory
+accesses, or pointers. Apollo (Automatic POLyhedral Loop Optimizer) is a
+framework that goes one step beyond and applies the polyhedral model
+dynamically by using TLS. Apollo can predict, at runtime, whether the codes are
+behaving linearly or not, and it applies polyhedral transformations on-the-fly.
+This article presents a novel system that enables Apollo to handle codes whose
+memory accesses and loop bounds are not necessarily linear. More generally,
+this approach expands the applicability of the polyhedral model at runtime to a
+wider class of codes. Plugging together both linear and nonlinear accesses to
+the dependence prediction model enables the application of polyhedral loop
+optimizing transformations even for nonlinear code kernels while also allowing
+a low-cost speculation verification.
+}
+}
+
 @inproceedings{Mullapudi2015asplos,
  author    = {Mullapudi, Ravi Teja and
               Vasista, Vinay and
@@ -138,6 +186,24 @@ Code Generation for GPUs},
  year = {2014},
  url = {http://www-users.cs.umn.edu/~sanyam/publications/p233-mehta.pdf},
  abstract = {Loop fusion is an important compiler optimization for improving memory hierarchy performance through enabling data reuse. Traditional compilers have approached loop fusion in a manner decoupled from other high-level loop optimizations, missing several interesting solutions. Recently, the polyhedral compiler framework with its ability to compose complex transformations, has proved to be promising in performing loop optimizations for small programs. However, our experiments with large programs using state-of-the-art polyhedral compiler frameworks reveal suboptimal fusion partitions in the transformed code. We trace the reason for this to be lack of an effective cost model to choose a good fusion partitioning among the possible choices, which increase exponentially with the number of program statements. In this paper, we propose a fusion algorithm to choose good fusion partitions with two objective functions - achieving good data reuse and preserving parallelism inherent in the source code. These objectives, although targeted by previous work in traditional compilers, pose new challenges within the polyhedral compiler framework and have thus not been addressed. In our algorithm, we propose several heuristics that work effectively within the polyhedral compiler framework and allow us to achieve the proposed objectives. Experimental results show that our fusion algorithm achieves performance comparable to the existing polyhedral compilers for small kernel programs, and significantly outperforms them for large benchmark programs such as those in the SPEC benchmark suite.}
+}
+
+@Article{Jimborean2014speculative,
+author="Jimborean, Alexandra
+and Clauss, Philippe
+and Dollinger, Jean-Fran{\c{c}}ois
+and Loechner, Vincent
+and Martinez Caama{\~{n}}o, Juan Manuel",
+title="Dynamic and Speculative Polyhedral Parallelization Using Compiler-Generated Skeletons",
+journal="International Journal of Parallel Programming",
+year="2014",
+volume="42",
+number="4",
+pages="529--545",
+abstract="We propose a framework based on an original generation and use of algorithmic skeletons, and dedicated to speculative parallelization of scientific nested loop kernels, able to apply at run-time polyhedral transformations to the target code in order to exhibit parallelism and data locality. Parallel code generation is achieved almost at no cost by using binary algorithmic skeletons that are generated at compile-time, and that embed the original code and operations devoted to instantiate a polyhedral parallelizing transformation and to verify the speculations on dependences. The skeletons are patched at run-time to generate the executable code. The run-time process includes a transformation selection guided by online profiling phases on short samples, using an instrumented version of the code. During this phase, the accessed memory addresses are used to compute on-the-fly dependence distance vectors, and are also interpolated to build a predictor of the forthcoming accesses. Interpolating functions and distance vectors are then employed for dependence analysis to select a parallelizing transformation that, if the prediction is correct, does not induce any rollback during execution. In order to ensure that the rollback time overhead stays low, the code is executed in successive slices of the outermost original loop of the nest. Each slice can be either a parallel version which instantiates a skeleton, a sequential original version, or an instrumented version. Moreover, such slicing of the execution provides the opportunity of transforming differently the code to adapt to the observed execution phases, by patching differently one of the pre-built skeletons. The framework has been implemented with extensions of the LLVM compiler and an x86-64 runtime system. Significant speed-ups are shown on a set of benchmarks that could not have been handled efficiently by a compiler.",
+issn="1573-7640",
+doi="10.1007/s10766-013-0259-4",
+url="http://dx.doi.org/10.1007/s10766-013-0259-4"
 }
 
 @inproceedings{Jimborean2014cgo,

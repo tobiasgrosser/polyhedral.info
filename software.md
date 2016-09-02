@@ -42,6 +42,10 @@ Compilers
  * [PPCG](http://ppcg.gforge.inria.fr/), <a class="citation">VERDOOLAEGE2013PPCG</a>
  * [R-Stream](https://www.reservoir.com/products), <a class="citation">SCHWEITZ2006RSTREAM</a>
 
+#### Speculative and Just-in-time Compilers
+
+ * [APOLLO](http://apollo.gforge.inria.fr/), <a class=citation">JIMBOREAN2014SPECULATIVE</a>
+
 #### Equational Programming
 
  * [AlphaZ](http://www.cs.colostate.edu/AlphaZ/), <a class="citation">YUKI2012ALPHAZ</a>
