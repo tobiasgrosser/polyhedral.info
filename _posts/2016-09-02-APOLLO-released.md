@@ -2,7 +2,7 @@
 layout: default
 title: APOLLO released - runtime speculative polyhedral loop optimizer
 author: Philippe Clauss
-www: http://icps.u-strasbg.fr/~clauss/http://icps.u-strasbg.fr/~clauss/
+www: http://icps.u-strasbg.fr/~clauss/
 ---
 We are glad to announce the first release of APOLLO, the runtime 
 speculative polyhedral loop optimizer and parallelizer. APOLLO is based 
