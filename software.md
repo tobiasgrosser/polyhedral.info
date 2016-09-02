@@ -44,7 +44,7 @@ Compilers
 
 #### Speculative and Just-in-time Compilers
 
- * [APOLLO](http://apollo.gforge.inria.fr/), <a class=citation">JIMBOREAN2014SPECULATIVE</a>
+ * [APOLLO](http://apollo.gforge.inria.fr/), <a class="citation">JIMBOREAN2014SPECULATIVE</a>
 
 #### Equational Programming
 
