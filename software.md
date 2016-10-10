@@ -19,7 +19,7 @@ Tools and libraries to translate a polyhedral representation into source code.
  * [CLooG](http://www.cloog.org), <a class="citation">BASTOUL2004CLOOG</a>
  * [CodeGen](http://www.cs.umd.edu/projects/omega/release-1.0.html)
  * [CodeGen+](http://ctop.cs.utah.edu/ctop/?page_id=21), <a class="citation">CHEN2012</a>
- * [isl](http://freecode.com/projects/isl)
+ * [isl](http://isl.gforge.inria.fr/)
 
 Compilers
 =========
@@ -55,7 +55,7 @@ Dependency analysis
 
  * [candl](http://www.lri.fr/~bastoul/development/candl/)
  * [FADA toolkit](https://bitbucket.org/mbelaoucha/fadalib), <a class="citation">BELAOUCHA2010FADALIB</a>
- * [isl](http://freecode.com/projects/isl)
+ * [isl](http://isl.gforge.inria.fr/)
  * [Petit](http://www.cs.umd.edu/projects/omega/release-1.0.html), <a class="citation">KELLY1995PETIT</a>
 
 Exchange formats
@@ -69,12 +69,12 @@ Front ends
 Tools and libraries to translate a high level language into a polyhedral representation.
 
  * [clan](http://www.lri.fr/~bastoul/development/clan/index.html), <a class="citation">BASTOUL2008CLAN</a>
- * [pet](http://freecode.com/projects/libpet), <a class="citation">VERDOOLAEGE2012</a>
+ * [pet](http://pet.gforge.inria.fr/), <a class="citation">VERDOOLAEGE2012</a>
 
 Interactive Environments
 ========================
 
- * [iscc](http://freecode.com/projects/barvinok), <a class="citation">VERDOOLAEGE2011IMPACT</a>
+ * [iscc](http://barvinok.gforge.inria.fr/), <a class="citation">VERDOOLAEGE2011IMPACT</a>
  * [Omega calculator](http://www.cs.umd.edu/projects/omega/release-1.0.html), <a class="citation">KELLY1996OMEGA</a>
  * [Omega+ calculator](http://ctop.cs.utah.edu/ctop/?page_id=21)
 
@@ -83,9 +83,9 @@ Libraries
 
 Libraries to perform calculations on polyhedra.
 
- * [barvinok](http://freecode.com/projects/barvinok)
+ * [barvinok](http://barvinok.gforge.inria.fr/)
  * [IEGenLib](http://www.cs.colostate.edu/hpc/PIES/iegenlib.php)
- * [isl](http://freecode.com/projects/isl), <a class="citation">VERDOOLAEGE2010ISL</a>
+ * [isl](http://isl.gforge.inria.fr/), <a class="citation">VERDOOLAEGE2010ISL</a>
  * [Jolylib](http://www.reservoir.com/)
  * [Omega](http://www.cs.umd.edu/projects/omega/release-1.0.html), <a class="citation">KELLY1996OMEGA</a>
  * [Omega+](http://ctop.cs.utah.edu/ctop/?page_id=21)
