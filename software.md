@@ -39,6 +39,7 @@ Compilers
  * [PoCC](http://www.cse.ohio-state.edu/~pouchet/software/pocc/pocc.html)
  * [PolyOpt/C](http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/C) <a class="citation">POUCHET2011POLYOPT</a>
  * [PolyOpt/Fortran](http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/Fortran)
+ * [RosePolly](https://github.com/rose-compiler/rose/tree/master/projects/RosePolly)
  * [PPCG](http://ppcg.gforge.inria.fr/), <a class="citation">VERDOOLAEGE2013PPCG</a>
  * [R-Stream](https://www.reservoir.com/products), <a class="citation">SCHWEITZ2006RSTREAM</a>
 
