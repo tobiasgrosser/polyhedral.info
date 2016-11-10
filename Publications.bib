@@ -502,19 +502,7 @@ evaluation using PolyBench.
   year = 2013
 }
 
-@phdthesis{KONSTANTINIDIS2013THESIS,
-  title={Source-to-Source Compilation of Loop Programs for Manycore Processors},
-  author={Konstantinidis, Athanasios}, 
-  school={Imperial College London},
-  year={2013},
-  url={https://www.doc.ic.ac.uk/~phjk/PhDTheses-LocalCopies/ThanasisThesisFinalVersion.pdf},
-  abstract={
-  It is widely accepted today that the end of microprocessor performance growth based on in- creasing clock speeds and instruction-level parallelism (ILP) demands new ways of exploit- ing transistor densities. Manycore processors (most commonly known as GPGPUs or simply GPUs) provide a viable solution to this performance scaling bottleneck through large num- bers of lightweight compute cores and memory hierarchies that rely primarily on software for their efficient utilization. The widespread proliferation of this class of architectures today is a clear indication that exposing and managing parallelism on a large scale as well as efficiently orchestrating on-chip data movement is becoming an increasingly critical concern for high- performance software development. In such a computing landscape performance portability – the ability to exploit the power of a variety of manycore chips while minimizing the impact on software development and productivity – is perhaps one of the most important and challenging objectives for our research community.
-  This thesis is about performance portability for manycore processors and how source-to-source compilation can help us achieve it. In particular, we show that for an important set of loop-programs, performance portability is attainable at low cost through compile-time poly- hedral analysis and optimization and parametric tiling for run-time performance tuning. In other words, we propose and evaluate a source-to-source compilation path that takes affine loop-programs as input and produces parametrically tiled parallel code amenable to run-time tuning across different manycore platforms and devices – a very useful and powerful property if we seek performance portability because it decouples the compiler from the performance tun- ing process. The produced code relies on a platform-independent run-time environment, called Avelas, that allows us to formulate a robust and portable code generation algorithm. Our ex- perimental evaluation shows that Avelas induces low run-time overhead and even substantial speed-ups for wavefront-parallel programs compared to a state-of-the-art compile-time scheme with no run-time support. We also claim that the low overhead of Avelas is a strong indication that it can also be effective as a general-purpose programming model for manycore processors as we demonstrate for a set of ParBoil benchmarks.
-  }
-}
-
-@inproceedings{konstantinidis2013parametric,
+@inproceedings{Konstantinidis2013parametric,
   title={Parametric GPU code generation for affine loop programs},
   author={Konstantinidis, Athanasios and Kelly, Paul HJ and Ramanujam, J and Sadayappan, P},
   booktitle={International Workshop on Languages and Compilers for Parallel Computing},
