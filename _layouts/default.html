@@ -153,11 +153,14 @@
         <div class="col-xs-12 col-sm-6 col-md-9">
 
 
+<div style="text-align: right">
             {% if page.title == "Publications" %}
-   <a style="float: right" href="https://github.com/tobig/polyhedral.info/blob/gh-pages/Publications.bib" class="btn btn-primary" role="button">Edit Publications</a>
+   <a href="https://github.com/tobig/polyhedral.info/blob/gh-pages/Publications.bib" class="btn btn-primary" role="button">Edit Publications</a>
 {% else %}
-   <a style="float: right" href="{{site.github.repository_url}}/blob/gh-pages/{{page.path}}" class="btn btn-primary" role="button">Edit this page</a>
+   <a href="{{site.github.repository_url}}/blob/gh-pages/{{page.path}}" class="btn btn-primary" role="button">Edit this page</a>
 {% endif %}
+</div>
+
 
             <!-- We format the header of a blog post -->
             {% if page.author %}
