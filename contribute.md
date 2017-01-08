@@ -82,7 +82,7 @@ On Linux (debian/Ubuntu) this can be done by running `apt-get install jekyll`. F
 
 #### Run the website locally
 
-       $jekyll --server --auto
+       $jekyll serve --watch
 
 #### View the website
 
