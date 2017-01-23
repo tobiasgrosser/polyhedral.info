@@ -19,4 +19,5 @@ title: Events
 
 ### Polyhedral School
 
- * [Spring School on Polyhedral Code Analysis and Optimizations](http://labexcompilation.ens-lyon.fr/polyhedral-school)
+ * [Spring school on numerical simulation and polyhedral code optimization (2016)](http://mathsinfohpc.sciencesconf.org/)
+ * [Spring School on Polyhedral Code Analysis and Optimizations (2013)](http://labexcompilation.ens-lyon.fr/polyhedral-school)
