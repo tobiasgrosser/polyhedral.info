@@ -73,6 +73,7 @@ Tools and libraries to translate a high level language into a polyhedral represe
 
  * [clan](http://www.lri.fr/~bastoul/development/clan/index.html), <a class="citation">BASTOUL2008CLAN</a>
  * [pet](http://pet.gforge.inria.fr/), <a class="citation">VERDOOLAEGE2012</a>
+ * [RStreamTF](https://www.reservoir.com/wp-content/uploads/2017/08/RStreamTF.pdf) R-Stream TF, a TensorFlow front-end to polyhedral compilers.
 
 Interactive Environments
 ========================
