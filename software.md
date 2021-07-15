@@ -53,6 +53,11 @@ Compilers
 
  * [AlphaZ](http://www.cs.colostate.edu/AlphaZ/), <a class="citation">YUKI2012ALPHAZ</a>
 
+
+#### Hardware Compilers
+
+ * [Dcc](https://www.xtremlogic.com/), <a class="citation">ALIAS2021DPN</a>
+
 Dependency analysis
 ===================
 
