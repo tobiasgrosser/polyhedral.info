@@ -40,23 +40,23 @@ Compilers
  * [PolyOpt/C](http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/C) <a class="citation">POUCHET2011POLYOPT</a>
  * [PolyOpt/Fortran](http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/Fortran)
  * [RosePolly](https://github.com/rose-compiler/rose/tree/master/projects/RosePolly)
- * [PPCG](http://ppcg.gforge.inria.fr/), <a class="citation">VERDOOLAEGE2013PPCG</a>
- * [R-Stream](https://www.reservoir.com/products), <a class="citation">SCHWEITZ2006RSTREAM</a>
- * [Traco](http://traco.sourceforge.net), <a class="citation">BIELECKI2016</a>
+ * [PPCG](http://ppcg.gforge.inria.fr/) <a class="citation">VERDOOLAEGE2013PPCG</a>
+ * [R-Stream](https://www.reservoir.com/products) <a class="citation">SCHWEITZ2006RSTREAM</a>
+ * [Traco](http://traco.sourceforge.net) <a class="citation">BIELECKI2016</a>
 
 
 #### Speculative and Just-in-time Compilers
 
- * [APOLLO](http://apollo.gforge.inria.fr/), <a class="citation">JIMBOREAN2014SPECULATIVE</a>
+ * [APOLLO](http://apollo.gforge.inria.fr/) <a class="citation">JIMBOREAN2014SPECULATIVE</a>
 
 #### Equational Programming
 
- * [AlphaZ](http://www.cs.colostate.edu/AlphaZ/), <a class="citation">YUKI2012ALPHAZ</a>
+ * [AlphaZ](http://www.cs.colostate.edu/AlphaZ/) <a class="citation">YUKI2012ALPHAZ</a>
 
 
 #### Hardware Compilers
 
- * [Dcc](https://www.xtremlogic.com/), <a class="citation">ALIAS2021DPN</a>
+ * [Dcc](https://www.xtremlogic.com/) <a class="citation">ALIAS2021DPN</a>
 
 Dependency analysis
 ===================
