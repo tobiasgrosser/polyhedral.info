@@ -16,9 +16,9 @@ Code Generators
 Tools and libraries to translate a polyhedral representation into source code.
 
  * [CADGen](https://www.infosun.fim.uni-passau.de/trac/LooPo/wiki/CADGen)
- * [CLooG](http://www.cloog.org), <a class="citation">BASTOUL2004CLOOG</a>
+ * [CLooG](http://www.cloog.org) <a class="citation">BASTOUL2004CLOOG</a>
  * [CodeGen](http://www.cs.umd.edu/projects/omega/release-1.0.html)
- * [CodeGen+](http://ctop.cs.utah.edu/ctop/?page_id=21), <a class="citation">CHEN2012</a>
+ * [CodeGen+](http://ctop.cs.utah.edu/ctop/?page_id=21) <a class="citation">CHEN2012</a>
  * [isl](http://isl.gforge.inria.fr/)
 
 Compilers
@@ -26,16 +26,16 @@ Compilers
 
 #### Static C/FORTRAN
 
- * [Graphite](http://gcc.gnu.org/wiki/Graphite) (for [GCC](http://www.gcc.org)), <a class="citation">TRIFINOVIC2010</a>
- * [IBM XL](http://www.ibm.com/software/awdtools/xlcpp/), <a class="citation">BONDHUGULA2010XLC</a>
- * [Polly](http://polly.llvm.org) (for [LLVM](http://www.llvm.org)), <a class="citation">GROSSER2012POLLY</a>
+ * [Graphite](http://gcc.gnu.org/wiki/Graphite) (for [GCC](http://www.gcc.org)) <a class="citation">TRIFINOVIC2010</a>
+ * [IBM XL](http://www.ibm.com/software/awdtools/xlcpp/) <a class="citation">BONDHUGULA2010XLC</a>
+ * [Polly](http://polly.llvm.org) (for [LLVM](http://www.llvm.org)) <a class="citation">GROSSER2012POLLY</a>
 
 
 #### Source-to-Source
 
- * [CHiLL](http://ctop.cs.utah.edu/ctop/?page_id=21), <a class="citation">CHEN2008CHILL</a>
- * [LooPo](https://www.infosun.fim.uni-passau.de/trac/LooPo), <a class="citation">GRIEBL1996LOOPO</a>
- * [Pluto](http://pluto-compiler.sourceforge.net/), <a class="citation">BONDHUGULA2008PLUTO</a>
+ * [CHiLL](http://ctop.cs.utah.edu/ctop/?page_id=21) <a class="citation">CHEN2008CHILL</a>
+ * [LooPo](https://www.infosun.fim.uni-passau.de/trac/LooPo) <a class="citation">GRIEBL1996LOOPO</a>
+ * [Pluto](http://pluto-compiler.sourceforge.net/) <a class="citation">BONDHUGULA2008PLUTO</a>
  * [PoCC](http://www.cse.ohio-state.edu/~pouchet/software/pocc/pocc.html)
  * [PolyOpt/C](http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/C) <a class="citation">POUCHET2011POLYOPT</a>
  * [PolyOpt/Fortran](http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/Fortran)
@@ -62,9 +62,9 @@ Dependency analysis
 ===================
 
  * [candl](http://www.lri.fr/~bastoul/development/candl/)
- * [FADA toolkit](https://bitbucket.org/mbelaoucha/fadalib), <a class="citation">BELAOUCHA2010FADALIB</a>
+ * [FADA toolkit](https://bitbucket.org/mbelaoucha/fadalib) <a class="citation">BELAOUCHA2010FADALIB</a>
  * [isl](http://isl.gforge.inria.fr/)
- * [Petit](http://www.cs.umd.edu/projects/omega/release-1.0.html), <a class="citation">KELLY1995PETIT</a>
+ * [Petit](http://www.cs.umd.edu/projects/omega/release-1.0.html) <a class="citation">KELLY1995PETIT</a>
 
 Exchange formats
 ===================
@@ -76,15 +76,15 @@ Front ends
 
 Tools and libraries to translate a high level language into a polyhedral representation.
 
- * [clan](http://www.lri.fr/~bastoul/development/clan/index.html), <a class="citation">BASTOUL2008CLAN</a>
- * [pet](http://pet.gforge.inria.fr/), <a class="citation">VERDOOLAEGE2012</a>
+ * [clan](http://www.lri.fr/~bastoul/development/clan/index.html) <a class="citation">BASTOUL2008CLAN</a>
+ * [pet](http://pet.gforge.inria.fr/) <a class="citation">VERDOOLAEGE2012</a>
  * [RStreamTF](https://www.reservoir.com/wp-content/uploads/2017/08/RStreamTF.pdf) R-Stream TF, a TensorFlow front-end to polyhedral compilers.
 
 Interactive Environments
 ========================
 
- * [iscc](http://barvinok.gforge.inria.fr/), <a class="citation">VERDOOLAEGE2011IMPACT</a>
- * [Omega calculator](http://www.cs.umd.edu/projects/omega/release-1.0.html), <a class="citation">KELLY1996OMEGA</a>
+ * [iscc](http://barvinok.gforge.inria.fr/) <a class="citation">VERDOOLAEGE2011IMPACT</a>
+ * [Omega calculator](http://www.cs.umd.edu/projects/omega/release-1.0.html) <a class="citation">KELLY1996OMEGA</a>
  * [Omega+ calculator](http://ctop.cs.utah.edu/ctop/?page_id=21)
 
 Libraries
@@ -94,13 +94,13 @@ Libraries to perform calculations on polyhedra.
 
  * [barvinok](http://barvinok.gforge.inria.fr/)
  * [IEGenLib](http://www.cs.colostate.edu/hpc/PIES/iegenlib.php)
- * [isl](http://isl.gforge.inria.fr/), <a class="citation">VERDOOLAEGE2010ISL</a>
+ * [isl](http://isl.gforge.inria.fr/) <a class="citation">VERDOOLAEGE2010ISL</a>
  * [Jolylib](http://www.reservoir.com/)
- * [Omega](http://www.cs.umd.edu/projects/omega/release-1.0.html), <a class="citation">KELLY1996OMEGA</a>
+ * [Omega](http://www.cs.umd.edu/projects/omega/release-1.0.html) <a class="citation">KELLY1996OMEGA</a>
  * [Omega+](http://ctop.cs.utah.edu/ctop/?page_id=21)
- * [polylib](http://icps.u-strasbg.fr/polylib/), <a class="citation">LOECHNER1999POLYLIB</a>
+ * [polylib](http://icps.u-strasbg.fr/polylib/) <a class="citation">LOECHNER1999POLYLIB</a>
  * [piplib](http://www.piplib.org)
- * [PPL](http://bugseng.com/products/ppl/), <a class="citation">BAGNARA2008PARMA</a>
+ * [PPL](http://bugseng.com/products/ppl/) <a class="citation">BAGNARA2008PARMA</a>
  * [ZPolyTrans](http://zpolytrans.gforge.inria.fr/)
 
 Scripting
