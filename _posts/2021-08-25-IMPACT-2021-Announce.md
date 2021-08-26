@@ -5,14 +5,17 @@ author: Benoit Meister
 www: https://www.reservoir.com
 ---
 
-# IMPACT 2022 announcement
+## IMPACT 2022 announcement
 
 Held in conjunction with [HiPEAC 2022] (https://www.hipeac.net/2022/budapest/#/)(Jan 16-18), 2022.
 
 The event will be hybrid, i.e., both physical and virtual attendance is possible.
 
+## Event page
 
-# Overview
+https://acohen.gitlabpages.inria.fr/impact/impact2022/
+
+## Overview
 
 With multicore processors, hardware accelerators, and deep memory
 hierarchies remaining the main sources of performance and
@@ -27,16 +30,16 @@ and practitioners for a high-quality one-day event including a keynote
 and selected paper presentations.
 
 
-# Event chairs
+## Event chairs
 
 Benoit Meister, Reservoir Labs, Inc.
 Riyadh Baghdadi, New York University Abu Dhabi
 
-# Calendar
+## Calendar
 
 
 |------------------------------------|-----------------------------------------------|
-| **When**                           |  Sometime between Jan 16, 2022 - Jan 18, 2022 |
+| **When**                           |  TBD between Jan 16, 2022 - Jan 18, 2022      |
 |------------------------------------|-----------------------------------------------|
 | **Where**                          |  Budapest, Hungary                            |
 |------------------------------------|-----------------------------------------------|
