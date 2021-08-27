@@ -13,7 +13,7 @@ The event will be hybrid, i.e., both physical and virtual attendance is possible
 
 ## Event page
 
-https://acohen.gitlabpages.inria.fr/impact/impact2022/
+<https://acohen.gitlabpages.inria.fr/impact/impact2022/>
 
 ## Overview
 
