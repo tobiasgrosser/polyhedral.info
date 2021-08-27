@@ -33,6 +33,7 @@ and selected paper presentations.
 ## Event chairs
 
 Benoit Meister, Reservoir Labs, Inc.
+
 Riyadh Baghdadi, New York University Abu Dhabi
 
 ## Calendar
