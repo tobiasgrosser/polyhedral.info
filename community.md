@@ -62,8 +62,6 @@ Sven Verdoolage an experienced postdoctoral researcher with strong focus on the
 development of important infrastructure components for polyhedral compilation.
 He is the author of [isl](http://isl.gforge.inria.fr/).
 
-Website: [www.cs.kuleuven.be/~sven](http://www.cs.kuleuven.be/~sven)
-
 #### Tobias Grosser
 
 ![Tobias Grosser](/images/people/grosser.jpg) 
