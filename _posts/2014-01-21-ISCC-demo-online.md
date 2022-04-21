@@ -17,6 +17,6 @@ readability of the isl output.
 
 Update: Added link to official barvinok online interface.
 
-[barvinok]: http://barvinok.gforge.inria.fr/
+[barvinok]: https://barvinok.sourceforge.io/
 [compsys-tools]: http://compsys-tools.ens-lyon.fr/iscc/
 [barvinok-cgi]: http://www.cs.kuleuven.be/cgi-bin/dtai/barvinok.cgi

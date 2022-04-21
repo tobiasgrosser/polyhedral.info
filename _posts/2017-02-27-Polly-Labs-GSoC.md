@@ -17,7 +17,7 @@ software development, and even get paid for it. Polly Labs not only
 supports the development of [LLVM Polly](https://polly.llvm.org/),
 but software, community and research around polyhedral compilation in
 general, such as such as the
-[Integer Set Library](http://isl.gforge.inria.fr/). You can choose to
+[Integer Set Library](https://libisl.sourceforge.io/). You can choose to
 work on one of our [ideas](http://pollylabs.org/gsoc2017.html) or
 suggest your own project.
 

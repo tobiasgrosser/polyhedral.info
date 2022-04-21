@@ -60,7 +60,7 @@ Website: [www.di.ens.fr/~baghdadi/](http://www.di.ens.fr/~baghdadi/)
 
 Sven Verdoolage an experienced postdoctoral researcher with strong focus on the
 development of important infrastructure components for polyhedral compilation.
-He is the author of [isl](http://isl.gforge.inria.fr/).
+He is the author of [isl](https://libisl.sourceforge.io/).
 
 #### Tobias Grosser
 

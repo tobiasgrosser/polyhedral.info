@@ -19,7 +19,7 @@ Tools and libraries to translate a polyhedral representation into source code.
  * [CLooG](http://www.cloog.org) <a class="citation">BASTOUL2004CLOOG</a>
  * [CodeGen](http://www.cs.umd.edu/projects/omega/release-1.0.html)
  * [CodeGen+](http://ctop.cs.utah.edu/ctop/?page_id=21) <a class="citation">CHEN2012</a>
- * [isl](http://isl.gforge.inria.fr/)
+ * [isl](https://libisl.sourceforge.io/)
 
 Compilers
 =========
@@ -40,7 +40,7 @@ Compilers
  * [PolyOpt/C](http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/C) <a class="citation">POUCHET2011POLYOPT</a>
  * [PolyOpt/Fortran](http://hpcrl.cse.ohio-state.edu/wiki/index.php/PolyOpt/Fortran)
  * [RosePolly](https://github.com/rose-compiler/rose/tree/master/projects/RosePolly)
- * [PPCG](http://ppcg.gforge.inria.fr/) <a class="citation">VERDOOLAEGE2013PPCG</a>
+ * [PPCG](https://ppcg.sourceforge.io/) <a class="citation">VERDOOLAEGE2013PPCG</a>
  * [R-Stream](https://www.reservoir.com/products) <a class="citation">SCHWEITZ2006RSTREAM</a>
  * [Traco](http://traco.sourceforge.net) <a class="citation">BIELECKI2016</a>
 
@@ -63,7 +63,7 @@ Dependency analysis
 
  * [candl](http://www.lri.fr/~bastoul/development/candl/)
  * [FADA toolkit](https://bitbucket.org/mbelaoucha/fadalib) <a class="citation">BELAOUCHA2010FADALIB</a>
- * [isl](http://isl.gforge.inria.fr/)
+ * [isl](https://libisl.sourceforge.io/)
  * [Petit](http://www.cs.umd.edu/projects/omega/release-1.0.html) <a class="citation">KELLY1995PETIT</a>
 
 Exchange formats
@@ -77,13 +77,13 @@ Front ends
 Tools and libraries to translate a high level language into a polyhedral representation.
 
  * [clan](http://www.lri.fr/~bastoul/development/clan/index.html) <a class="citation">BASTOUL2008CLAN</a>
- * [pet](http://pet.gforge.inria.fr/) <a class="citation">VERDOOLAEGE2012</a>
+ * [pet](https://libpet.sourceforge.io/) <a class="citation">VERDOOLAEGE2012</a>
  * [RStreamTF](https://www.reservoir.com/wp-content/uploads/2017/08/RStreamTF.pdf) R-Stream TF, a TensorFlow front-end to polyhedral compilers.
 
 Interactive Environments
 ========================
 
- * [iscc](http://barvinok.gforge.inria.fr/) <a class="citation">VERDOOLAEGE2011IMPACT</a>
+ * [iscc](https://barvinok.sourceforge.io/) <a class="citation">VERDOOLAEGE2011IMPACT</a>
  * [Omega calculator](http://www.cs.umd.edu/projects/omega/release-1.0.html) <a class="citation">KELLY1996OMEGA</a>
  * [Omega+ calculator](http://ctop.cs.utah.edu/ctop/?page_id=21)
 
@@ -92,9 +92,9 @@ Libraries
 
 Libraries to perform calculations on polyhedra.
 
- * [barvinok](http://barvinok.gforge.inria.fr/)
+ * [barvinok](https://barvinok.sourceforge.io/)
  * [IEGenLib](http://www.cs.colostate.edu/hpc/PIES/iegenlib.php)
- * [isl](http://isl.gforge.inria.fr/) <a class="citation">VERDOOLAEGE2010ISL</a>
+ * [isl](https://libisl.sourceforge.io/) <a class="citation">VERDOOLAEGE2010ISL</a>
  * [Jolylib](http://www.reservoir.com/)
  * [Omega](http://www.cs.umd.edu/projects/omega/release-1.0.html) <a class="citation">KELLY1996OMEGA</a>
  * [Omega+](http://ctop.cs.utah.edu/ctop/?page_id=21)
