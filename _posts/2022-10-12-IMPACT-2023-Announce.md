@@ -34,7 +34,7 @@ held in conjunction with HiPEAC 2023 in Toulouse, France.
 
 IMPORTANT DATES:
 
-Submission:    November 24, 2022 (AoE)
+Submission:    November 27, 2022 (AoE)
 
 Author notification: December 19, 2022
 
