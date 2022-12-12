@@ -273,14 +273,20 @@ Program Committee:
   Diana Picus (Linaro, Sweden)
 
   Arjun Pitchanathan (IIIT Hyderabad, India)
+  
+  Louis-Noel Pouchet (Ohio State University, USA)
+  
+  Benoit Pradelle (AMD, Germany)
 
   Sanjay Rajopadhye (Colorado State University, USA)
+  
+  P. Sadayappan (University of Utah, USA)
 
   Daniele Giuseppe Spampinato (Huawei, Switzerland)
 
   Sven Verdoolaege (Cerebras, Belgium)
 
-  Dave Wonnacott (Haverford, USA)
+  David G. Wonnacott (Haverford College, USA)
 
   Jie Zhao (State Key Laboratory Zhengzhou, China)
 </pre>
